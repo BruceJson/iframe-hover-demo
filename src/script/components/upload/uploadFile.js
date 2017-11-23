@@ -11,6 +11,10 @@ class UploadFile {
         // state => waiting:准备上传 uploading:正在上传 complete:上传成功
         this.state = 'waiting';
     }
+
+    setState(state) {
+        this.state = state;
+    }
 }
 
 export default UploadFile;
