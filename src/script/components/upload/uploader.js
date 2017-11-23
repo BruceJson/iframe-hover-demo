@@ -25,6 +25,10 @@ class Uploader {
         if (!$upload) throw '请传入$upload容器';
 
         this.$upload = $upload.append(createUploaderBox(defaultImgSrc));
+
+        this.upfile;
+
+        this._initialize();
     }
 
     _initialize() {
@@ -35,7 +39,20 @@ class Uploader {
         // input file change event
         this.$upload.find('.input_upload').on('change', function (e) {
             console.log('===== upload select file =====');
+            
         });
+    }
+
+    // interface
+
+    // 开始上传
+    upload() {
+
+    }
+
+    // 设置上传底图
+    setDefaultImg(src = DEFAULT_IMG_SRC) {
+        this.$upload.find('.preview_img').attr('src', src);
     }
 }
 

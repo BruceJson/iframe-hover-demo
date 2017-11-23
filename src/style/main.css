@@ -83,13 +83,13 @@ iframe {
 .router_uploader_box {
     position: relative;
     width: 100%;
-    left: 100%;
+    height: 100%;
 }
 
 .router_uploader_box .router_uploader_inner {
     position: relative;
     width: 100%;
-    left: 100%;
+    height: 100%;
 }
 
 .img_selector .input_upload {

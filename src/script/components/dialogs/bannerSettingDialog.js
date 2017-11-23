@@ -2,8 +2,22 @@ import tools from '@/tools';
 
 import Dialog from './dialog.js';
 
+import Uploader from '@/script/components/upload/uploader';
+
 // 创建弹出框模板
 function createTemplate() {
+    // <!-- ========= 图片预览 ========= -->
+    // <div id='img_preview_box' class="absolute_full">
+    //     <img id='preview_img' class="absolute_full" src="/static/img/icon_3.png">
+    // </div>
+    // <!-- ========= 上传选择 ========= -->
+    // <div id='img_upload_box' class="absolute_full">
+    //     <input class="inp-upload" type="file">
+    //     <span class="vertical_middle inline_block width_0 height_full"></span>
+    //     <div class="vertical_middle inline_block">
+    //         <i class="icon iconfont icon-fankui"></i>
+    //     </div>
+    // </div>
     var template =
         `<div id='zfmodal6' class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
             <div class="modal-dialog matic_modal_dialog" role="document">
@@ -16,19 +30,8 @@ function createTemplate() {
                     </div>
                     <div class="modal-body">
                         <div class="matic-mainBodyNav matic-linkNav" id="matic-lineNav" onmouseover="isOut=false" onmouseoout="isOut=true">
-                            <div class="coverpic-box coverpic-box3 inline_block matic-middlePicture">
-                                <!-- ========= 图片预览 ========= -->
-                                <div id='img_preview_box' class="absolute_full">
-                                    <img id='preview_img' class="absolute_full" src="/static/img/icon_3.png">
-                                </div>
-                                <!-- ========= 上传选择 ========= -->
-                                <div id='img_upload_box' class="absolute_full">
-                                    <input class="inp-upload" type="file">
-                                    <span class="vertical_middle inline_block width_0 height_full"></span>
-                                    <div class="vertical_middle inline_block">
-                                        <i class="icon iconfont icon-fankui"></i>
-                                    </div>
-                                </div>
+                            <div class="banner_upload_box coverpic-box coverpic-box3 inline_block matic-middlePicture">
+                                <!-- ========= 上传插件 insert ========= -->
                             </div>
                             <div class="matic-msg1"> 建议上传宽高为1920*600像素的图片，图片大小不超过2M，仅支持jpg、png、gif格式图片</div>
                         </div>
@@ -56,7 +59,14 @@ class BannerSettingDialog extends Dialog {
     }
 
     _initialize() {
+        // 初始化dom
         this.$dialog = createTemplate();
+        // 初始化上传插件
+        this._initUploader();
+    }
+
+    _initUploader() {
+        this.bannerUploader = new Uploader(this.$dialog.find('.banner_upload_box'));
     }
 
     _renderBanner() {
