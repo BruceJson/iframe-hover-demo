@@ -79,3 +79,19 @@ iframe {
     color: #fff;
     font-size: 20px;
 }
+
+.router_uploader_box {
+    position: relative;
+    width: 100%;
+    left: 100%;
+}
+
+.router_uploader_box .router_uploader_inner {
+    position: relative;
+    width: 100%;
+    left: 100%;
+}
+
+.img_selector .input_upload {
+    opacity: 0;
+}

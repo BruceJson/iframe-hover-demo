@@ -19,6 +19,7 @@ class DialogManager {
 
     // 渲染
     _render() {
+        this.$el.append(this.bannerDialog.getDom());
         this.$el.append(this.navDialog.getDom());
     }
 
