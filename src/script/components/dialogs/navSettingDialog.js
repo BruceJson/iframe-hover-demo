@@ -101,15 +101,14 @@ function createTemplate(navArr = []) {
 
 // 栏目设置弹窗
 class NavSettingDialog extends Dialog {
-    constructor(modelData) {
-        super(modelData);
+    constructor() {
+        super();
         this._initialize();
-        this._renderNavList();
         this._renderLinkList();
     }
 
     _initialize() {
-        this.$dialog = createTemplate(this.modelData.navItemList);
+        this.$dialog = createTemplate();
         this.$linkListBox = this.$dialog.find('#matic-link-box');
     }
 
@@ -176,7 +175,7 @@ class NavSettingDialog extends Dialog {
     }
 
     show(modelData){
-        this.$dialog.modal('show');
+        this._showDialog();
         this.modelData = modelData;
 
         // 渲染navbar list

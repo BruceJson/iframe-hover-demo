@@ -9,7 +9,7 @@ import Dialog from './dialog.js';
  *     jumpLink: '***'
  * }]
  */
-createTemplate(navArr = []) {
+function createTemplate() {
     var template =
         `<!--顶图设置  -->
         <div id='zfmodal6' class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
@@ -25,10 +25,15 @@ createTemplate(navArr = []) {
                     <div class="modal-body">
                         <div class="matic-mainBodyNav matic-linkNav" id="matic-lineNav" onmouseover="isOut=false" onmouseoout="isOut=true">
                             <div class="coverpic-box coverpic-box3 inline_block matic-middlePicture">
-                                <input class="inp-upload" type="file">
-                                <span class="vertical_middle inline_block width_0 height_full"></span>
-                                <div class="vertical_middle inline_block">
-                                    <i class="icon iconfont icon-fankui"></i>
+                                <div class="absolute_full">
+                                    <input class="inp-upload" type="file">
+                                    <span class="vertical_middle inline_block width_0 height_full"></span>
+                                    <div class="vertical_middle inline_block">
+                                        <i class="icon iconfont icon-fankui"></i>
+                                    </div>
+                                </div>
+                                <div class="absolute_full">
+                                    <img src="/static/img/icon_3.png">
                                 </div>
                             </div>
                             <div class="matic-msg1"> 建议上传宽高为1920*600像素的图片，图片大小不超过2M，仅支持jpg、png、gif格式图片</div>
@@ -48,48 +53,39 @@ createTemplate(navArr = []) {
 }
 
 // 栏目设置弹窗
-class NavSettingDialog extends Dialog {
+class BannerSettingDialog extends Dialog {
 
     /**
-     * {object} modelObj
-     * modelObj => {
-     *     navArr: [{
-     *          title: '***',
-     *          jumpLink: '***'
-     *     },...],
-     *     
-     * }
+     * @param {BannerData} modelData
      */
-    constructor(modelObj) {
-        super(modelObj);
-        this.initialize();
-        this.renderLinkList();
+    constructor() {
+        super();
+        this._initialize();
     }
 
-    initialize() {
-        this.$dialog = createTemplate(this.modelObj.navArr);
-        this.$linkListBox = this.$dialog.find('#matic-link-box');
+    _initialize() {
+        this.$dialog = createTemplate();
     }
 
-    async renderLinkList() {
-        // 获取链接列表
-        var linkList = await getLinkList();
-        // 根据链接列表渲染列表
-        var $linkListTemplate = createColumnLinkListTemplate(linkList);
-        // 清空列表
-        this.$linkListBox.children().remove();
-        // 渲染linkList
-        this.$linkListBox.append($linkListTemplate);
+    _renderBanner() {
+
     }
 
-    // 获取栏目链接列表
-    getLinkList() {
-        return new Promise((resolve, reject) => {
-            resolve();
-        });
-    }
-
+    // @interface
     getDom() {
         return this.$dialog;
     }
+
+    show(modelData) {
+        // 显示dialog
+        this._showDialog();
+
+        // 替换元数据
+        this.modelData = modelData;
+
+        // 渲染banner
+        this._renderBanner();
+    }
 }
+
+export default BannerSettingDialog;

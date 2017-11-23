@@ -1,3 +1,4 @@
+import BannerSettingDialog from '@/script/components/dialogs/bannerSettingDialog'
 import NavSettingDialog from '@/script/components/dialogs/navSettingDialog'
 
 class DialogManager {
@@ -12,18 +13,8 @@ class DialogManager {
     }
 
     _initDialogs() {
-        this.navDialog = new NavSettingDialog({
-            navArr: [{
-                title: '标题1',
-                jumpLink: 'http: www.baidu.com'
-            }, {
-                title: '标题2',
-                jumpLink: 'http: www.baidu.com'
-            }, {
-                title: '标题3',
-                jumpLink: 'http: www.baidu.com'
-            }]
-        });
+        this.bannerDialog = new BannerSettingDialog();
+        this.navDialog = new NavSettingDialog();
     }
 
     // 渲染
@@ -35,7 +26,7 @@ class DialogManager {
     showDialog(modelData) {
         switch (modelData.type) {
             case 'banner':
-                this.navDialog.show(modelData);
+                this.bannerDialog.show(modelData);
                 break;
             case 'navbar':
                 this.navDialog.show(modelData);

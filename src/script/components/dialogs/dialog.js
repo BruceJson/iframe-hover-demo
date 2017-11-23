@@ -3,17 +3,29 @@ class Dialog {
     /**
      * {object} modelObj
      */
-    constructor(modelData) {
-        this.modelData = tools.deepClone(modelData);
+    constructor() {
+
+    }
+
+    _initialize() {
         this.$dialog;
     }
 
-    show() {
+    _showDialog() {
         this.$dialog.modal('show');
     }
 
-    hide() {
+    _hideDialog() {
         this.$dialog.modal('hide');
+    }
+
+    // @interface
+    show() {
+        this._showDialog();
+    }
+
+    hide() {
+        this._hideDialog();
     }
 }
 
