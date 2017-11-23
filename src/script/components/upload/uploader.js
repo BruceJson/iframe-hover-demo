@@ -1,4 +1,5 @@
-var wuploader = require('webuploader');
+import tools from '@/tools';
+import UploadFile from './uploadFile';
 
 var DEFAULT_IMG_SRC = '/static/img/default_1.png';
 
@@ -7,7 +8,7 @@ function createUploaderBox(defaultImgSrc = DEFAULT_IMG_SRC) {
         `<div class='router_uploader_box'>
             <div class='router_uploader_inner'>
                 <div class='absolute_full'>
-                    <img class='preview_img' class='absolute_full preview_img' src='${defaultImgSrc}'>
+                    <img class='absolute_full preview_img' src='${defaultImgSrc}'>
                 </div>
 
                 <div class='absolute_full align_center font_0 img_selector'>
@@ -36,10 +37,25 @@ class Uploader {
     }
 
     _bindEvent() {
+        var self = this;
         // input file change event
         this.$upload.find('.input_upload').on('change', function (e) {
             console.log('===== upload select file =====');
-            
+
+            var file = this.files[0];
+
+            // 渲染预览图片
+            tools.getBase64Img(file).then(base64Img => {
+                self.setDefaultImg(base64Img);
+            });
+
+            // 重置upfile
+            this.upfile = new UploadFile(file);
+            console.log(this.upfile);
+
+
+
+
         });
     }
 

@@ -48,7 +48,33 @@ var tools = {
                 v = c == 'x' ? r : (r & 0x3 | 0x8);
             return v.toString(16);
         });
-    }
+    },
+
+    getBase64Img(file) {
+        return new Promise((resolve, reject) => {
+            // 看支持不支持FileReader
+            if (!file || !window.FileReader) {
+                reject('对不起，您的浏览器无法生成预览图片~');
+                return;
+            }
+            if (/^image/.test(file.type)) {
+                // 创建一个reader
+                var reader = new FileReader()
+                    // 将图片将转成 base64 格式
+                reader.readAsDataURL(file)
+                    // 读取成功后的回调
+                reader.onloadend = function (e) {
+                    if (this.result) {
+                        resolve(this.result);
+                    } else {
+                        reject('生成预览图片失败~');
+                    }
+                }
+            } else {
+                reject('请选择图片类型文件~');
+            }
+        });
+    },
 };
 
 export default tools;

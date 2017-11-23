@@ -1,4 +1,5 @@
 import tools from '@/tools';
+
 class UploadFile {
     constructor(file) {
         this.file = file;
@@ -6,7 +7,7 @@ class UploadFile {
     }
 
     _initialize() {
-        this.guid = tools.getGuid();
+        this.id = tools.getGuid();
         // state => waiting:准备上传 uploading:正在上传 complete:上传成功
         this.state = 'waiting';
     }
