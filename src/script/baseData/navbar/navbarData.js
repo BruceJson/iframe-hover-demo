@@ -1,4 +1,4 @@
-class NavListData {
+class NavbarData {
     constructor(guid = '', navItemList) {
         this.guid = guid;
         this.type = 'navbar';
@@ -6,4 +6,4 @@ class NavListData {
     }
 }
 
-export default NavListData;
+export default NavbarData;

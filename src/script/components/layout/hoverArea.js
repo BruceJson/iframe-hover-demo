@@ -33,11 +33,11 @@ class HoverArea {
 
 
         // 循环位置列表，渲染
-        this.modelPositionList.forEach(modelObj => {
+        this.modelPositionList.forEach(modelPositionObj => {
             // 创建hoverBox对象
-            var hoverBox = new HoverBox(modelObj);
+            var hoverBox = new HoverBox(modelPositionObj);
             // 根据model获取对应的dom上的相关设置数据
-            var modelData = this._getVisualSettingData(modelObj);
+            var modelData = this._getVisualSettingData(modelPositionObj);
             // 给hoverBox绑定data数据
             hoverBox.bindModelData(modelData);
             // 渲染
@@ -65,6 +65,8 @@ class HoverArea {
 
         // 获取dom对应的data
         var modelData = modelDataGetter.getData($modelDom);
+
+        return modelData;
     }
 
     // interface

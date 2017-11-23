@@ -1,0 +1,539 @@
+.matic-reply {
+    width: 1000px;
+}
+
+.matic-reply-head {
+    height: 60px;
+    background-color: #1bc1ff;
+    line-height: 60px;
+}
+
+.matic-reply-head .matic-head-list1 {
+    font-size: 20px;
+    color: #fff;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.matic-reply-head .matic-head-list2 i {
+    font-size: 20px !important;
+}
+
+.matic-reply-head .matic-head-list2 {
+    color: #fff;
+    float: right;
+    padding-right: 10px;
+    height: 60px;
+}
+
+.matic-head-mainbody {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 20px 0px 20px;
+}
+
+.matic-topTitle {
+    width: 100%;
+    padding: 40px 0px 40px 0px;
+    text-align: center;
+}
+
+.matic-topTitle .active {
+    background: #1bc1ff;
+    color: #fff;
+}
+
+.matic-backgroundSet {
+    display: inline-block;
+    font-size: 16px;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.matic-fontSiseSet {
+    display: inline-block;
+    font-size: 16px;
+    background: #fff;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    color: #1c1b1b;
+}
+
+
+/* 自定义背景 */
+
+.matic-mainBodyBg {
+    width: 100%;
+    padding: 10px 67px 125px 67px;
+}
+
+.matic-mainBodyLeft {
+    width: 200px;
+    height: 134px;
+    margin-right: 35px;
+    vertical-align: top;
+}
+
+.matic-mainBodyRight {
+    border: 1px solid red;
+    display: inline-block;
+    width: 600px;
+    height: 160px;
+    vertical-align: middle;
+}
+
+.checkbox-custom.fill.checkbox-success label:before {
+    background: #09b600;
+}
+
+.radio-custom.radio-success label:before,
+.checkbox-custom.checkbox-success label:before {
+    border-color: #09b600;
+}
+
+
+/* 自定义颜色 */
+
+.matic-manBodyColor {
+    width: 468px;
+    height: 196px;
+    margin: 0 auto;
+    border: 1px solid red;
+    margin-bottom: 112px;
+}
+
+
+/* 顶图设置 */
+
+.matic-mainBodyPicture {
+    width: 100%;
+    padding: 30px 60px 60px 60px;
+}
+
+.matic-middlePicture {
+    width: 880px;
+    height: 281px;
+}
+
+.matic-msg {
+    color: #aeaeae;
+    font-size: 12px;
+    margin-top: -15px;
+}
+
+.matic-msg1 {
+    color: #aeaeae;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+
+/* 导航设置 */
+
+.matic-lookDetail {
+    font-size: 14px;
+    color: #fff;
+    margin-right: 40px;
+}
+
+.matic-nav-spanSpecial {
+    color: #aeadad;
+    height: 94px;
+    width: 100%;
+    border: none;
+    text-align: center;
+}
+
+.matic-addIcon {
+    color: #1bc1ff;
+    font-size: 24px;
+    vertical-align: middle;
+    position: relative;
+    top: 2px;
+}
+
+.matic-add {
+    color: #1bc1ff;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.operate-delete-btn:hover {
+    text-decoration: none;
+}
+
+.operate-delete-btn:hover i,
+.operate-delete-btn:hover span {
+    color: #ff2727;
+    text-decoration: none;
+}
+
+
+/* 栏目链接 */
+
+.matic-link {
+    width: 776px;
+    max-height: 182px;
+    background-color: #ffffea;
+    border-radius: 5px;
+    overflow-y: auto;
+    padding: 15px 20px 15px 20px;
+    margin-top: -6px;
+    overflow: auto;
+}
+
+.matic-link-list {
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    height: 34px;
+    line-height: 34px;
+}
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #ffffea;
+    display: inline-block;
+    margin-left: 700px;
+}
+
+.matic-linkNav {
+    position: relative
+}
+
+.matic-linkAll {
+    position: absolute;
+    top: 37px;
+    left: 167px;
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5px);
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.matic-lineDetail:hover .matic-linkAll {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+}
+
+
+/* 轮播设置 */
+
+.matic-msg2 {
+    color: #aeaeae;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.matic-mainBodySwiper {
+    padding: 0px 20px 15px 20px;
+    width: 100%;
+}
+
+
+/* 栏目设置 */
+
+input.matic-specialColor::-webkit-input-placeholder {
+    /* WebKit browsers*/
+    color: #666666;
+}
+
+input.matic-specialColor:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18*/
+    color: #666666;
+}
+
+input.matic-specialColor::-moz-placeholder {
+    /* Mozilla Firefox 19+*/
+    color: #666666;
+}
+
+input.matic-specialColor:-ms-input-placeholder {
+    /* Internet Explorer 10+*/
+    color: #666666;
+}
+
+.column-replayHead {
+    width: 100%;
+    font-size: 0;
+}
+
+.column-reply {
+    width: 1000px;
+    font-size: 0px;
+}
+
+.replayHeadFirst {
+    display: inline-block;
+    width: 33.3%;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 30px;
+}
+
+.replayHeaderFirstList1 {
+    color: #1c1b1b;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.replayHeaderFirstList2 {
+    color: #aeadad;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.column-replayInner {
+    margin-top: 30px;
+    padding-bottom: 60px;
+}
+
+.column-replayInnerTitle {
+    width: 16.7%;
+    text-align: right;
+    font-size: 14px;
+    color: #1c1b1b;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.column-replayInnerContent {
+    width: 80%;
+    font-size: 14px;
+    color: #1c1b1b;
+    display: inline-block;
+}
+
+.column-replayInnerContent div {
+    padding-left: 0 !important;
+    padding-top: 10px;
+    margin-left: 0 !important;
+}
+
+.column-replayInnerContent div label {
+    margin-right: 0 !important;
+    padding-left: 25px !important;
+}
+
+.checkbox-custom.fill input[type=checkbox]:checked+label:after,
+.checkbox-custom.fill input[type=radio]:checked+label:after {
+    position: absolute;
+    font-family: "FontAwesome";
+    content: "\f00c";
+    font-size: 14px;
+    top: 0px;
+    left: 4px;
+    width: 0;
+    height: 0;
+    color: #fff !important;
+    transform: rotate(0deg);
+}
+
+.column-replayInnerContent label {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #626262;
+    outline: none;
+}
+
+
+/* 焦点图设置 */
+
+.matic-foucsImage {
+    height: 60px;
+    line-height: 60px;
+    font-size: 0;
+}
+
+.matic-foucsImage:first-child {
+    margin-top: 20px;
+}
+
+.matic-foucsImage1 {
+    width: 20%;
+    text-align: right;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.matic-foucsImage2 {
+    width: 70%;
+    text-align: left;
+    font-size: 14px;
+    display: inline-block;
+    padding-left: 15px;
+    color: #aeadad;
+}
+
+
+/* 单图设置 */
+
+.matic-mainBodyRight2 {
+    display: inline-block;
+    width: 600px;
+    height: 160px;
+    vertical-align: top;
+}
+
+.matic-linkP {
+    font-size: 14px;
+    line-height: 2.6;
+    color: #666666;
+}
+
+
+/* 最高高度 */
+
+.column-replayBody {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.coverpic-box {
+    background-color: #eff1f3;
+    width: 145px;
+    height: 95px;
+    text-align: center;
+    position: relative;
+}
+
+.coverpic-box1 {
+    background-color: #eff1f3;
+    width: 246px;
+    height: 142px;
+    text-align: center;
+    position: relative;
+}
+
+.coverpic-box2 {
+    background-color: #eff1f3;
+    width: 194px;
+    height: 128px;
+    text-align: center;
+    position: relative;
+}
+
+.coverpic-box3 {
+    background-color: #eff1f3;
+    width: 100%;
+    height: 280px;
+    text-align: center;
+    position: relative;
+}
+
+.coverpic-box .inp-upload {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.coverpic-box .icon-fankui {
+    font-size: 32px;
+    color: #d5d6d7;
+}
+
+
+/* ==================================================== */
+
+.matic_modal_dialog {
+    width: 1000px;
+}
+
+.matic_header {
+    height: 60px;
+    background-color: #1BC1FF;
+}
+
+.matic_header .matic_close {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    opacity: 1;
+}
+
+.matic_header .matic_modal_title {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.matic_modal_footer {
+    text-align: center;
+    background-color: #fff;
+    padding: 19px 0;
+}
+
+.matic_modal_footer .btn_confirm {
+    height: 30px;
+    line-height: 30px;
+    background: #1bc1ff;
+    width: 110px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    margin-right: 40px;
+}
+
+.matic_modal_footer .btn_cancel {
+    height: 30px;
+    line-height: 30px;
+    background: #f2f2f3;
+    width: 110px;
+    text-align: center;
+    display: inline-block;
+    color: #585758;
+}
+
+.matic_header .matic-lineDetail {
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+/* 修改 */
+
+.matic_modal_th {
+    border-right: 1px solid #e4e4e4;
+    text-align: center;
+    background: #f5f5f5;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.matic_modal_td {
+    border-right: 1px solid #e4e4e4;
+}
+
+.border-rightNone {
+    border-right: none;
+}

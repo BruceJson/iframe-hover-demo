@@ -3,7 +3,7 @@ import BaseData from '@/script/baseData/baseData';
 // 获取bannerdata data-src
 function getBannerData($banner) {
     var guid = getDomGuid($banner);
-    var src = $banner.find('img').attr('img-src');
+    var src = $banner.find('.router_img').attr('data-src');
     return new BaseData.BannerData(guid, src);
 }
 
@@ -16,7 +16,7 @@ function getBannerData($banner) {
 function getNavbarData($navbar) {
     var guid = getDomGuid($navbar);
     var arr = [];
-    $navbar.find('.nav_item').each(function () {
+    $navbar.find('.router_box_item').each(function () {
         var title = this.getAttribute('data-title');
         var link = this.getAttribute('data-link');
 
@@ -25,7 +25,7 @@ function getNavbarData($navbar) {
         arr.push(navItemData);
     });
 
-    return BaseData.NavbarData(guid, arr);
+    return new BaseData.NavbarData(guid, arr);
 }
 
 /**
@@ -53,7 +53,7 @@ function getFocusData($focus) {
 function getSwiperData($swiper) {
     var guid = getDomGuid($swiper);
     var arr = [];
-    $swiper.find('.swiper_inner_item').each(function () {
+    $swiper.find('.router_box_item').each(function () {
         var src = $(this).find('img').attr('data-src');
         var link = $(this).find('a').attr('data-link');
 
@@ -107,7 +107,7 @@ function getAdvData($adv) {
 function getAdvListData($advList) {
     var guid = getDomGuid($advList);
     var arr = [];
-    $advList.find('.adv_list_item').each(function () {
+    $advList.find('.router_box_item').each(function () {
         var link = $(this).find('a').attr('data-link');
         var name = $(this).find('a').attr('data-name');
         var src = $(this).find('img').attr('data-src');
@@ -127,7 +127,7 @@ function getAdvListData($advList) {
  */
 function getTextData($text) {
     var guid = getDomGuid($text);
-    var value = $text.find('.text_inner_box').innerHTML;
+    var value = $text.find('.router_text_box').innerHTML;
     return new BaseData.TextData(guid, value);
 }
 

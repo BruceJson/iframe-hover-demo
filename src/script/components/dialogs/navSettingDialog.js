@@ -12,7 +12,7 @@ import Dialog from './dialog.js';
  */
 function createColumnLinkListTemplate(linkArr = []) {
     var template = !linkArr || linkArr.length === 0 ?
-        '<p>对不起，暂无栏目链接</p>' :
+        '<p style="color: #000;">对不起，暂无栏目链接</p>' :
         `<table style="width:100%">
             <thead>
                 <tr>
@@ -75,37 +75,9 @@ function createTemplate(navArr = []) {
                                             <th width="15%" class=" matic_modal_th border-rightNone">操作</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        ${
-                                            navArr.map(nav => `<tr>
-                                                    <td class="font_14 align_center matic_modal_td">
-                                                        <input class="font_14 matic-nav-spanSpecial" placeholder='请输入标题' value="${nav.title || ''}">
-                                                    </td>
-                                                    <td class="font_14 align_center  matic_modal_td">
-                                                        <input class="matic-nav-spanSpecial" placeholder='请输入网址' value="${nav.jumpLink || ''}">
-                                                    </td>
-                                                    <td class="align_center font_14  matic_modal_td">
-                                                        <!-- 上 -->
-                                                        <i class="icon iconfont icon-jiantou1" style="color:#c7c7c7;font-size:30px;"></i>
-                                                        <!-- 下 -->
-                                                        <i class="icon iconfont icon-jiantou1-copy" style="color:#1bc1ff;font-size:30px;"></i>
-                                                    </td>
-                                                    <td class="align_center">
-                                                        <div>
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="#" class="operate-delete-btn">
-                                                                        <i class="icon iconfont icon-zititubiao2huishouzhan1 font_25 vertical_middle"></i>
-                                                                        <span class="font_16 vertical_middle">删除</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>`
-                                            ).join('')
-                                        }
-                                        <tr>
+                                    <tbody id="navbar_list">
+                                        <!-- =========== navbar列表 insert ============ -->
+                                        <tr id="navbar_add_item">
                                             <td colspan="5" class="align_center cursor">
                                                 <i class="icon iconfont icon-tianjia matic-addIcon"></i>
                                                 <span class="matic-add">添加</span>
@@ -132,27 +104,48 @@ class NavSettingDialog extends Dialog {
     constructor(modelData) {
         super(modelData);
         this._initialize();
+        this._renderNavList();
         this._renderLinkList();
-        this._bindEvent();
     }
 
     _initialize() {
-        // this.$dialog = createTemplate(this.modelData.navItemList);
-        this.$dialog = createTemplate([{
-            title: 'aaa',
-            link: 'http:www.baidu.com'
-        },{
-            title: 'bbb',
-            link: 'http:www.baidu.com'
-        },{
-            title: 'ccc',
-            link: 'http:www.baidu.com'
-        }]);
+        this.$dialog = createTemplate(this.modelData.navItemList);
         this.$linkListBox = this.$dialog.find('#matic-link-box');
     }
 
-    _bindEvent(){
-        
+    // 创建navList
+    _renderNavList(){
+        var navArr = this.modelData.navItemList || [];
+        var navArrStr = navArr.map(nav => `<tr class="nav_item">
+                <td class="font_14 align_center matic_modal_td">
+                    <input class="font_14 matic-nav-spanSpecial" placeholder='请输入标题' value="${nav.title || ''}">
+                </td>
+                <td class="font_14 align_center  matic_modal_td">
+                    <input class="matic-nav-spanSpecial" placeholder='请输入网址' value="${nav.link || ''}">
+                </td>
+                <td class="align_center font_14  matic_modal_td">
+                    <!-- 上 -->
+                    <i class="icon iconfont icon-jiantou1" style="color:#c7c7c7;font-size:30px;"></i>
+                    <!-- 下 -->
+                    <i class="icon iconfont icon-jiantou1-copy" style="color:#1bc1ff;font-size:30px;"></i>
+                </td>
+                <td class="align_center">
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#" class="operate-delete-btn">
+                                    <i class="icon iconfont icon-zititubiao2huishouzhan1 font_25 vertical_middle"></i>
+                                    <span class="font_16 vertical_middle">删除</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>`
+        ).join('');
+
+        this._removeNavItems();
+        this.$dialog.find('#navbar_list').prepend($(navArrStr));
     }
 
     async _renderLinkList() {
@@ -173,8 +166,21 @@ class NavSettingDialog extends Dialog {
         });
     }
 
+    _removeNavItems(){
+        this.$dialog.find('#navbar_list').find('.nav_item').remove();
+    }
+
+    // @interface
     getDom(){
         return this.$dialog;
+    }
+
+    show(modelData){
+        this.$dialog.modal('show');
+        this.modelData = modelData;
+
+        // 渲染navbar list
+        this._renderNavList();
     }
 }
 
