@@ -5,10 +5,10 @@ var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var webpack = require('webpack');
 
-var config = require('./config');
+var config = require('../config');
 
 function resolve(url) {
-    return path.join(__dirname, url);
+    return path.join(__dirname, '..', url);
 }
 
 module.exports = {

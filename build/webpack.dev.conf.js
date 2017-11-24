@@ -7,7 +7,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 var webpack = require('webpack');
 var merge = require('webpack-merge');
 
-var config = require('./config');
+var config = require('../config');
 var webpackBaseConfig = require('./webpack.base.conf');
 
 function resolve(url) {

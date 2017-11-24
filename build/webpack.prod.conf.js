@@ -7,11 +7,11 @@ var webpack = require('webpack');
 var merge = require('webpack-merge');
 
 
-var config = require('./config');
+var config = require('../config');
 var webpackBaseConfig = require('./webpack.base.conf.js');
 
 function resolve(url) {
-    return path.join(__dirname, url);
+    return path.join(__dirname, '..', url);
 }
 
 module.exports = merge(webpackBaseConfig, {
@@ -94,8 +94,8 @@ module.exports = merge(webpackBaseConfig, {
         }),
 
         new CopyWebpackPlugin([{
-            from: path.join(__dirname, 'static'),
-            to: path.join(__dirname, 'dist/static'),
+            from: path.resolve(__dirname, '..', 'static'),
+            to: path.resolve(__dirname, '..', 'dist/static'),
             ignore: ['.*']
         }]),
 
