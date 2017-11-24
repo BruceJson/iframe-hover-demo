@@ -34,6 +34,7 @@ module.exports = merge(webpackBaseConfig, {
         }),
 
         // extra style.css 引入
+        
         new ExtractTextPlugin({
             filename: path.posix.join('assets', 'css/[name].[contenthash].css')
         }),

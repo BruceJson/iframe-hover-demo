@@ -7,7 +7,7 @@ var path = require('path');
 var webpack = require('webpack');
 var webpackProdConfig = require('./webpack.prod.conf.js');
 
-var spinner = ora('building for production...')
+var spinner = ora('building...')
 spinner.start()
 
 rm(path.join(__dirname, '../dist'), error => {
