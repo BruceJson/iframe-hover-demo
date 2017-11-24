@@ -3,38 +3,24 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
-
 var webpack = require('webpack');
+var merge = require('webpack-merge');
+
 
 var config = require('./config');
-
-var env = process.env.NODE_ENV === 'production' ? config.build.env : config.dev.env;
-
-console.log('####################### NODE-ENV=' + process.env.NODE_ENV);
+var webpackBaseConfig = require('./webpack.base.conf.js');
 
 function resolve(url) {
     return path.join(__dirname, url);
 }
 
-module.exports = {
-    entry: {
-        main: resolve('src/main.js')
-    },
-
+module.exports = merge(webpackBaseConfig, {
     output: {
         path: resolve('dist'),
         filename: path.posix.join('assets', 'js/[name].[hash:7].js')
     },
 
-    devtool: 'eval-source-map', // source-map
-
-    devServer: {
-        contentBase: "./", //本地服务器所加载的页面所在的目录
-        port: 8888,
-        inline: true, //实时刷新
-        historyApiFallback: true, //不跳转
-        hot: true // 开启热重载
-    },
+    devtool: '#source-map', // source-map
 
     module: {
         rules: [{
@@ -96,7 +82,7 @@ module.exports = {
 
     plugins: [
         new webpack.DefinePlugin({
-            'process.env': env
+            'process.env': config.build.env
         }),
 
         // 定义全局变量
@@ -135,14 +121,5 @@ module.exports = {
         }),
 
         new webpack.BannerPlugin('版权所有，翻版必究'),
-    ],
-
-    resolve: {
-        extensions: ['.js', '.vue', '.json'],
-        alias: {
-            '@': resolve('src'),
-            '@static': resolve('static'),
-            '@cfg': resolve('src/config')
-        }
-    }
-}
+    ]
+})

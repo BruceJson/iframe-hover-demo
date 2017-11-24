@@ -26,7 +26,7 @@ module.exports = {
         filename: path.posix.join('assets', 'js/[name].[hash:7].js')
     },
 
-    devtool: 'eval-source-map', // source-map
+    devtool: '#source-map', // source-map
 
     devServer: {
         contentBase: "./", //本地服务器所加载的页面所在的目录

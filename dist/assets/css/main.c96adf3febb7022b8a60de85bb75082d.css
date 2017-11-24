@@ -1,2 +1,0 @@
-/*! 版权所有，翻版必究 */
-*{box-sizing:border-box}body,html{height:100%}body,html{position:relative}body{margin:0}.box{position:relative}iframe{display:block;border:none}.shadow_box,iframe{width:100%;height:100%}.shadow_box{position:absolute;left:0;top:0}.selector_item{position:absolute;background-color:rgba(211,232,242,.7);border:1px solid #14aef7;opacity:0;transition:all .3s linear;-webkit-transition:all .3s linear;-moz-transition:all linear .3s;-ms-transition:all linear .3s;-o-transition:all linear .3s;cursor:pointer}.selector_item:hover{opacity:1}
