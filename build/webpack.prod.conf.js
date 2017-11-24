@@ -22,64 +22,6 @@ module.exports = merge(webpackBaseConfig, {
 
     devtool: '#source-map', // source-map
 
-    module: {
-        rules: [{
-            test: /\.js$/,
-            exclude: /(node_modules|bower_components)/,
-            use: {
-                loader: 'babel-loader'
-            },
-        }, {
-            test: /\.css$/,
-            use: ExtractTextPlugin.extract({
-                fallback: "style-loader",
-                use: [{
-                    loader: 'css-loader'
-                }, {
-                    loader: 'postcss-loader'
-                }]
-            })
-        }, {
-            test: /\.less$/,
-            use: ExtractTextPlugin.extract({
-                fallback: "style-loader",
-                use: [{
-                    loader: 'css-loader'
-                }, {
-                    loader: 'postcss-loader'
-                }, {
-                    loader: 'less-loader'
-                }]
-            })
-        }, {
-            test: /\.less$/,
-            use: ExtractTextPlugin.extract({
-                fallback: "style-loader",
-                use: [{
-                    loader: 'css-loader'
-                }, {
-                    loader: 'postcss-loader'
-                }, {
-                    loader: 'less-loader'
-                }]
-            })
-        }, {
-            test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-            loader: 'url-loader',
-            options: {
-                limit: 10000,
-                name: path.posix.join('assets', 'img/[name].[hash:7].[ext]')
-            }
-        }, {
-            test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-            loader: 'url-loader',
-            options: {
-                limit: 10000,
-                name: path.posix.join('assets', 'fonts/[name].[hash:7].[ext]')
-            }
-        }]
-    },
-
     plugins: [
         new webpack.DefinePlugin({
             'process.env': config.build.env
@@ -94,8 +36,8 @@ module.exports = merge(webpackBaseConfig, {
         }),
 
         new CopyWebpackPlugin([{
-            from: path.resolve(__dirname, '..', 'static'),
-            to: path.resolve(__dirname, '..', 'dist/static'),
+            from: path.resolve(__dirname, '../static'),
+            to: path.resolve(__dirname, '../dist/static'),
             ignore: ['.*']
         }]),
 
@@ -105,9 +47,6 @@ module.exports = merge(webpackBaseConfig, {
             template: 'index.html', //new 一个这个插件的实例，并传入相关的参数
             inject: true // 是否把js文件插入到body的最后
         }),
-
-        //热加载插件
-        new webpack.HotModuleReplacementPlugin(),
 
         // css压缩
         new OptimizeCssAssetsPlugin(),

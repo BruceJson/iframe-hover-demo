@@ -6,14 +6,14 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 var webpack = require('webpack');
 
-var config = require('./config');
+var config = require('../config');
 
 var env = process.env.NODE_ENV === 'production' ? config.build.env : config.dev.env;
 
 console.log('####################### NODE-ENV=' + process.env.NODE_ENV);
 
 function resolve(url) {
-    return path.join(__dirname, url);
+    return path.join(__dirname, '..', url);
 }
 
 module.exports = {
@@ -26,7 +26,15 @@ module.exports = {
         filename: path.posix.join('assets', 'js/[name].[hash:7].js')
     },
 
-    devtool: '#source-map', // source-map
+    devtool: 'eval-source-map', // source-map
+
+    devServer: {
+        contentBase: "./", //本地服务器所加载的页面所在的目录
+        port: 8888,
+        inline: true, //实时刷新
+        historyApiFallback: true, //不跳转
+        hot: true // 开启热重载
+    },
 
     module: {
         rules: [{
@@ -100,8 +108,8 @@ module.exports = {
         }),
 
         new CopyWebpackPlugin([{
-            from: path.join(__dirname, 'static'),
-            to: path.join(__dirname, 'dist/static'),
+            from: path.join(__dirname, '../static'),
+            to: path.join(__dirname, '../dist/static'),
             ignore: ['.*']
         }]),
 
