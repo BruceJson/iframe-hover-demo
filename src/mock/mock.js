@@ -77,20 +77,9 @@ Mock.mock(/\/plugin\/diyspecial\/tags-list/, 'get', {
     "message": "成功获取当前平台的标签列表！"
 });
 
-Mock.mock(/\/plugin\/diyspecial\/get-platform/, 'get', {
-    {
-        "platform": "5a12478e931c750f008b4568",
-        "state": 1,
-        "message": "成功获取当前平台id！"
-    }
-});
-
-Mock.mock(/\/plugin\/diyspecial\/get-platform/, 'get', {
-    {
-        "platform": "5a12478e931c750f008b4568",
-        "state": 1,
-        "message": "成功获取当前平台id！"
-    }
+Mock.mock(/\/plugin\/diyspecial\/model-save/, 'post', {
+    "state": 1,
+    "message": "保存成功"
 });
 
 export default Mock;
