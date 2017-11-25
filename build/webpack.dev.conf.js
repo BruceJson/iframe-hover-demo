@@ -13,10 +13,19 @@ var webpackBaseConfig = require('./webpack.base.conf');
 module.exports = merge(webpackBaseConfig, {
     devtool: 'eval-source-map', // source-map
 
+    devServer: {
+        contentBase: path.join(__dirname, '..'), //本地服务器所加载的页面所在的目录
+        port: 8888,
+        inline: true, //实时刷新
+        historyApiFallback: true, //不跳转
+        hot: true // 开启热重载
+    },
+
     plugins: [
         new webpack.DefinePlugin({
             'process.env': config.build.env
         }),
+
 
         // 定义全局变量
         new webpack.ProvidePlugin({
@@ -34,7 +43,7 @@ module.exports = merge(webpackBaseConfig, {
         }),
 
         // extra style.css 引入
-        
+
         new ExtractTextPlugin({
             filename: path.posix.join('assets', 'css/[name].[contenthash].css')
         }),

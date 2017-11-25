@@ -1,5 +1,7 @@
 import tools from '@/tools';
 
+import api from '@/api'
+
 import Dialog from './dialog.js';
 
 
@@ -23,8 +25,8 @@ function createColumnLinkListTemplate(linkArr = []) {
             <tbody>
                 ${
                     linkArr.map(linkObj => `<tr>
-                                <td class="matic-link-list">${linkObj.title || ''}</td>
-                                <td class="matic-link-list">${linkObj.jumpLink || ''}</td>
+                                <td class="matic-link-list">${linkObj.name || ''}</td>
+                                <td class="matic-link-list">${linkObj.url || ''}</td>
                             </tr>`
                     ).join('')
                 }
@@ -161,7 +163,11 @@ class NavSettingDialog extends Dialog {
     // 获取栏目链接列表
     _getLinkList(){
         return new Promise((resolve,reject) => {
-            resolve();
+            api.getNavLinkList().then(resp => {
+                console.log('获取栏目链接列表成功~~');
+                console.log(resp);
+                resolve(resp.data.list);
+            })
         });
     }
 
