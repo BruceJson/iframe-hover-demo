@@ -16,7 +16,7 @@ function getBannerData($banner) {
 function getNavbarData($navbar) {
     var guid = getDomGuid($navbar);
     var arr = [];
-    $navbar.find('.router_box_item').each(function () {
+    $navbar.find('.router_box_item').each(function() {
         var title = this.getAttribute('data-title');
         var link = this.getAttribute('data-link');
 
@@ -37,11 +37,11 @@ function getNavbarData($navbar) {
  */
 function getFocusData($focus) {
     var guid = getDomGuid($focus);
-    var name = $focus.attr('data-name');
+    var title = $focus.attr('data-title');
     var focusType = $focus.attr('data-focus-type');
     var count = $focus.attr('data-count');
 
-    return new BaseData.FocusData(guid, name, focusType, count);
+    return new BaseData.FocusData(guid, title, focusType, count);
 }
 
 /**
@@ -53,7 +53,7 @@ function getFocusData($focus) {
 function getSwiperData($swiper) {
     var guid = getDomGuid($swiper);
     var arr = [];
-    $swiper.find('.router_box_item').each(function () {
+    $swiper.find('.router_box_item').each(function() {
         var src = $(this).find('img').attr('data-src');
         var link = $(this).find('a').attr('data-link');
 
@@ -107,12 +107,12 @@ function getAdvData($adv) {
 function getAdvListData($advList) {
     var guid = getDomGuid($advList);
     var arr = [];
-    $advList.find('.router_box_item').each(function () {
+    $advList.find('.router_box_item').each(function() {
         var link = $(this).find('a').attr('data-link');
         var name = $(this).find('a').attr('data-name');
         var src = $(this).find('img').attr('data-src');
 
-        var advData = new BaseData.AdvData(src, link, name);
+        var advData = new BaseData.AdvData('', src, link, name);
 
         arr.push(advData);
     });

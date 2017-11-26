@@ -42,8 +42,8 @@ var tools = {
         throw new Error("Unable to copy obj! Its type isn't supported.");
     },
 
-    getGuid: function () {
-        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+    getGuid: function() {
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
             var r = Math.random() * 16 | 0,
                 v = c == 'x' ? r : (r & 0x3 | 0x8);
             return v.toString(16);
@@ -60,10 +60,10 @@ var tools = {
             if (/^image/.test(file.type)) {
                 // 创建一个reader
                 var reader = new FileReader()
-                    // 将图片将转成 base64 格式
+                // 将图片将转成 base64 格式
                 reader.readAsDataURL(file)
-                    // 读取成功后的回调
-                reader.onloadend = function (e) {
+                // 读取成功后的回调
+                reader.onloadend = function(e) {
                     if (this.result) {
                         resolve(this.result);
                     } else {
@@ -82,6 +82,25 @@ var tools = {
             return {}
         }
         return JSON.parse('{"' + decodeURIComponent(search).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"') + '"}');
+    },
+
+    getTimeByType(type) {
+        var dateTime = new Date();
+        var year = dateTime.getFullYear();
+        var month = (dateTime.getMonth() + 1) + '';
+        month = month.length < 2 ? ('0' + month) : month;
+        var date = dateTime.getDate() + '';
+        date = date.length < 2 ? ('0' + date) : date;
+        var hour = dateTime.getHours() + '';
+        date = hour.length < 2 ? ('0' + hour) : hour;
+        var min = dateTime.getMinutes();
+        min = min.length < 2 ? ('0' + min) : min;
+        var sec = dateTime.getSeconds();
+        dateTime = dateTime.length < 2 ? ('0' + dateTime) : dateTime;
+
+        if (type === 'yyyymmdd') {
+            return year + month + date;
+        }
     },
 };
 

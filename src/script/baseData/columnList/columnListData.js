@@ -1,6 +1,6 @@
 // 栏目列表
 class ColumnListData {
-    constructor(guid = '', type = '', title = '', groupType = '', tagIds = '') {
+    constructor(guid = '', type = '', title = '', groupType = 'in', tagIds = '') {
         this.guid = guid;
         this.type = type;
         this.title = title;

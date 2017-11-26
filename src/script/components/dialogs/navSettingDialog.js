@@ -37,12 +37,6 @@ function createColumnLinkListTemplate(linkArr = []) {
 }
 
 // 创建弹出框模板
-/**
- * navArr => [{
- *     title: '***',
- *     jumpLink: '***'
- * }]
- */
 function createTemplate(navArr = []) {
     var template =
         `<div id='zfmodal' class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
@@ -77,10 +71,10 @@ function createTemplate(navArr = []) {
                                             <th width="15%" class=" matic_modal_th border-rightNone">操作</th>
                                         </tr>
                                     </thead>
-                                    <tbody id="navbar_list">
+                                    <tbody id="dialog_navbar_list">
                                         <!-- =========== navbar列表 insert ============ -->
                                         <tr id="navbar_add_item">
-                                            <td colspan="5" class="align_center cursor">
+                                            <td colspan="5" class="align_center cursor btn_add">
                                                 <i class="icon iconfont icon-tianjia matic-addIcon"></i>
                                                 <span class="matic-add">添加</span>
                                             </td>
@@ -101,6 +95,39 @@ function createTemplate(navArr = []) {
     return $(template);
 }
 
+function createNavItemTemplate(nav = {}) {
+    var navItemStr = `<tr class="nav_item">
+        <td class="font_14 align_center matic_modal_td">
+            <input class="font_14 matic-nav-spanSpecial" placeholder='请输入标题' value="${nav.title || ''}">
+        </td>
+        <td class="font_14 align_center  matic_modal_td">
+            <input class="matic-nav-spanSpecial" placeholder='请输入网址' value="${nav.link || ''}">
+        </td>
+        <td class="align_center font_14  matic_modal_td">
+            <!-- 上 -->
+            <i class="icon iconfont icon-jiantou1 cursor btn_up" style="color:#c7c7c7;font-size:30px;"></i>
+            <!-- 下 -->
+            <i class="icon iconfont icon-jiantou1-copy cursor btn_down" style="color:#1bc1ff;font-size:30px;"></i>
+        </td>
+        <td class="align_center">
+            <div>
+                <ul>
+                    <li>
+                        <a class="operate-delete-btn cursor btn_delete">
+                            <i class="icon iconfont icon-zititubiao2huishouzhan1 font_25 vertical_middle"></i>
+                            <span class="font_16 vertical_middle">删除</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </td>
+    </tr>`;
+
+    return navItemStr;
+}
+
+var _resolve;
+
 // 栏目设置弹窗
 class NavSettingDialog extends Dialog {
     constructor() {
@@ -112,43 +139,19 @@ class NavSettingDialog extends Dialog {
     _initialize() {
         this.$dialog = createTemplate();
         this.$linkListBox = this.$dialog.find('#matic-link-box');
+        this._bindEvent();
     }
 
     // 创建navList
-    _renderNavList(){
+    _renderNavList() {
         var navArr = this.modelData.navItemList || [];
-        var navArrStr = navArr.map(nav => `<tr class="nav_item">
-                <td class="font_14 align_center matic_modal_td">
-                    <input class="font_14 matic-nav-spanSpecial" placeholder='请输入标题' value="${nav.title || ''}">
-                </td>
-                <td class="font_14 align_center  matic_modal_td">
-                    <input class="matic-nav-spanSpecial" placeholder='请输入网址' value="${nav.link || ''}">
-                </td>
-                <td class="align_center font_14  matic_modal_td">
-                    <!-- 上 -->
-                    <i class="icon iconfont icon-jiantou1" style="color:#c7c7c7;font-size:30px;"></i>
-                    <!-- 下 -->
-                    <i class="icon iconfont icon-jiantou1-copy" style="color:#1bc1ff;font-size:30px;"></i>
-                </td>
-                <td class="align_center">
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="#" class="operate-delete-btn">
-                                    <i class="icon iconfont icon-zititubiao2huishouzhan1 font_25 vertical_middle"></i>
-                                    <span class="font_16 vertical_middle">删除</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </td>
-            </tr>`
-        ).join('');
+        var navArrStr = navArr.map(createNavItemTemplate).join('');
 
         this._removeNavItems();
-        this.$dialog.find('#navbar_list').prepend($(navArrStr));
+        this.$dialog.find('#dialog_navbar_list').prepend($(navArrStr));
     }
 
+    // 渲染栏目链接列表
     async _renderLinkList() {
         // 获取链接列表
         var linkList = await this._getLinkList();
@@ -161,8 +164,8 @@ class NavSettingDialog extends Dialog {
     }
 
     // 获取栏目链接列表
-    _getLinkList(){
-        return new Promise((resolve,reject) => {
+    _getLinkList() {
+        return new Promise((resolve, reject) => {
             api.getNavLinkList().then(resp => {
                 console.log('获取栏目链接列表成功~~');
                 console.log(resp);
@@ -171,16 +174,68 @@ class NavSettingDialog extends Dialog {
         });
     }
 
-    _removeNavItems(){
-        this.$dialog.find('#navbar_list').find('.nav_item').remove();
+    // 删除栏目列表
+    _removeNavItems() {
+        this.$dialog.find('#dialog_navbar_list').find('.nav_item').remove();
+    }
+
+    // 绑定事件
+    _bindEvent() {
+        var self = this;
+        // 上按钮点击事件
+        this.$dialog.on('click', '.btn_up', function() {
+            var navList = self.$dialog.find('#dialog_navbar_list').get(0);
+
+            var navItem = $(this).parents('.nav_item').get(0);
+
+            var pre_navItem = navItem.previousSibling;
+
+            if (pre_navItem) {
+                navList.insertBefore(navItem, pre_navItem);
+            }
+
+        });
+
+        // 下按钮点击事件
+        this.$dialog.on('click', '.btn_down', function() {
+            var navList = self.$dialog.find('#dialog_navbar_list').get(0);
+
+            var navItem = $(this).parents('.nav_item').get(0);
+
+            var next_navItem = navItem.nextSibling;
+
+            if (next_navItem && next_navItem.id !== 'navbar_add_item') {
+                navList.insertBefore(next_navItem, navItem);
+            }
+        });
+
+        // 删除按钮点击事件
+        this.$dialog.on('click', '.btn_delete', function() {
+            $(this).parents('.nav_item').eq(0).remove();
+        });
+
+        // 添加按钮点击事件
+        this.$dialog.on('click', '#navbar_add_item', function() {
+            var navItemTmpl = createNavItemTemplate();
+
+            self.$dialog.find('#dialog_navbar_list').get(0).insertBefore($(navItemTmpl)[0], this)
+        });
+
+        // 确定按钮点击事件
+        this.$dialog.on('click', '.btn_confirm', function() {
+            self._hideDialog();
+            _resolve('nav dialog 确定按钮点击');
+        });
     }
 
     // @interface
-    getDom(){
+    getDom() {
         return this.$dialog;
     }
 
-    show(modelData){
+    show(modelData, resolve) {
+        _resolve = resolve;
+
         this._showDialog();
         this.modelData = modelData;
 

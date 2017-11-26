@@ -53,22 +53,24 @@ class HoverBox {
     _bindEvent() {
         var self = this;
         // 上移
-        this.$model.on('click', '.popover_edit_box .up', function () {
+        this.$model.on('click', '.popover_edit_box .up', function() {
             alert('up');
         });
 
         // 下移
-        this.$model.on('click', '.popover_edit_box .down', function () {
+        this.$model.on('click', '.popover_edit_box .down', function() {
             alert('down');
         });
 
         // 设置
-        this.$model.on('click', '.popover_edit_box .setting', function () {
-            dialogManager.showDialog(self.modelData);
+        this.$model.on('click', '.popover_edit_box .setting', function() {
+            dialogManager.showDialog(self.modelData).then((resp) => {
+                console.log(resp);
+            });
         });
 
         // 删除
-        this.$model.on('click', '.popover_edit_box .delete', function () {
+        this.$model.on('click', '.popover_edit_box .delete', function() {
             alert('delete');
         });
     }

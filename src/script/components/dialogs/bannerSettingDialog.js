@@ -47,6 +47,8 @@ function createTemplate() {
     return $(template);
 }
 
+var _resolve;
+
 // 栏目设置弹窗
 class BannerSettingDialog extends Dialog {
 
@@ -63,6 +65,8 @@ class BannerSettingDialog extends Dialog {
         this.$dialog = createTemplate();
         // 初始化上传插件
         this._initUploader();
+        // 绑定事件
+        this._bindEvent();
     }
 
     _initUploader() {
@@ -73,12 +77,18 @@ class BannerSettingDialog extends Dialog {
         this.$dialog.find('#preview_img').attr('src', this.modelData && this.modelData.src || '');
     }
 
+    _bindEvent() {
+        this.$dialog.find('.btn_confirm').click(function() {
+            _resolve('banner dialog 确定');
+        });
+    }
+
     // @interface
     getDom() {
         return this.$dialog;
     }
 
-    show(modelData) {
+    show(modelData, resolve) {
         // 显示dialog
         this._showDialog();
 
@@ -87,7 +97,10 @@ class BannerSettingDialog extends Dialog {
 
         // 渲染banner
         this._renderBanner();
+
+        _resolve = resolve;
     }
+
 }
 
 export default BannerSettingDialog;

@@ -1,5 +1,6 @@
 import tools from '@/tools';
 import UploadFile from './uploadFile';
+import OssUploader from '@/script/components/upload/ossUpload';
 
 var DEFAULT_IMG_SRC = '/static/img/default_1.png';
 
@@ -27,8 +28,6 @@ class Uploader {
 
         this.$upload = $upload.append(createUploaderBox(defaultImgSrc));
 
-        this.upfile;
-
         this._initialize();
     }
 
@@ -39,7 +38,7 @@ class Uploader {
     _bindEvent() {
         var self = this;
         // input file change event
-        this.$upload.find('.input_upload').on('change', function (e) {
+        this.$upload.find('.input_upload').on('change', function(e) {
             console.log('===== upload select file =====');
 
             var file = this.files[0];
@@ -49,10 +48,7 @@ class Uploader {
                 self.setDefaultImg(base64Img);
             });
 
-            // 重置upfile
-            this.upfile = new UploadFile(file);
-            console.log(this.upfile);
-
+            self.uploadFile = new UploadFile(file);
 
 
 
@@ -63,7 +59,17 @@ class Uploader {
 
     // 开始上传
     upload() {
-
+        if (!this.uploadFile) {
+            throw '请选择上传文件···'
+        } else {
+            return OssUploader.upload(file, function(percent) {
+                return function(done) {
+                    console.log('正在上传中···');
+                    console.log(percent);
+                    done();
+                }
+            });
+        }
     }
 
     // 设置上传底图

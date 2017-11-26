@@ -1,7 +1,7 @@
 class SwiperData {
     constructor(guid = '', swiperItemList = []) {
         this.guid = guid;
-        this.type = 'swiperItem';
+        this.type = 'swiper';
         this.swiperItemList = swiperItemList;
     }
 }

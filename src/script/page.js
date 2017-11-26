@@ -26,7 +26,7 @@ async function init() {
 };
 
 // 防止两个渲染线程冲突
-window.onload = function () {
+window.onload = function() {
     init();
 };
 
@@ -46,7 +46,7 @@ function loadIframe($iframe) {
             });
             resolve();
         } else {
-            $iframe.on('load', function () {
+            $iframe.on('load', function() {
                 $iframe.css({
                     'height': (tools.getIframeHeight($iframe[0])) + 'px'
                 });
@@ -59,7 +59,7 @@ function loadIframe($iframe) {
 // 绑定事件
 function bindEvent() {
     // 监听postmessage
-    window.addEventListener('message', function (e) {
+    window.addEventListener('message', function(e) {
         console.log('=========== onmessage ============');
 
         /**
@@ -82,7 +82,7 @@ function bindEvent() {
     });
 
     // 监听resize事件
-    window.addEventListener('resize', _.debounce(function () {
+    window.addEventListener('resize', _.debounce(function() {
         getIframeInfo();
     }, 200));
 }

@@ -6,12 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
     <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
-
     <!-- swiper -->
     <link rel="stylesheet" href="../js/plugin/Swiper-2.7.6/dist/idangerous.swiper.css" type="text/css" />
-
     <link rel="stylesheet" href="../css/common.css" type="text/css" />
     <link rel="stylesheet" href="../css/models.css" type="text/css" />
 </head>
@@ -41,12 +38,11 @@
             </div>
         </div>
     </div>
-
     <div class='body_content'>
         <!-- 焦点图、图文列表混合模块 -->
         <div class='section focus_article_box focus_article_box_1 clx'>
             <!-- 焦点图 focus_box -->
-            <div class='router_edit_box focus_box focus_box_1' movable='false' model-type='focus'>
+            <div class='router_edit_box focus_box focus_box_1' movable='false' model-type='focus' data-title='焦点图1' data-focus-type='images' data-count='5'>
                 <div class='focus_inner_box'>
                     <div class="swiper-container">
                         <!-- 上一步按钮 -->
@@ -104,7 +100,7 @@
                 </div>
             </div>
             <!-- 图文列表1 article_box -->
-            <div class='router_edit_box article_box article_box_1' movable='false' model-type='article'>
+            <div class='router_edit_box article_box article_box_1' movable='false' model-type='article' data-type='article' data-title='article1' data-group-type='in' data-tagids='5a124881cc1193e41700002c,5a124879cc1193e41700002b,5a124870cc1193901b00002d'>
                 <div class='article_inner_box'>
                     <div class='article_item article_item_1'>
                         <a class='block'>
@@ -127,7 +123,6 @@
                 </div>
             </div>
         </div>
-
         <div class='router_edit_box section' movable='true' model-type='swiper'>
             <!-- 轮播图 swiper_box -->
             <div class=' swiper_box swiper_box_1'>
@@ -140,22 +135,22 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class='router_box_item swiper_inner_item'>
-                                    <a class='block'>
-                                        <img src='../img/icon_2.png' />
+                                    <a class='block' data-link='http://www.baidu.com'>
+                                        <img data-src='/static/img/icon_2.png' src='../img/icon_2.png' />
                                     </a>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class='router_box_item swiper_inner_item'>
-                                    <a class='block'>
-                                        <img src='../img/icon_2.png' />
+                                    <a class='block' data-link='http://www.baidu.com'>
+                                        <img data-src='/static/img/icon_2.png' src='../img/icon_2.png' />
                                     </a>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class='router_box_item swiper_inner_item'>
-                                    <a class='block'>
-                                        <img src='../img/icon_2.png' />
+                                    <a class='block' data-link='http://www.baidu.com'>
+                                        <img data-src='/static/img/icon_2.png' src='../img/icon_2.png' />
                                     </a>
                                 </div>
                             </div>
@@ -165,22 +160,20 @@
                 </div>
             </div>
         </div>
-
         <div class='router_edit_box section' movable='true' model-type='adv'>
             <!-- 广告位 adv_box -->
             <div class='block adv_img_box'>
                 <div class='adv_img_inner_box'>
-                    <a class='block'>
-                        <img class='adv_img' src='../img/icon_7.png'>
+                    <a class='block' data-link='http://www.baidu.com'>
+                        <img class='adv_img' data-src='/static/img/icon_7.png' src='../img/icon_7.png'>
                     </a>
                 </div>
             </div>
         </div>
-
         <!-- 图文列表组合模块 -->
         <div class='row'>
             <div class='col-xs-8 section '>
-                <div class='column router_edit_box' movable='false' model-type='article'>
+                <div class='column router_edit_box' movable='false' model-type='article' data-type='article' data-title='article2' data-group-type='in' data-tagids=''>
                     <div class='column_head'>
                         <span class='title'>栏目名称</span>
                         <a class='more_link'>更多>></a>
@@ -229,7 +222,7 @@
                 </div>
             </div>
             <div class=' section col-xs-4'>
-                <div class='column router_edit_box' movable='false' model-type='article'>
+                <div class='column router_edit_box' movable='false' model-type='article' data-type='article' data-title='article3' data-group-type='in' data-tagids=''>
                     <div class='column_head'>
                         <span class='title'>栏目名称</span>
                         <a class='more_link'>更多>></a>
@@ -353,7 +346,7 @@
             </div>
         </div>
         <!-- 图片列表模块 -->
-        <div class='router_edit_box section' movable='true' model-type='images'>
+        <div class='router_edit_box section' movable='true' model-type='images' data-type='images' data-title='images1' data-group-type='in' data-tagids=''>
             <div class='column'>
                 <div class='column_head'>
                     <span class='title'>栏目名称</span>
@@ -390,13 +383,13 @@
                 </div>
             </div>
         </div>
-
         <div class='router_edit_box section' movable='true' model-type='text'>
             <!-- 文字块模块 -->
             <div class='text_box text_box_1'>
                 <div class='router_text_box text_inner_box'>
                     <p style="text-align: center;">
-                        <strong><span style="font-size: 36px;">铭记历史 振兴中华</span></strong><br/>
+                        <strong><span style="font-size: 36px;">铭记历史 振兴中华</span></strong>
+                        <br/>
                     </p>
                     <p style="text-align: center; line-height: 1.5em;">
                         <span style="color: rgb(255, 255, 255); font-size: 20px;"><strong><span style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">勿忘918历史事变历史经历</span></strong>
@@ -411,9 +404,8 @@
                 </div>
             </div>
         </div>
-
         <!-- 图文列表模块 -->
-        <div class='router_edit_box section' movable='true' model-type='article'>
+        <div class='router_edit_box section' movable='true' model-type='article' data-type='article' data-title='article4' data-group-type='in' data-tagids=''>
             <div class='column'>
                 <div class='column_head'>
                     <span class='title'>栏目名称</span>
@@ -451,9 +443,8 @@
                 </div>
             </div>
         </div>
-
         <!-- 视频列表模块 -->
-        <div class='router_edit_box section' movable='true' model-type='video'>
+        <div class='router_edit_box section' movable='true' model-type='video' data-type='video' data-title='video1' data-group-type='in' data-tagids=''>
             <div class='column'>
                 <div class='column_head'>
                     <span class='title'>栏目名称</span>
@@ -502,7 +493,6 @@
                 </div>
             </div>
         </div>
-
         <!-- 广告列表模块 -->
         <div class='router_edit_box section' movable='true' model-type='advList'>
             <div class='column'>
@@ -514,33 +504,30 @@
                 <div class='adv_list_box adv_list_box_1 clx'>
                     <div class='adv_list_inner_box'>
                         <div class='router_box_item adv_list_item adv_list_item_1'>
-                            <a class='block width_full height_full'>
-                                <img class='adv_img' src='../img/icon_1.png'>
-                            </a>
-                        </div>
-
-                        <div class='router_box_item adv_list_item adv_list_item_1'>
-                            <a class='block width_full height_full'>
-                                <img class='adv_img' src='../img/icon_1.png'>
+                            <a class='block width_full height_full' data-name='广告位1' data-link='http://www.baidu.com'>
+                                <img class='adv_img' src='../img/icon_1.png' data-src='/static/img/icon_1.png'>
                             </a>
                         </div>
                         <div class='router_box_item adv_list_item adv_list_item_1'>
-                            <a class='block width_full height_full'>
-                                <img class='adv_img' src='../img/icon_1.png'>
+                            <a class='block width_full height_full' data-name='广告位2' data-link='http://www.baidu.com'>
+                                <img class='adv_img' src='../img/icon_1.png' data-src='/static/img/icon_1.png'>
                             </a>
                         </div>
                         <div class='router_box_item adv_list_item adv_list_item_1'>
-                            <a class='block width_full height_full'>
-                                <img class='adv_img' src='../img/icon_1.png'>
+                            <a class='block width_full height_full' data-name='广告位3' data-link='http://www.baidu.com'>
+                                <img class='adv_img' src='../img/icon_1.png' data-src='/static/img/icon_1.png'>
+                            </a>
+                        </div>
+                        <div class='router_box_item adv_list_item adv_list_item_1'>
+                            <a class='block width_full height_full' data-name='广告位4' data-link='http://www.baidu.com'>
+                                <img class='adv_img' src='../img/icon_1.png' data-src='/static/img/icon_1.png'>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
-
     <footer>
         <div class='footer_content'>
             <p>Copyright © 2017 XXX.com Inc. All Rights Reserved. </p>
