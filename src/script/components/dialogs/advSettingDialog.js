@@ -2,9 +2,11 @@ import tools from '@/tools';
 
 import api from '@/api'
 
-import Dialog from './dialog.js';
+import Dialog from '@/script/components/core/dialog.js';
 
 import Uploader from '@/script/components/upload/uploader';
+
+import baseData from '@/script/baseData/baseData';
 
 // 创建弹出框模板
 function createTemplate(navArr = []) {
@@ -71,8 +73,20 @@ class AdvSettingDialog extends Dialog {
         var self = this;
         // 确定按钮点击事件
         this.$dialog.on('click', '.btn_confirm', function() {
-            self._hideDialog();
-            _resolve('adv dialog 确定按钮点击');
+            self.advUploader.upload().then(url => {
+
+                var guid = self.modelData.guid;
+                var src = self.advUploader.getImgSrc();
+                var link = self.$dialog.find('.adv_link').val();
+
+                var advData = new baseData.AdvData(guid, src, link);
+                console.log('adv dialog 确定')
+                _resolve(advData);
+
+
+                // 隐藏弹出框
+                self._hideDialog();
+            });
         });
     }
 

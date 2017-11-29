@@ -1,5 +1,13 @@
 import dialogManager from '@/script/components/dialogs/dialogManager';
 
+import tools from '@/tools'
+
+var $iframe = $('#iframe');
+
+var iframeWindow = $iframe[0].contentWindow;
+
+var iframeOrigin = $iframe[0].src;
+
 // 创建SelectItem
 /**
  * {object} modelPositionObj
@@ -54,24 +62,40 @@ class HoverBox {
         var self = this;
         // 上移
         this.$model.on('click', '.popover_edit_box .up', function() {
-            alert('up');
+            tools.postMessage(iframeWindow, {
+                method: 'moveUp',
+                data: self.modelData
+            }, iframeOrigin);
         });
 
         // 下移
         this.$model.on('click', '.popover_edit_box .down', function() {
-            alert('down');
+            tools.postMessage(iframeWindow, {
+                method: 'moveDown',
+                data: self.modelData
+            }, iframeOrigin);
         });
 
         // 设置
         this.$model.on('click', '.popover_edit_box .setting', function() {
-            dialogManager.showDialog(self.modelData).then((resp) => {
-                console.log(resp);
+            dialogManager.showDialog(self.modelData).then(modelData => {
+                console.log(modelData);
+                // 保存设置后的modelData替换现有的
+                self.modelData = modelData;
+
+                tools.postMessage(iframeWindow, {
+                    method: 'setPart',
+                    data: self.modelData
+                }, iframeOrigin);
             });
         });
 
         // 删除
         this.$model.on('click', '.popover_edit_box .delete', function() {
-            alert('delete');
+            tools.postMessage(iframeWindow, {
+                method: 'deletePart',
+                data: self.modelData
+            }, iframeOrigin);
         });
     }
 

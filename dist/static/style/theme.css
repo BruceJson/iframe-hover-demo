@@ -25,6 +25,8 @@ Import the fonts*/
 }
 
 
+
+
 /*Individual icons*/
 
 .glyphicon-asterisk:before {
@@ -834,8 +836,8 @@ html .halflings {
 
 @font-face {
     font-family: Glyphicons;
-    src: url('../../../fonts/glyphicons-pro/glyphicons-regular.eot');
-    src: url('../../../fonts/glyphicons-pro/glyphicons-regular.eot?#iefix') format("embedded-opentype"), url('../../../fonts/glyphicons-pro/glyphicons-regular.woff') format("woff"), url('../../../fonts/glyphicons-pro/glyphicons-regular.ttf') format("truetype"), url('../../../fonts/glyphicons-pro/glyphicons-regular.svg#glyphicons_halflingsregular') format("svg");
+    src: url('../fonts/glyphicons-pro/glyphicons-regular.eot');
+    src: url('../fonts/glyphicons-pro/glyphicons-regular.eot?#iefix') format("embedded-opentype"), url('../fonts/glyphicons-pro/glyphicons-regular.woff') format("woff"), url('../fonts/glyphicons-pro/glyphicons-regular.ttf') format("truetype"), url('../fonts/glyphicons-pro/glyphicons-regular.svg#glyphicons_halflingsregular') format("svg");
     font-weight: 400;
     font-style: normal;
 }
@@ -2541,6 +2543,8 @@ html .halflings {
 }
 
 
+
+
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2552,8 +2556,8 @@ html .halflings {
 
 @font-face {
     font-family: 'FontAwesome';
-    src: url('../../../fonts/font-awesome/fontawesome-webfont.eot?v=4.2.0');
-    src: url('../../../fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../../../fonts/font-awesome/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../../../fonts/font-awesome/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../../../fonts/font-awesome/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+    src: url('../fonts/font-awesome/fontawesome-webfont.eot?v=4.2.0');
+    src: url('../fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../fonts/font-awesome/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../fonts/font-awesome/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../fonts/font-awesome/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -2567,6 +2571,8 @@ html .halflings {
     -moz-osx-font-smoothing: grayscale;
     transform: translate(0, 0);
 }
+
+
 
 
 /* makes the font 33% larger relative to the icon container */
@@ -2745,6 +2751,8 @@ html .halflings {
 .fa-inverse {
     color: #ffffff;
 }
+
+
 
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
@@ -4903,10 +4911,12 @@ html .halflings {
 @charset "IBM437";
 @font-face {
     font-family: 'octicons';
-    src: url("../../../fonts/octicons/octicons.eot?#iefix") format("embedded-opentype"), url("../../../fonts/octicons/octicons.woff") format("woff"), url("../../../fonts/octicons/octicons.ttf") format("truetype"), url("../../../fonts/octicons/octicons.svg#octicons") format("svg");
+    src: url("../fonts/octicons/octicons.eot?#iefix") format("embedded-opentype"), url("../fonts/octicons/octicons.woff") format("woff"), url("../fonts/octicons/octicons.ttf") format("truetype"), url("../fonts/octicons/octicons.svg#octicons") format("svg");
     font-weight: normal;
     font-style: normal;
 }
+
+
 
 
 /*
@@ -4947,11 +4957,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-alignment-align:before {
     content: '\f08a';
 }
+
+
 
 
 /*  */
@@ -4961,11 +4975,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-alignment-unalign:before {
     content: '\f08b';
 }
+
+
 
 
 /*  */
@@ -4975,11 +4993,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-arrow-left:before {
     content: '\f040';
 }
+
+
 
 
 /*  */
@@ -4989,11 +5011,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-arrow-small-down:before {
     content: '\f0a0';
 }
+
+
 
 
 /*  */
@@ -5003,11 +5029,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-arrow-small-right:before {
     content: '\f071';
 }
+
+
 
 
 /*  */
@@ -5017,11 +5047,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-arrow-up:before {
     content: '\f03d';
 }
+
+
 
 
 /*  */
@@ -5031,11 +5065,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-book:before {
     content: '\f007';
 }
+
+
 
 
 /*  */
@@ -5045,11 +5083,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-briefcase:before {
     content: '\f0d3';
 }
+
+
 
 
 /*  */
@@ -5059,11 +5101,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-browser:before {
     content: '\f0c5';
 }
+
+
 
 
 /*  */
@@ -5073,11 +5119,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-calendar:before {
     content: '\f068';
 }
+
+
 
 
 /*  */
@@ -5087,11 +5137,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-checklist:before {
     content: '\f076';
 }
+
+
 
 
 /*  */
@@ -5101,11 +5155,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-chevron-left:before {
     content: '\f0a4';
 }
+
+
 
 
 /*  */
@@ -5115,11 +5173,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-chevron-up:before {
     content: '\f0a2';
 }
+
+
 
 
 /*  */
@@ -5129,11 +5191,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-circuit-board:before {
     content: '\f0d6';
 }
+
+
 
 
 /*  */
@@ -5143,11 +5209,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-clock:before {
     content: '\f046';
 }
+
+
 
 
 /*  */
@@ -5157,11 +5227,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-cloud-upload:before {
     content: '\f00c';
 }
+
+
 
 
 /*  */
@@ -5171,11 +5245,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-color-mode:before {
     content: '\f065';
 }
+
+
 
 
 /*  */
@@ -5186,11 +5264,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-comment-discussion:before {
     content: '\f04f';
 }
+
+
 
 
 /*  */
@@ -5200,11 +5282,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-dash:before {
     content: '\f0ca';
 }
+
+
 
 
 /*  */
@@ -5214,11 +5300,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-database:before {
     content: '\f096';
 }
+
+
 
 
 /*  */
@@ -5228,11 +5318,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-device-camera-video:before {
     content: '\f057';
 }
+
+
 
 
 /*  */
@@ -5242,11 +5336,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-device-mobile:before {
     content: '\f038';
 }
+
+
 
 
 /*  */
@@ -5256,11 +5354,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-diff-added:before {
     content: '\f06b';
 }
+
+
 
 
 /*  */
@@ -5270,11 +5372,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-diff-modified:before {
     content: '\f06d';
 }
+
+
 
 
 /*  */
@@ -5284,6 +5390,8 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-diff-renamed:before {
@@ -5291,11 +5399,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-ellipsis:before {
     content: '\f09a';
 }
+
+
 
 
 /*  */
@@ -5307,11 +5419,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-file-binary:before {
     content: '\f094';
 }
+
+
 
 
 /*  */
@@ -5321,11 +5437,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-file-directory:before {
     content: '\f016';
 }
+
+
 
 
 /*  */
@@ -5335,11 +5455,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-file-pdf:before {
     content: '\f014';
 }
+
+
 
 
 /*  */
@@ -5349,11 +5473,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-file-symlink-directory:before {
     content: '\f0b1';
 }
+
+
 
 
 /*  */
@@ -5363,11 +5491,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-file-text:before {
     content: '\f011';
 }
+
+
 
 
 /*  */
@@ -5377,11 +5509,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-flame:before {
     content: '\f0d2';
 }
+
+
 
 
 /*  */
@@ -5391,11 +5527,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-gear:before {
     content: '\f02f';
 }
+
+
 
 
 /*  */
@@ -5405,6 +5545,8 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-gist:before {
@@ -5412,11 +5554,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-gist-secret:before {
     content: '\f08c';
 }
+
+
 
 
 /*  */
@@ -5428,11 +5574,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-git-commit:before {
     content: '\f01f';
 }
+
+
 
 
 /*  */
@@ -5442,11 +5592,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-git-merge:before {
     content: '\f023';
 }
+
+
 
 
 /*  */
@@ -5457,11 +5611,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-globe:before {
     content: '\f0b6';
 }
+
+
 
 
 /*  */
@@ -5471,11 +5629,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-heart:before {
     content: '\2665';
 }
+
+
 
 
 /* ♥ */
@@ -5485,11 +5647,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-home:before {
     content: '\f08d';
 }
+
+
 
 
 /*  */
@@ -5499,11 +5665,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-hourglass:before {
     content: '\f09e';
 }
+
+
 
 
 /*  */
@@ -5513,11 +5683,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-inbox:before {
     content: '\f0cf';
 }
+
+
 
 
 /*  */
@@ -5527,11 +5701,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-issue-closed:before {
     content: '\f028';
 }
+
+
 
 
 /*  */
@@ -5541,11 +5719,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-issue-reopened:before {
     content: '\f027';
 }
+
+
 
 
 /*  */
@@ -5555,11 +5737,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-jump-down:before {
     content: '\f072';
 }
+
+
 
 
 /*  */
@@ -5569,11 +5755,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-jump-right:before {
     content: '\f0a6';
 }
+
+
 
 
 /*  */
@@ -5583,11 +5773,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-key:before {
     content: '\f049';
 }
+
+
 
 
 /*  */
@@ -5597,11 +5791,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-law:before {
     content: '\f0d8';
 }
+
+
 
 
 /*  */
@@ -5611,11 +5809,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-link:before {
     content: '\f05c';
 }
+
+
 
 
 /*  */
@@ -5625,11 +5827,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-list-ordered:before {
     content: '\f062';
 }
+
+
 
 
 /*  */
@@ -5639,11 +5845,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-location:before {
     content: '\f060';
 }
+
+
 
 
 /*  */
@@ -5656,11 +5866,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-logo-github:before {
     content: '\f092';
 }
+
+
 
 
 /*  */
@@ -5670,11 +5884,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-mail-read:before {
     content: '\f03c';
 }
+
+
 
 
 /*  */
@@ -5684,11 +5902,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-mark-github:before {
     content: '\f00a';
 }
+
+
 
 
 /*  */
@@ -5698,11 +5920,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-megaphone:before {
     content: '\f077';
 }
+
+
 
 
 /*  */
@@ -5712,6 +5938,8 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-microscope:before {
@@ -5719,11 +5947,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-milestone:before {
     content: '\f075';
 }
+
+
 
 
 /*  */
@@ -5734,11 +5966,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-mortar-board:before {
     content: '\f0d7';
 }
+
+
 
 
 /*  */
@@ -5748,11 +5984,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-move-left:before {
     content: '\f074';
 }
+
+
 
 
 /*  */
@@ -5762,11 +6002,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-move-up:before {
     content: '\f0a7';
 }
+
+
 
 
 /*  */
@@ -5776,11 +6020,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-no-newline:before {
     content: '\f09c';
 }
+
+
 
 
 /*  */
@@ -5790,11 +6038,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-organization:before {
     content: '\f037';
 }
+
+
 
 
 /*  */
@@ -5804,6 +6056,8 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-paintcan:before {
@@ -5811,11 +6065,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-pencil:before {
     content: '\f058';
 }
+
+
 
 
 /*  */
@@ -5827,11 +6085,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-pin:before {
     content: '\f041';
 }
+
+
 
 
 /*  */
@@ -5841,11 +6103,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-playback-pause:before {
     content: '\f0bb';
 }
+
+
 
 
 /*  */
@@ -5855,6 +6121,8 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-playback-rewind:before {
@@ -5862,11 +6130,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-plug:before {
     content: '\f0d4';
 }
+
+
 
 
 /*  */
@@ -5880,11 +6152,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-podium:before {
     content: '\f0af';
 }
+
+
 
 
 /*  */
@@ -5894,11 +6170,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-primitive-square:before {
     content: '\f053';
 }
+
+
 
 
 /*  */
@@ -5908,11 +6188,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-puzzle:before {
     content: '\f0c0';
 }
+
+
 
 
 /*  */
@@ -5922,6 +6206,8 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-quote:before {
@@ -5929,11 +6215,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-radio-tower:before {
     content: '\f030';
 }
+
+
 
 
 /*  */
@@ -5944,6 +6234,8 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-repo-clone:before {
@@ -5951,11 +6243,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-repo-force-push:before {
     content: '\f04a';
 }
+
+
 
 
 /*  */
@@ -5966,11 +6262,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-repo-pull:before {
     content: '\f006';
 }
+
+
 
 
 /*  */
@@ -5980,11 +6280,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-rocket:before {
     content: '\f033';
 }
+
+
 
 
 /*  */
@@ -5994,11 +6298,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-ruby:before {
     content: '\f047';
 }
+
+
 
 
 /*  */
@@ -6008,11 +6316,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-screen-normal:before {
     content: '\f067';
 }
+
+
 
 
 /*  */
@@ -6023,6 +6335,8 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-server:before {
@@ -6030,11 +6344,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-settings:before {
     content: '\f07c';
 }
+
+
 
 
 /*  */
@@ -6045,12 +6363,16 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-log-out:before,
 .octicon-sign-out:before {
     content: '\f032';
 }
+
+
 
 
 /*  */
@@ -6060,11 +6382,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-squirrel:before {
     content: '\f0b2';
 }
+
+
 
 
 /*  */
@@ -6076,11 +6402,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-steps:before {
     content: '\f0c7';
 }
+
+
 
 
 /*  */
@@ -6090,12 +6420,16 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-repo-sync:before,
 .octicon-sync:before {
     content: '\f087';
 }
+
+
 
 
 /*  */
@@ -6107,11 +6441,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-telescope:before {
     content: '\f088';
 }
+
+
 
 
 /*  */
@@ -6121,11 +6459,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-three-bars:before {
     content: '\f05e';
 }
+
+
 
 
 /*  */
@@ -6135,11 +6477,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-trashcan:before {
     content: '\f0d0';
 }
+
+
 
 
 /*  */
@@ -6149,11 +6495,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-triangle-left:before {
     content: '\f044';
 }
+
+
 
 
 /*  */
@@ -6163,11 +6513,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-triangle-up:before {
     content: '\f0aa';
 }
+
+
 
 
 /*  */
@@ -6177,6 +6531,8 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-unmute:before {
@@ -6184,11 +6540,15 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-versions:before {
     content: '\f064';
 }
+
+
 
 
 /*  */
@@ -6199,6 +6559,8 @@ html .halflings {
 }
 
 
+
+
 /*  */
 
 .octicon-zap:before {
@@ -6206,12 +6568,14 @@ html .halflings {
 }
 
 
+
+
 /* ⚡ */
 
 @font-face {
     font-family: 'StateFaceRegular';
-    src: url('../../../fonts/stateface/stateface-regular-webfont.eot');
-    src: url('../../../fonts/stateface/stateface-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../../fonts/stateface/stateface-regular-webfont.woff') format('woff'), url('../../../fonts/stateface/stateface-regular-webfont.ttf') format('truetype'), url('../../../fonts/stateface/stateface-regular-webfont.svg#StateFaceRegular') format('svg');
+    src: url('../fonts/stateface/stateface-regular-webfont.eot');
+    src: url('../fonts/stateface/stateface-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/stateface/stateface-regular-webfont.woff') format('woff'), url('../fonts/stateface/stateface-regular-webfont.ttf') format('truetype'), url('../fonts/stateface/stateface-regular-webfont.svg#StateFaceRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -6443,13 +6807,15 @@ html .halflings {
 }
 
 
+
+
 /*!
-	Zocial Butons
-	http://zocial.smcllns.com
-	by Sam Collins (@smcllns)
-	License: http://opensource.org/licenses/mit-license.php
-	
-	You are free to use and modify, as long as you keep this license comment intact or link back to zocial.smcllns.com on your site.
+    Zocial Butons
+    http://zocial.smcllns.com
+    by Sam Collins (@smcllns)
+    License: http://opensource.org/licenses/mit-license.php
+    
+    You are free to use and modify, as long as you keep this license comment intact or link back to zocial.smcllns.com on your site.
 */
 
 
@@ -6508,6 +6874,8 @@ a.zocial {
 }
 
 
+
+
 /* Buttons can be displayed as standalone icons by adding a class of "icon" */
 
 .zocial.icon {
@@ -6526,6 +6894,8 @@ a.zocial {
     box-shadow: none;
     border: none;
 }
+
+
 
 
 /* Gradients */
@@ -6557,6 +6927,8 @@ a.zocial {
     background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 30%, transparent 50%, rgba(0, 0, 0, 0.1));
     background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 30%, transparent 50%, rgba(0, 0, 0, 0.1));
 }
+
+
 
 
 /* Adjustments for light background buttons */
@@ -6591,6 +6963,8 @@ a.zocial {
     box-shadow: inset 0 0.08em 0 rgba(255, 255, 255, 0.7), inset 0 0 0.08em rgba(255, 255, 255, 0.5);
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
+
+
 
 
 /* :hover adjustments for light background buttons */
@@ -6645,6 +7019,8 @@ a.zocial {
 }
 
 
+
+
 /* :active adjustments for light background buttons */
 
 .zocial.acrobat:active,
@@ -6674,6 +7050,8 @@ a.zocial {
     background-image: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
     background-image: linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
 }
+
+
 
 
 /* Button icon and color */
@@ -7097,6 +7475,8 @@ a.zocial {
 .zocial.youtube:before {
     content: "U";
 }
+
+
 
 
 /* Button background and text color */
@@ -7529,6 +7909,8 @@ a.zocial {
 }
 
 
+
+
 /*
 The Miscellaneous Buttons
 These button have no icons and can be general purpose buttons while ensuring consistent button style
@@ -7557,6 +7939,8 @@ Credit to @guillermovs for suggesting
 }
 
 
+
+
 /* Any browser-specific adjustments */
 
 button:-moz-focus-inner {
@@ -7565,21 +7949,25 @@ button:-moz-focus-inner {
 }
 
 
+
+
 /* Reference icons from font-files
 ** Base 64-encoded version recommended to resolve cross-site font-loading issues
 */
 
 @font-face {
     font-family: 'zocial';
-    src: url('../../../fonts/zocial/zocial-regular-webfont.eot');
+    src: url('../fonts/zocial/zocial-regular-webfont.eot');
 }
 
 @font-face {
     font-family: 'zocial';
-    src: url('../../../fonts/zocial/zocial-regular-webfont.ttf') format('truetype'), url('../../../fonts/zocial/zocial-regular-webfont.svg#zocialregular') format('svg');
+    src: url('../fonts/zocial/zocial-regular-webfont.ttf') format('truetype'), url('../fonts/zocial/zocial-regular-webfont.svg#zocialregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
+
+
 
 
 /* ===============================================
@@ -7606,6 +7994,8 @@ button:-moz-focus-inner {
     font-size: 12px;
     color: #999;
 }
+
+
 
 
 /*===============================================
@@ -7676,6 +8066,8 @@ button:-moz-focus-inner {
     clear: none !important;
     display: block !important;
 }
+
+
 
 
 /* ==================================================
@@ -7774,6 +8166,8 @@ button:-moz-focus-inner {
 }
 
 
+
+
 /*===============================================
   DataTables
 ================================================= */
@@ -7786,11 +8180,15 @@ table.dataTable {
 }
 
 
+
+
 /* Table Row Changes */
 
 table.dataTable tr.odd {
     background-color: #fff;
 }
+
+
 
 
 /* Table Header Changes */
@@ -7799,6 +8197,8 @@ table.dataTable thead th {
     background: #f9f9f9;
     padding: 10px;
 }
+
+
 
 
 /* Table Footer Changes */
@@ -7811,6 +8211,8 @@ table.dataTable tfoot th {
 }
 
 
+
+
 /* DataTable panel-menu, commonly holds filters */
 
 .dt-panelmenu {
@@ -7818,6 +8220,8 @@ table.dataTable tfoot th {
     background: #f8f8f8;
     border-bottom: 1px solid #e5e5e5;
 }
+
+
 
 
 /* DataTable panel-footer, commonly holds paginator */
@@ -7829,6 +8233,8 @@ table.dataTable tfoot th {
 }
 
 
+
+
 /* DataTable Length */
 
 .dataTables_length {
@@ -7838,6 +8244,8 @@ table.dataTable tfoot th {
 .dataTables_length select {
     margin: 0 5px;
 }
+
+
 
 
 /* DataTable Filter */
@@ -7852,11 +8260,15 @@ table.dataTable tfoot th {
 }
 
 
+
+
 /* DataTable Search bar */
 
 table.dataTable .form-control {
     width: 100%;
 }
+
+
 
 
 /* DataTable Footer Elements */
@@ -7871,12 +8283,16 @@ div.dataTables_paginate {
 }
 
 
+
+
 /* Filter Returned No results Pane */
 
 table.dataTable td.dataTables_empty {
     padding: 50px !important;
     background: #f6f6f6 !important;
 }
+
+
 
 
 /* Datatables abc filter */
@@ -7900,6 +8316,8 @@ table.dataTable td.dataTables_empty {
 }
 
 
+
+
 /* Contextual Row Filter Example */
 
 table.dataTable tr.row-label td {
@@ -7908,6 +8326,8 @@ table.dataTable tr.row-label td {
     font-weight: 600;
     cursor: pointer;
 }
+
+
 
 
 /*
@@ -7927,6 +8347,8 @@ table.dataTable tr.row-label td {
     border-color: #EEE;
     background-color: #FAF9DF !important;
 }
+
+
 
 
 /*
@@ -7967,6 +8389,8 @@ table.dataTable tr.row-label td {
 .DTE .DTE_Body:after {
     clear: both;
 }
+
+
 
 
 /*
@@ -8033,6 +8457,8 @@ table.dataTable tr.row-label td {
     font-size: 14px;
     line-height: 20px;
 }
+
+
 
 
 /*===============================================
@@ -8146,12 +8572,16 @@ table.dataTable tr.row-label td {
 }
 
 
+
+
 /* Demonstration Purposes ONLY */
 
 .dropzone .dz-preview .dz-error-message,
 .dropzone-previews .dz-preview .dz-error-message {
     display: none !important;
 }
+
+
 
 
 /*===============================================
@@ -8166,6 +8596,8 @@ table.dataTable tr.row-label td {
     background: rgba(0, 0, 0, 0.6);
     z-index: 9999;
 }
+
+
 
 
 /*===============================================
@@ -8288,6 +8720,8 @@ table.dataTable tr.row-label td {
 }
 
 
+
+
 /*===============================================
   Flot Charts
 ================================================= */
@@ -8319,6 +8753,8 @@ table.dataTable tr.row-label td {
 td.legendColorBox {
     padding: 5px;
 }
+
+
 
 
 /*==================================================
@@ -8427,6 +8863,8 @@ td.legendColorBox {
 .fc-event-system .fc-event-icon {
     color: #37bc9b;
 }
+
+
 
 
 /* Buttons (styled <button> tags, normalized to work cross-browser)
@@ -8590,12 +9028,16 @@ fieldset[disabled] .fc button.active {
 }
 
 
+
+
 /* icons in buttons */
 
 .fc button .fc-icon {
     position: relative;
     margin: 0 .1em;
 }
+
+
 
 
 /*  button states
@@ -8640,12 +9082,16 @@ fieldset[disabled] .fc button.active {
 }
 
 
+
+
 /* Buttons Groups
 --------------------------------------------------------------------------------------------------*/
 
 .fc-button-group {
     display: inline-block;
 }
+
+
 
 
 /*
@@ -8665,6 +9111,8 @@ previous button's border...
 }
 
 
+
+
 /* Background
 --------------------------------------------------------------------------------------------------*/
 
@@ -8679,6 +9127,8 @@ previous button's border...
 .fc-bg .fc-other-month {
     background-color: #f8f8f8;
 }
+
+
 
 
 /* Text
@@ -8697,6 +9147,8 @@ previous button's border...
 }
 
 
+
+
 /*===============================================
   Gmap
 ================================================= */
@@ -8708,6 +9160,8 @@ previous button's border...
     width: 100%;
     height: 400px;
 }
+
+
 
 
 /* Inline Map Pagination Styles */
@@ -8745,18 +9199,20 @@ previous button's border...
 .map .pagination .back-btn {
     float: left;
     border-right: 1px solid #ddd;
-    background: url("../../../img/plugins/arrow_left_12x12.png") no-repeat 50% 50%;
+    background: url("../img/plugins/arrow_left_12x12.png") no-repeat 50% 50%;
 }
 
 .map .pagination .fwd-btn {
     float: right;
     border-left: 1px solid #ddd;
-    background: url("../../../img/plugins/arrow_right_12x12.png") no-repeat 50% 50%;
+    background: url("../img/plugins/arrow_right_12x12.png") no-repeat 50% 50%;
 }
 
 .map .checker {
     margin-right: 8px;
 }
+
+
 
 
 /* Map Styling Helper Classes */
@@ -8779,6 +9235,8 @@ previous button's border...
 }
 
 
+
+
 /*===============================================
   High Charts
 ================================================= */
@@ -8793,12 +9251,16 @@ previous button's border...
 }
 
 
+
+
 /* Label Text */
 
 .highcharts-container .highcharts-axis-labels text {
     color: #AAA !important;
     fill: #AAA !important;
 }
+
+
 
 
 /*===============================================
@@ -8853,12 +9315,16 @@ previous button's border...
 }
 
 
+
+
 /* TR overrides */
 
 .ui-spinner .ui-icon-triangle-1-s {
     /* needed to correct false icon sprite pos */
     background-position: -65px -16px;
 }
+
+
 
 
 /*===============================================
@@ -8904,12 +9370,16 @@ previous button's border...
 }
 
 
+
+
 /* used to hide zoom buttons */
 
 .hide-jzoom .jvectormap-zoomin,
 .hide-jzoom .jvectormap-zoomout {
     display: none;
 }
+
+
 
 
 /* ==================================================
@@ -8935,6 +9405,8 @@ previous button's border...
 }
 
 
+
+
 /* Basic Example */
 
 .mfp-no-margins img.mfp-img {
@@ -8949,6 +9421,8 @@ previous button's border...
 .mfp-no-margins .mfp-container {
     padding: 0;
 }
+
+
 
 
 /*Simple fade transition*/
@@ -8984,6 +9458,8 @@ previous button's border...
 }
 
 
+
+
 /* Fade-zoom animation for first dialog */
 
 
@@ -9003,6 +9479,8 @@ previous button's border...
 }
 
 
+
+
 /* animate in */
 
 .my-mfp-zoom-in.mfp-ready #small-dialog {
@@ -9013,6 +9491,8 @@ previous button's border...
     -o-transform: scale(1);
     transform: scale(1);
 }
+
+
 
 
 /* animate out */
@@ -9027,6 +9507,8 @@ previous button's border...
 }
 
 
+
+
 /* Dark overlay, start state */
 
 .my-mfp-zoom-in.mfp-bg {
@@ -9038,6 +9520,8 @@ previous button's border...
 }
 
 
+
+
 /* animate in */
 
 .my-mfp-zoom-in.mfp-ready.mfp-bg {
@@ -9045,11 +9529,15 @@ previous button's border...
 }
 
 
+
+
 /* animate out */
 
 .my-mfp-zoom-in.mfp-removing.mfp-bg {
     opacity: 0;
 }
+
+
 
 
 /* Fade-move animation for second dialog */
@@ -9071,6 +9559,8 @@ previous button's border...
 }
 
 
+
+
 /* animate in */
 
 .my-mfp-slide-bottom.mfp-ready #small-dialog {
@@ -9081,6 +9571,8 @@ previous button's border...
     -o-transform: translateY(0) perspective(600px) rotateX(0);
     transform: translateY(0) perspective(600px) rotateX(0);
 }
+
+
 
 
 /* animate out */
@@ -9095,6 +9587,8 @@ previous button's border...
 }
 
 
+
+
 /* Dark overlay, start state */
 
 .my-mfp-slide-bottom.mfp-bg {
@@ -9106,6 +9600,8 @@ previous button's border...
 }
 
 
+
+
 /* animate in */
 
 .my-mfp-slide-bottom.mfp-ready.mfp-bg {
@@ -9113,11 +9609,15 @@ previous button's border...
 }
 
 
+
+
 /* animate out */
 
 .my-mfp-slide-bottom.mfp-removing.mfp-bg {
     opacity: 0;
 }
+
+
 
 
 /*===============================================
@@ -9131,6 +9631,8 @@ previous button's border...
     width: 100%;
     margin: 0;
 }
+
+
 
 
 /* Header */
@@ -9159,6 +9661,8 @@ previous button's border...
 }
 
 
+
+
 /* Textarea */
 
 .markItUpEditor {
@@ -9171,11 +9675,15 @@ previous button's border...
 }
 
 
+
+
 /* Footer */
 
 .markItUpFooter {
     height: 15px;
 }
+
+
 
 
 /* preview frame */
@@ -9190,6 +9698,8 @@ previous button's border...
 }
 
 
+
+
 /* ==================================================
   Mapplic Map Plugin
 ==================================================== */
@@ -9202,6 +9712,8 @@ previous button's border...
         width: 100%;
     }
 }
+
+
 
 
 /*===============================================
@@ -9291,6 +9803,8 @@ previous button's border...
 }
 
 
+
+
 /* item search bar */
 
 .multiselect-container.dropdown-menu>li.multiselect-item.filter {
@@ -9300,6 +9814,8 @@ previous button's border...
 .btn.multiselect .caret {
     margin-left: 5px;
 }
+
+
 
 
 /*===============================================
@@ -9384,6 +9900,8 @@ previous button's border...
 }
 
 
+
+
 /* Nano colors/contextuals - default color grey */
 
 .nano.affix.nano-primary>.nano-pane>.nano-slider {
@@ -9419,6 +9937,8 @@ previous button's border...
 }
 
 
+
+
 /*===============================================
   Nestable
 ================================================= */
@@ -9444,11 +9964,15 @@ previous button's border...
 }
 
 
+
+
 /*nestable*/
 
 .dd {
     max-width: 100%;
 }
+
+
 
 
 /* Item heading */
@@ -9469,6 +9993,8 @@ previous button's border...
 }
 
 
+
+
 /* heading hover */
 
 .dd-handle:hover {
@@ -9485,6 +10011,8 @@ previous button's border...
 }
 
 
+
+
 /* item content */
 
 .dd-content {
@@ -9499,6 +10027,8 @@ previous button's border...
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+
 
 
 /* heading/content - dragged */
@@ -9525,6 +10055,8 @@ previous button's border...
 }
 
 
+
+
 /* ============================================== 
  Colorpicker/Datepicker/DateRangePicker
 ================================================= */
@@ -9541,11 +10073,15 @@ body.mfp-bg-open .bootstrap-datetimepicker-widget {
 }
 
 
+
+
 /* disable z-index modifcation for inline pickers */
 
 body.mfp-bg-open .ui-datepicker-inline {
     z-index: inherit !important;
 }
+
+
 
 
 /*colorpicker*/
@@ -9566,11 +10102,15 @@ body.mfp-bg-open .ui-datepicker-inline {
 }
 
 
+
+
 /*datepicker*/
 
 .datepicker {
     padding: 6px;
 }
+
+
 
 
 /*daterangepicker*/
@@ -9623,12 +10163,16 @@ body.mfp-bg-open .ui-datepicker-inline {
 }
 
 
+
+
 /*bootstrap datetimepicker*/
 
 .bootstrap-datetimepicker-widget td span.glyphicon,
 .bootstrap-datetimepicker-widget td span.glyphicons {
     line-height: 54px;
 }
+
+
 
 
 /*bootstrap datetimepicker toggle switch*/
@@ -9645,6 +10189,8 @@ body.mfp-bg-open .ui-datepicker-inline {
 }
 
 
+
+
 /* inline datewidget */
 
 .datewidget-inline {
@@ -9656,6 +10202,8 @@ body.mfp-bg-open .ui-datepicker-inline {
     right: auto !important;
     bottom: auto !important;
 }
+
+
 
 
 /*==================================================
@@ -9677,6 +10225,8 @@ body.mfp-bg-open .ui-datepicker-inline {
 .ui-pnotify .alert {
     border-radius: 0;
 }
+
+
 
 
 /* Hides position: fixed from IE6 */
@@ -9720,6 +10270,8 @@ html>body>.ui-pnotify {
     float: left;
     margin-right: .2em;
 }
+
+
 
 
 /* Alternate stack initial positioning. */
@@ -9770,12 +10322,16 @@ html>body>.ui-pnotify {
 }
 
 
+
+
 /*wrapper */
 
 .ui-pnotify {
     top: 70px;
     right: 8px;
 }
+
+
 
 
 /*with icon*/
@@ -9787,6 +10343,8 @@ html>body>.ui-pnotify {
     line-height: 40px;
     padding-right: 3px;
 }
+
+
 
 
 /*===============================================
@@ -9803,6 +10361,8 @@ html>body>.ui-pnotify {
 }
 
 
+
+
 /* Slider Inner bar */
 
 .ui-rangeSlider .ui-rangeSlider-innerBar {
@@ -9814,6 +10374,8 @@ html>body>.ui-pnotify {
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset, 0 -1px 0 rgba(255, 255, 255, 0.65) inset;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset, 0 -1px 0 rgba(255, 255, 255, 0.65) inset;
 }
+
+
 
 
 /* Slider Label */
@@ -9855,12 +10417,16 @@ html>body>.ui-pnotify {
 }
 
 
+
+
 /* Slider Input Label */
 
 input.ui-editRangeSlider-inputValue {
     border: 1px solid #DDD;
     width: 2.2em;
 }
+
+
 
 
 /* Slider Handles */
@@ -9884,6 +10450,8 @@ input.ui-editRangeSlider-inputValue {
 }
 
 
+
+
 /* Slider Arrows */
 
 .ui-rangeSlider-arrow {
@@ -9897,6 +10465,8 @@ input.ui-editRangeSlider-inputValue {
 .ui-rangeSlider-arrow.ui-rangeSlider-rightArrow {
     right: -13px !important;
 }
+
+
 
 
 /*===============================================
@@ -9945,6 +10515,8 @@ input.ui-editRangeSlider-inputValue {
 .note-dialog .modal-dialog {
     padding-top: 50px;
 }
+
+
 
 
 /*===============================================
@@ -10093,6 +10665,8 @@ input.ui-editRangeSlider-inputValue {
 }
 
 
+
+
 /*===============================================
   Treeview Plugin
 ================================================= */
@@ -10110,11 +10684,15 @@ ul.fancytree-container {
 }
 
 
+
+
 /*fancytree items */
 
 ul.fancytree-container li {
     padding: 2px 0;
 }
+
+
 
 
 /*fancytree item*/
@@ -10124,6 +10702,8 @@ span.fancytree-node {
 }
 
 
+
+
 /*fancytree item title*/
 
 span.fancytree-title {
@@ -10131,11 +10711,15 @@ span.fancytree-title {
 }
 
 
+
+
 /*fancytree item icon*/
 
 span.fancytree-icon {
     position: relative;
 }
+
+
 
 
 /*fancytree item STATES*/
@@ -10149,6 +10733,8 @@ span.fancytree-node:hover {
 }
 
 
+
+
 /*fancytree active item*/
 
 span.fancytree-node.fancytree-active,
@@ -10156,6 +10742,8 @@ span.fancytree-node.fancytree-selected {
     background-color: #EEE;
     border-color: #CCC;
 }
+
+
 
 
 /*fancytree active item hover*/
@@ -10167,6 +10755,8 @@ span.fancytree-node.fancytree-selected:hover {
 }
 
 
+
+
 /*fancytree active item focus*/
 
 .fancytree-container.fancytree-treefocus span.fancytree-node.fancytree-active,
@@ -10174,6 +10764,8 @@ span.fancytree-node.fancytree-selected:hover {
     background-color: #EEE;
     border-color: #CCC;
 }
+
+
 
 
 /*fancytree addon - childcounter */
@@ -10197,6 +10789,8 @@ span.fancytree-childcounter {
 }
 
 
+
+
 /*fancytree addon - columnview*/
 
 table.fancytree-ext-columnview {
@@ -10212,6 +10806,8 @@ table.fancytree-container tbody tr td {
 }
 
 
+
+
 /* prevent long lines to wrap */
 
 table.fancytree-container span.fancytree-node {
@@ -10221,6 +10817,8 @@ table.fancytree-container span.fancytree-node {
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
 }
+
+
 
 
 /* prevent long lines to start with a break after the icon */
@@ -10245,6 +10843,8 @@ table.fancytree-ext-columnview tbody tr #preview {
     vertical-align: middle;
     background: #fbfbfb;
 }
+
+
 
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
@@ -10469,6 +11069,8 @@ th {
 }
 
 
+
+
 /*==================================================
   Basic print styles
   Source: https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css
@@ -10545,6 +11147,8 @@ th {
         border: 1px solid #ddd !important;
     }
 }
+
+
 
 
 /*==================================================
@@ -10672,6 +11276,8 @@ hr {
     overflow: visible;
     clip: auto;
 }
+
+
 
 
 /*==================================================
@@ -11440,6 +12046,8 @@ address {
 }
 
 
+
+
 /*===============================================
   D. Dividers
 ================================================= */
@@ -11470,6 +12078,8 @@ hr.dotted {
     margin: 25px 0;
     background: #e2e2e2;
 }
+
+
 
 
 /*==================================================
@@ -11533,6 +12143,8 @@ pre code {
     max-height: 340px;
     overflow-y: scroll;
 }
+
+
 
 
 /*==================================================
@@ -12564,6 +13176,8 @@ pre code {
 }
 
 
+
+
 /*===============================================
   Tables
 ================================================= */
@@ -13002,6 +13616,8 @@ table th[class*="col-"] {
         border-bottom: 0;
     }
 }
+
+
 
 
 /*==================================================
@@ -13656,6 +14272,8 @@ select[multiple].input-lg {
 }
 
 
+
+
 /*===============================================
   B. Form Groups 
 ================================================= */
@@ -13671,6 +14289,8 @@ select[multiple].input-lg {
     padding-bottom: 0;
     margin-bottom: 0;
 }
+
+
 
 
 /*===============================================
@@ -13694,6 +14314,8 @@ select[multiple].input-lg {
 }
 
 
+
+
 /* Input Addon */
 
 .input-group-addon {
@@ -13701,6 +14323,8 @@ select[multiple].input-lg {
     background-color: #fafafa;
     border-color: #DDD;
 }
+
+
 
 
 /*==================================================
@@ -14611,6 +15235,8 @@ input[type="button"].btn-block {
 }
 
 
+
+
 /*==================================================
   Component Animations
 ==================================================== */
@@ -14650,6 +15276,8 @@ tbody.collapse.in {
     -o-transition: height 0.35s ease;
     transition: height 0.35s ease;
 }
+
+
 
 
 /*==================================================
@@ -14844,6 +15472,8 @@ tbody.collapse.in {
         right: auto;
     }
 }
+
+
 
 
 /*==================================================
@@ -15060,6 +15690,8 @@ tbody.collapse.in {
 }
 
 
+
+
 /*==================================================
   Input Groups
 ==================================================== */
@@ -15244,6 +15876,8 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 .input-group-btn:last-child>.btn-group {
     margin-left: -1px;
 }
+
+
 
 
 /*==================================================
@@ -15521,6 +16155,8 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 .nav-list.nav-list-sm li a {
     padding: 10px 8px;
 }
+
+
 
 
 /*==================================================
@@ -16127,6 +16763,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 
+
+
 /*==================================================
   Breadcrumbs
 ==================================================== */
@@ -16152,6 +16790,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .breadcrumb>.active {
     color: #777777;
 }
+
+
 
 
 /*==================================================
@@ -16266,6 +16906,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 
+
+
 /*==================================================
   Pager Pagination
 ==================================================== */
@@ -16314,6 +16956,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     background-color: #ffffff;
     cursor: not-allowed;
 }
+
+
 
 
 /*==================================================
@@ -16472,6 +17116,8 @@ a.label:focus {
 }
 
 
+
+
 /*==================================================
   Badges
 ==================================================== */
@@ -16604,6 +17250,8 @@ a.list-group-item.active>.badge,
 }
 
 
+
+
 /*==================================================
   Jumbotron
 ==================================================== */
@@ -16654,6 +17302,8 @@ a.list-group-item.active>.badge,
 }
 
 
+
+
 /*===============================================
   Thumbnails
 ================================================= */
@@ -16687,6 +17337,8 @@ a.thumbnail.active {
     padding: 9px;
     color: #666666;
 }
+
+
 
 
 /*==================================================
@@ -17205,6 +17857,8 @@ a.thumbnail.active {
 }
 
 
+
+
 /*==================================================
   Progress Bars
 ==================================================== */
@@ -17531,6 +18185,8 @@ a.thumbnail.active {
 }
 
 
+
+
 /*==================================================
   Media Groups
 ==================================================== */
@@ -17580,6 +18236,8 @@ a.thumbnail.active {
     padding-left: 0;
     list-style: none;
 }
+
+
 
 
 /*==================================================
@@ -17905,6 +18563,8 @@ a.list-group-item-dark.active:focus {
     margin-bottom: 0;
     line-height: 1.3;
 }
+
+
 
 
 /*==================================================
@@ -18604,6 +19264,8 @@ a.list-group-item-dark.active:focus {
 }
 
 
+
+
 /*==================================================
   Responsive Embeds
   Credit: Nicolas Gallagher and SUIT CSS.
@@ -18637,6 +19299,8 @@ a.list-group-item-dark.active:focus {
 .embed-responsive.embed-responsive-4by3 {
     padding-bottom: 75%;
 }
+
+
 
 
 /*==================================================
@@ -18681,6 +19345,8 @@ a.list-group-item-dark.active:focus {
 }
 
 
+
+
 /*==================================================
   Close Icons
 ==================================================== */
@@ -18712,6 +19378,8 @@ button.close {
     border: 0;
     -webkit-appearance: none;
 }
+
+
 
 
 /*==================================================
@@ -19118,15 +19786,15 @@ a.bg-white:hover {
 }
 
 .bg-background.bg-topbar {
-    background: url("../../../img/patterns/topbar-bg.jpg") no-repeat center left;
+    background: url("../img/patterns/topbar-bg.jpg") no-repeat center left;
 }
 
 .bg-background.bg-topbar2 {
-    background: url("../../../img/patterns/topbar-bg2.jpg") no-repeat center left;
+    background: url("../img/patterns/topbar-bg2.jpg") no-repeat center left;
 }
 
 .bg-background.bg-topbar3 {
-    background: url("../../../img/patterns/topbar-bg3.jpg") no-repeat center left;
+    background: url("../img/patterns/topbar-bg3.jpg") no-repeat center left;
 }
 
 .bg-background.bg-psuedo-tp:before,
@@ -19151,6 +19819,8 @@ a.bg-white:hover {
 }
 
 
+
+
 /*===============================================
   Tabs
 ================================================= */
@@ -19161,6 +19831,8 @@ a.bg-white:hover {
 .tab-block {
     position: relative;
 }
+
+
 
 
 /* Tabs Content Container */
@@ -19174,6 +19846,8 @@ a.bg-white:hover {
     border: 1px solid #e5e5e5;
     background-color: #FFF;
 }
+
+
 
 
 /* Tab Navigation */
@@ -19205,11 +19879,15 @@ a.bg-white:hover {
 }
 
 
+
+
 /* tab states */
 
 .tab-block .nav-tabs>li>a:hover {
     background-color: #eeeeee;
 }
+
+
 
 
 /* active states */
@@ -19225,6 +19903,8 @@ a.bg-white:hover {
     border-color: #e5e5e5;
     border-bottom: 1px solid #FFF;
 }
+
+
 
 
 /* Tabs - Left */
@@ -19248,6 +19928,8 @@ a.bg-white:hover {
 }
 
 
+
+
 /* tab states */
 
 .tab-block .tabs-left>li.active>a,
@@ -19260,6 +19942,8 @@ a.bg-white:hover {
     z-index: 12;
     background: #FFF;
 }
+
+
 
 
 /* Tabs - Right */
@@ -19283,6 +19967,8 @@ a.bg-white:hover {
 }
 
 
+
+
 /* tab states */
 
 .tab-block .tabs-right>li.active>a,
@@ -19295,6 +19981,8 @@ a.bg-white:hover {
     z-index: 12;
     background: #FFF;
 }
+
+
 
 
 /* Tabs - Below */
@@ -19320,6 +20008,8 @@ a.bg-white:hover {
 }
 
 
+
+
 /* tab states */
 
 .tab-block .tabs-below>li.active>a,
@@ -19333,6 +20023,8 @@ a.bg-white:hover {
     border-color: #DDD;
     border-top: 1px solid #FFF;
 }
+
+
 
 
 /* TABS JUSTIFIED */
@@ -19349,6 +20041,8 @@ a.bg-white:hover {
 .tab-block .nav-tabs.nav-justified>li>a {
     padding: 11px;
 }
+
+
 
 
 /* tabs justified - bottom */
@@ -19368,6 +20062,8 @@ a.bg-white:hover {
 }
 
 
+
+
 /* TAB ALTERNATE ALIGNMENT - RIGHT */
 
 .nav-tabs.nav-tabs-right>li {
@@ -19377,6 +20073,8 @@ a.bg-white:hover {
 .nav-tabs.nav-tabs-right>li:first-child>a {
     margin-right: 0;
 }
+
+
 
 
 /* 
@@ -19392,12 +20090,16 @@ a.bg-white:hover {
 }
 
 
+
+
 /* tabs left */
 
 .tab-block .tabs-border.tabs-left>li.active>a {
     margin-left: -1px;
     border-left: 2px solid #666;
 }
+
+
 
 
 /* tabs right */
@@ -19408,12 +20110,16 @@ a.bg-white:hover {
 }
 
 
+
+
 /* tabs bottom */
 
 .tab-block .tabs-border.tabs-below>li.active>a {
     margin-bottom: -1px;
     border-bottom: 2px solid #666;
 }
+
+
 
 
 /* 
@@ -19431,6 +20137,8 @@ a.bg-white:hover {
 }
 
 
+
+
 /* 
  * Alternate Tab Styles - Nav BG
 */
@@ -19446,6 +20154,8 @@ a.bg-white:hover {
 }
 
 
+
+
 /* tabs bottom */
 
 .tabs-bg.tabs-below {
@@ -19454,6 +20164,8 @@ a.bg-white:hover {
     border-top: none;
     padding: 0 10px 6px;
 }
+
+
 
 
 /*===============================================
@@ -19480,6 +20192,8 @@ a.bg-white:hover {
 }
 
 
+
+
 /*===============================================
   E. PANEL TABS
   -----------------------------------------------
@@ -19492,6 +20206,8 @@ a.bg-white:hover {
     bottom: 0;
     right: 0;
 }
+
+
 
 
 /* tabs */
@@ -19512,6 +20228,8 @@ a.bg-white:hover {
 }
 
 
+
+
 /* hover and active states */
 
 .panel-tabs>li>a:hover {
@@ -19525,6 +20243,8 @@ a.bg-white:hover {
     cursor: default;
     background: #ffffff;
 }
+
+
 
 
 /* Panel Tab Alignments */
@@ -19543,12 +20263,16 @@ a.bg-white:hover {
 }
 
 
+
+
 /* TAB NAVIGATION - ALT STYLE: BORDER */
 
 .tabs-border.nav-tabs>li.active>a,
 .tabs-border-bottom .nav-tabs>li.active>a {
     border-top-color: #4a89dc;
 }
+
+
 
 
 /* TAB NAVIGATION - ALT STYLE: BORDER */
@@ -19559,6 +20283,8 @@ a.bg-white:hover {
 }
 
 
+
+
 /* TAB NAVIGATION - ALT STYLE: BORDER */
 
 .tabs-border.tabs-right>li.active>a,
@@ -19567,12 +20293,16 @@ a.bg-white:hover {
 }
 
 
+
+
 /* TAB NAVIGATION - ALT STYLE: BORDER */
 
 .tabs-border-bottom.nav-tabs>li.active>a,
 .tabs-border-bottom .nav-tabs>li.active>a {
     border-bottom-color: #4a89dc;
 }
+
+
 
 
 /*==================================================
@@ -19590,6 +20320,8 @@ a.bg-white:hover {
 }
 
 
+
+
 /* Plan Header */
 
 .plan-header {
@@ -19599,12 +20331,16 @@ a.bg-white:hover {
 }
 
 
+
+
 /* Header Title */
 
 .plan-header h2 {
     margin-bottom: 5px;
     font-weight: 200;
 }
+
+
 
 
 /* Header SubTitle */
@@ -19645,6 +20381,8 @@ a.bg-white:hover {
 }
 
 
+
+
 /* Pricing Table Item Features */
 
 .plan-features ul {
@@ -19677,6 +20415,8 @@ a.bg-white:hover {
 }
 
 
+
+
 /* Pricing Table Icons */
 
 .plan-icons ul {
@@ -19698,6 +20438,8 @@ a.bg-white:hover {
 }
 
 
+
+
 /* Pricing Table Sign Up Button*/
 
 .plan-footer {
@@ -19708,6 +20450,8 @@ a.bg-white:hover {
     margin: 20px 0;
     padding: 8px 26px;
 }
+
+
 
 
 /* Hero Pricing Plan Modifications */
@@ -19765,6 +20509,8 @@ a.bg-white:hover {
     font-size: 24px;
     padding: 13px 0 24px;
 }
+
+
 
 
 /*==================================================
@@ -19842,6 +20588,8 @@ div.switch input:checked+label {
 }
 
 
+
+
 /* Switch Sizes */
 
 div.switch.switch-lg label {
@@ -19895,6 +20643,8 @@ div.switch.radius label:after {
 }
 
 
+
+
 /* Switch Option - Rounded */
 
 div.switch.round {
@@ -19908,6 +20658,8 @@ div.switch.round label {
 div.switch.round label:after {
     border-radius: 26px;
 }
+
+
 
 
 /* Switch Option - Inline */
@@ -19953,6 +20705,8 @@ div.switch.switch-dark input:checked+label {
 }
 
 
+
+
 /*==================================================
   Radios and Checkboxes
 ==================================================== */
@@ -19962,6 +20716,8 @@ div.switch.switch-dark input:checked+label {
     background-color: transparent;
     color: inherit;
 }
+
+
 
 
 /* hide default input */
@@ -19977,6 +20733,8 @@ div.switch.switch-dark input:checked+label {
 }
 
 
+
+
 /* radio container */
 
 .radio-custom label {
@@ -19986,6 +20744,8 @@ div.switch.switch-dark input:checked+label {
     margin-right: 15px;
     margin-bottom: 5px;
 }
+
+
 
 
 /* radio border */
@@ -20000,6 +20760,8 @@ div.switch.switch-dark input:checked+label {
     height: 20px;
     border: 2px solid #666;
 }
+
+
 
 
 /* check radio icon */
@@ -20018,6 +20780,8 @@ div.switch.switch-dark input:checked+label {
 }
 
 
+
+
 /* alt style - square */
 
 .radio-custom.square label:before {
@@ -20030,6 +20794,8 @@ div.switch.switch-dark input:checked+label {
 }
 
 
+
+
 /* checkbox container */
 
 .checkbox-custom label {
@@ -20039,6 +20805,8 @@ div.switch.switch-dark input:checked+label {
     margin-right: 15px;
     margin-bottom: 5px;
 }
+
+
 
 
 /* checkbox border */
@@ -20057,6 +20825,8 @@ div.switch.switch-dark input:checked+label {
 }
 
 
+
+
 /* checked state icon */
 
 .checkbox-custom input[type=checkbox]:checked+label:after,
@@ -20071,6 +20841,8 @@ div.switch.switch-dark input:checked+label {
     height: 0;
     transform: rotate(-13deg);
 }
+
+
 
 
 /* alt style - filled bg ".fill" */
@@ -20279,6 +21051,8 @@ div.switch.switch-dark input:checked+label {
 }
 
 
+
+
 /*==================================================
   Icons
 ==================================================== */
@@ -20290,6 +21064,8 @@ div.switch.switch-dark input:checked+label {
 .wf-loading .iconsweets {
     opacity: 0 !important;
 }
+
+
 
 
 /* Font Awesome Fixed Width Helpers */
@@ -20311,6 +21087,8 @@ div.switch.switch-dark input:checked+label {
 }
 
 
+
+
 /* Icon Transitions */
 
 .glyphicon,
@@ -20323,6 +21101,8 @@ div.switch.switch-dark input:checked+label {
     -moz-transition: opacity 0.1s ease-in;
     -webkit-transition: opacity 0.1s ease-in;
 }
+
+
 
 
 /* Glyphicon Pro and Halfling */
@@ -20348,6 +21128,8 @@ div.switch.switch-dark input:checked+label {
 }
 
 
+
+
 /* Icomoon Font Icons */
 
 .imoon-2x {
@@ -20365,6 +21147,8 @@ div.switch.switch-dark input:checked+label {
 .imoon-5x {
     font-size: 5em;
 }
+
+
 
 
 /* IconSweets2 Font Icons */
@@ -20386,6 +21170,8 @@ div.switch.switch-dark input:checked+label {
 }
 
 
+
+
 /* Buttons with Icons 
 * Cross browser problems were creating problems when
 * an icon was given a larger font size than its sibling
@@ -20401,6 +21187,8 @@ div.switch.switch-dark input:checked+label {
 }
 
 
+
+
 /* A Helper Class to Align Icons Right in Control-forms */
 
 span.field-icon-right,
@@ -20409,6 +21197,8 @@ i.field-icon-right {
     right: 10px;
     top: 8px;
 }
+
+
 
 
 /* Icon Background and Borders 
@@ -20429,6 +21219,8 @@ i.field-icon-right {
     padding: 9px;
     border-radius: 4px;
 }
+
+
 
 
 /* Icon Background Sizes */
@@ -20464,6 +21256,8 @@ i.field-icon-right {
 }
 
 
+
+
 /* WIDGET SPECIFIC ICON STYLING
 * ALL elements which use icons have been
 * moved from their respective positions
@@ -20477,6 +21271,8 @@ i.field-icon-right {
     font-size: 15px;
     vertical-align: middle;
 }
+
+
 
 
 /* Special on-hover styles for user dropdown menu */
@@ -20494,6 +21290,8 @@ i.field-icon-right {
 }
 
 
+
+
 /* Breadcrumb "Home" Icon */
 
 .breadcrumb .glyphicon,
@@ -20503,6 +21301,8 @@ i.field-icon-right {
     margin-left: 1px;
     top: 0;
 }
+
+
 
 
 /* Panel Sidemenu Icons */
@@ -20522,6 +21322,8 @@ i.field-icon-right {
 }
 
 
+
+
 /* Panel Tabs Icons */
 
 .panel-tabs li .glyphicon,
@@ -20535,6 +21337,8 @@ i.field-icon-right {
     font-size: 14px;
     vertical-align: middle;
 }
+
+
 
 
 /* Mildly styles a font awesome based icon group
@@ -20551,6 +21355,8 @@ i.field-icon-right {
 }
 
 
+
+
 /* Pricing Table Icons */
 
 .pricing-tables .pricing-icons li .fa-times {
@@ -20562,6 +21368,8 @@ i.field-icon-right {
 }
 
 
+
+
 /* Tab Navigation Icons */
 
 .nav-tabs li .fa {
@@ -20571,6 +21379,8 @@ i.field-icon-right {
 .nav-tabs li .fa.fa-caret-down {
     font-size: 12px;
 }
+
+
 
 
 /* Timeline Widget Icons */
@@ -20588,10 +21398,12 @@ i.field-icon-right {
 }
 
 
+
+
 /* Favicon sprite */
 
 .favicons {
-    background: url('../../../img/sprites/favicons.png') no-repeat;
+    background: url('../img/sprites/favicons.png') no-repeat;
     width: 16px;
     height: 16px;
     vertical-align: middle;
@@ -20627,6 +21439,8 @@ i.field-icon-right {
 }
 
 
+
+
 /* News Sprite - Demo purposes */
 
 .news-sprite {
@@ -20634,7 +21448,7 @@ i.field-icon-right {
     height: 26px;
     vertical-align: middle;
     display: inline-block;
-    background: url("../../../img/sprites/news-logo_sprite.png") no-repeat;
+    background: url("../img/sprites/news-logo_sprite.png") no-repeat;
     background-position: 0 0;
 }
 
@@ -20655,6 +21469,8 @@ i.field-icon-right {
 }
 
 
+
+
 /* Flag Icons */
 
 .flag-xs,
@@ -20668,13 +21484,13 @@ i.field-icon-right {
 .flag-xs {
     width: 16px;
     height: 16px;
-    background: url('../../../img/sprites/flag-xs.png') no-repeat top left;
+    background: url('../img/sprites/flag-xs.png') no-repeat top left;
 }
 
 .flag-sm {
     width: 32px;
     height: 32px;
-    background: url('../../../img/sprites/flag-sm.png') no-repeat top left;
+    background: url('../img/sprites/flag-sm.png') no-repeat top left;
 }
 
 .flag-sm.flag-fr {
@@ -20722,6 +21538,8 @@ i.field-icon-right {
 }
 
 
+
+
 /*===============================================
   Widget Tiles
 ================================================= */
@@ -20744,6 +21562,8 @@ i.field-icon-right {
 .panel-tile .panel-footer {
     border: 0;
 }
+
+
 
 
 /* ==============================================
@@ -20828,6 +21648,8 @@ ol.timeline-list li.timeline-item .timeline-date {
     position: relative;
     padding: 15px 80px 15px 50px;
 }
+
+
 
 
 /*==================================================
@@ -20979,6 +21801,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /*==================================================
   Tooltips
 ==================================================== */
@@ -21098,6 +21922,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /*===============================================
   S. Bootstrap Tooltips
 ================================================= */
@@ -21136,6 +21962,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 .tooltip.left .tooltip-arrow {
     border-left-color: #FFF;
 }
+
+
 
 
 /*==================================================
@@ -21278,6 +22106,8 @@ ol.timeline-list li.timeline-item .timeline-date {
     border-left-color: #ffffff;
     bottom: -10px;
 }
+
+
 
 
 /*==================================================
@@ -21502,6 +22332,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /*==================================================
   Utility Classes
 ==================================================== */
@@ -21606,6 +22438,8 @@ ol.timeline-list li.timeline-item .timeline-date {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
+
+
 
 
 /*==================================================
@@ -21911,6 +22745,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /*=================================================
   HELPERS
 ===================================================
@@ -21941,6 +22777,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /*divide li items with border and extra spacing*/
 
 .list-divide-items {
@@ -21954,6 +22792,8 @@ ol.timeline-list li.timeline-item .timeline-date {
     padding-top: 13px;
     border-top: 1px solid #EEE;
 }
+
+
 
 
 /*===================================================
@@ -22117,6 +22957,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /*===================================================
   A. General/Misc Helpers
 ===================================================== */
@@ -22133,11 +22975,15 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /* BG Helpers */
 
 .bg-none {
     background-color: transparent !important;
 }
+
+
 
 
 /* box-shadow Helpers */
@@ -22147,11 +22993,15 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /* height helpers */
 
 .h-a {
     height: auto !important;
 }
+
+
 
 
 /* overflow Helpers */
@@ -22193,6 +23043,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /* Center Grid Column Helper */
 
 .center-column {
@@ -22201,6 +23053,8 @@ ol.timeline-list li.timeline-item .timeline-date {
     margin-right: auto !important;
     display: block !important;
 }
+
+
 
 
 /* Vertical Align Helpers */
@@ -22222,11 +23076,15 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /* Relative Position Helper */
 
 .posr {
     position: relative !important;
 }
+
+
 
 
 /* Inline Block Helper */
@@ -22237,6 +23095,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /* pointer cursor */
 
 .cursor {
@@ -22244,11 +23104,15 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /* Useful for emphasizing a disabled input */
 
 .option-disabled {
     opacity: 0.6 !important;
 }
+
+
 
 
 /* unstyled input */
@@ -22261,6 +23125,8 @@ ol.timeline-list li.timeline-item .timeline-date {
     box-shadow: none !important;
     outline: none !important;
 }
+
+
 
 
 /*===================================================
@@ -22279,6 +23145,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /* table-layout when attached to row */
 
 .row.table-layout {
@@ -22293,6 +23161,8 @@ ol.timeline-list li.timeline-item .timeline-date {
     width: 100%;
     margin: 0;
 }
+
+
 
 
 /* table-layout helper content */
@@ -22334,6 +23204,8 @@ ol.timeline-list li.timeline-item .timeline-date {
         float: none;
     }
 }
+
+
 
 
 /*===============================================
@@ -22487,6 +23359,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 .fs100 {
     font-size: 100px !important;
 }
+
+
 
 
 /*===============================================
@@ -22726,6 +23600,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /* Axis Padding (both top/bottom or left/right) */
 
 .pv5 {
@@ -22819,6 +23695,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /* responsive padding helpers */
 
 @media (min-width: 1140px) {
@@ -22874,6 +23752,8 @@ ol.timeline-list li.timeline-item .timeline-date {
         padding-left: 5px !important;
     }
 }
+
+
 
 
 /*===============================================
@@ -23117,6 +23997,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /* Axis Margins (both top/bottom or left/right) */
 
 .mv5 {
@@ -23210,6 +24092,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /* Negative Margin Helpers */
 
 .mtn5 {
@@ -23293,6 +24177,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /* Vertical Negative Margin "mv" + "n" + "x" */
 
 .mvn5 {
@@ -23321,6 +24207,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /* Horizontal Negative Margin "mh" + "n" + "x" */
 
 .mhn5 {
@@ -23347,6 +24235,8 @@ ol.timeline-list li.timeline-item .timeline-date {
     margin-left: -30px !important;
     margin-right: -30px !important;
 }
+
+
 
 
 /*===============================================
@@ -23390,6 +24280,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /*===============================================
   G. Border Helpers
 ================================================= */
@@ -23428,6 +24320,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /* Default Borders */
 
 .br-a {
@@ -23451,11 +24345,15 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /* Border Style */
 
 .br-dashed {
     border-style: dotted !important;
 }
+
+
 
 
 /* Border Radius */
@@ -23501,6 +24399,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 }
 
 
+
+
 /* Border Width */
 
 .bw1 {
@@ -23534,6 +24434,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 .bw15 {
     border-width: 15px !important;
 }
+
+
 
 
 /*Border Colors Generate contextual modifier classes for colorizing the alert.
@@ -23634,6 +24536,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 .br-tp-left {
     border-left-color: rgba(0, 0, 0, 0.1);
 }
+
+
 
 
 /*===============================================
@@ -23751,6 +24655,8 @@ ol.timeline-list li.timeline-item .timeline-date {
 .mw1200 {
     max-width: 1200px !important;
 }
+
+
 
 
 /*Regular Width Helpers. Primarily used
@@ -23885,6 +24791,8 @@ on tables, feel free to add more*/
 }
 
 
+
+
 /* ================================================
   A. Table Styling Helpers 
 =================================================== */
@@ -23900,6 +24808,8 @@ table tbody tr.message-read td {
 table tbody tr.message-unread td {
     background-color: #fff;
 }
+
+
 
 
 /* table header/footer styles */
@@ -23920,6 +24830,8 @@ table.tc-fs12-head tfoot th {
 }
 
 
+
+
 /* special styles */
 
 table.tc-checkbox-1 tbody td:first-child,
@@ -23929,6 +24841,8 @@ table.tc-checkbox-last tbody td:last-child {
     text-align: center;
     padding: 11px;
 }
+
+
 
 
 /* special styles */
@@ -23947,6 +24861,8 @@ table.tc-list-last tbody td:last-child {
 }
 
 
+
+
 /* special styles */
 
 table.tc-bold-1 tbody td:first-child,
@@ -23957,6 +24873,8 @@ table.tc-bold-last tbody td:last-child {
     text-align: right;
     font-size: 14px;
 }
+
+
 
 
 /* special styles */
@@ -23970,6 +24888,8 @@ table.tc-med-last tbody td:last-child {
 }
 
 
+
+
 /* special styles */
 
 table.tc-icon-1 tbody td:first-child,
@@ -23980,6 +24900,8 @@ table.tc-icon-last tbody td:last-child {
     text-align: center;
     color: #999;
 }
+
+
 
 
 /* text colors */
@@ -23999,6 +24921,8 @@ table.tc-text-primary-last tbody td:last-child {
 }
 
 
+
+
 /* font weights */
 
 table.tc-fw600-1 tbody td:first-child,
@@ -24016,6 +24940,8 @@ table.tc-fw700-last tbody td:last-child {
 }
 
 
+
+
 /* font sizes */
 
 table.tc-fs13-1 tbody td:first-child,
@@ -24024,6 +24950,8 @@ table.tc-fs13-3 tbody td:nth-child(3),
 table.tc-fs13-last tbody td:last-child {
     font-size: 13px;
 }
+
+
 
 
 /* text aligns */
@@ -24050,6 +24978,8 @@ table.tc-text-right-last tbody td:last-child {
 }
 
 
+
+
 /* vertical aligns */
 
 table.tc-va-t-1 tbody td:first-child,
@@ -24074,6 +25004,8 @@ table.tc-va-b-last tbody td:last-child {
 }
 
 
+
+
 /* table Checklist */
 
 .table-checklist td {
@@ -24085,6 +25017,8 @@ table.tc-va-b-last tbody td:last-child {
     border: 0;
     overflow: hidden;
 }
+
+
 
 
 /* Table items (labels, badges, progress bars etc) */
@@ -24101,6 +25035,8 @@ table.tc-va-b-last tbody td:last-child {
 }
 
 
+
+
 /* Tables with the .table-checklist class become clickable
  * if you want text to have a line-through effect on click
  * add the .text-slash class to the element */
@@ -24114,12 +25050,16 @@ table.tc-va-b-last tbody td:last-child {
 }
 
 
+
+
 /* Table item checked state - class added via JS */
 
 .table-checklist tr.task-checked .label,
 .table-checklist tr.task-checked .progress {
     opacity: 0.3;
 }
+
+
 
 
 /*==================================================
@@ -24151,6 +25091,8 @@ body {
 }
 
 
+
+
 /* psuedo background */
 
 #main:before {
@@ -24170,6 +25112,8 @@ body {
 }
 
 
+
+
 /* Transitions */
 
 body.onload-check .navbar,
@@ -24181,6 +25125,8 @@ body.onload-check #topbar {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
+
+
 
 
 /*===============================================
@@ -24195,12 +25141,16 @@ body.onload-check #topbar {
 }
 
 
+
+
 /* Fixed Sidebar */
 
 #sidebar_left.affix {
     position: fixed;
     height: 100%;
 }
+
+
 
 
 /* Scrollbar for Sidebars in Fixed Positions */
@@ -24224,6 +25174,8 @@ body.onload-check #topbar {
 }
 
 
+
+
 /* Corrects Pseudo sidebar bg when fixed */
 
 #sidebar_left.affix:before {
@@ -24234,6 +25186,8 @@ body.sidebar-hidden #sidebar_left.affix:before,
 body.sidebar-rtl #sidebar_left.affix:before {
     left: -230px;
 }
+
+
 
 
 /* Sidebar User Area - Hidden */
@@ -24258,6 +25212,8 @@ body.usermenu-hidden #sidebar_left.affix .user-info+.user-divider+.user-menu+.si
 }
 
 
+
+
 /* Breadcrumbs fixed state */
 
 #topbar.affix {
@@ -24272,6 +25228,8 @@ body.usermenu-hidden #sidebar_left.affix .user-info+.user-divider+.user-menu+.si
 }
 
 
+
+
 /* breadcrumb fixed settings when sidebar is minified */
 
 body.sb-l-m #topbar.affix,
@@ -24284,11 +25242,15 @@ body.sb-l-c #topbar.affix {
 }
 
 
+
+
 /* if topbar is fixed grant proper margin spacing */
 
 #topbar.affix+#content {
     margin-top: 51px;
 }
+
+
 
 
 /* if navbar is fixed and hidden grant proper margin spacing */
@@ -24298,6 +25260,8 @@ body.sb-l-c #topbar.affix {
 }
 
 
+
+
 /* Topbar/Breadcrumbs Area - Hidden */
 
 body.hidden-breadcrumbs #topbar {
@@ -24305,11 +25269,15 @@ body.hidden-breadcrumbs #topbar {
 }
 
 
+
+
 /* for preview only - no real use in development enviroment */
 
 body.sidebar-collapsed #sidebar:before {
     width: 40px;
 }
+
+
 
 
 /* ==============================================
@@ -24337,7 +25305,7 @@ body.boxed-layout:before {
     bottom: 0;
     left: 0;
     z-index: -2;
-    background: url("../../../img/patterns/topbar-bg.jpg") repeat top center;
+    background: url("../img/patterns/topbar-bg.jpg") repeat top center;
 }
 
 body.boxed-layout:after {
@@ -24356,6 +25324,8 @@ body.boxed-layout #main {
 }
 
 
+
+
 /* hide psuedo background */
 
 body.boxed-layout #main:before {
@@ -24370,6 +25340,8 @@ body.boxed-layout #main:before {
 }
 
 
+
+
 /*===============================================
   B. Content Wrappers
 ================================================= */
@@ -24382,6 +25354,8 @@ body.boxed-layout #content_wrapper {
 body.boxed-layout .container {
     width: 100% !important;
 }
+
+
 
 
 /*===============================================
@@ -24399,6 +25373,8 @@ body.boxed-layout .navbar .navbar-right {
 }
 
 
+
+
 /*===============================================
   D. Sidebar
 ================================================= */
@@ -24413,11 +25389,15 @@ body.boxed-layout #sidebar:before {
 }
 
 
+
+
 /* sidebar open/close buttons */
 
 body.boxed-layout #toggle_sidemenu_r {
     display: none !important;
 }
+
+
 
 
 /*===============================================
@@ -24485,6 +25465,8 @@ body.boxed-layout.timeline-page #timeline {
 }
 
 
+
+
 /* ---------------------------------------
    PAGES REQUIRING 90% COLUMNS(in order):
    * EDITABLE.HTML
@@ -24502,6 +25484,8 @@ body.boxed-layout.profile-page .container>.row>.col-lg-8 {
 }
 
 
+
+
 /* ----------------------------------------
    PAGES REQUIRING 50% COLUMNS(in order):
    * PORTLETS.HTML 
@@ -24515,6 +25499,8 @@ body.boxed-layout.profile-page .container>.row>.col-lg-8 {
         float: left;
     }
 }
+
+
 
 
 /* -----------------------------------------
@@ -24546,6 +25532,8 @@ body.boxed-layout.icons-page .container>.row>.col-md-3 {
     width: 20%;
     float: left;
 }
+
+
 
 
 /* ----------------------------------------
@@ -24591,6 +25579,8 @@ body.boxed-layout.dashboard-page #console-search-btn {
 }
 
 
+
+
 /* TIMELINE.HTML */
 
 body.boxed-layout.timeline-page #timeline .panel-menu .glyphicons {
@@ -24598,11 +25588,15 @@ body.boxed-layout.timeline-page #timeline .panel-menu .glyphicons {
 }
 
 
+
+
 /* GALLERY.HTML */
 
 body.boxed-layout.gallery-page .container>.row .placeholder {
     height: 50px;
 }
+
+
 
 
 /*  MESSAGES.HTML  */
@@ -24618,6 +25612,8 @@ body.boxed-layout.messages-page .container>.row table tr:nth-of-type(5) {
 }
 
 
+
+
 /* PROFILE.HTML */
 
 body.boxed-layout.profile-page .container>.row>.col-lg-4 .panel {
@@ -24631,6 +25627,8 @@ body.boxed-layout.profile-page .container>.row .console-btn {
 body.boxed-layout.profile-page .container>.row .profile-panel .panel-footer {
     padding: 10px 16px 4px;
 }
+
+
 
 
 /* FAQ.HTML */
@@ -24649,6 +25647,8 @@ body.boxed-layout.faq-page .faq-panel>.panel-body #search-widget {
 }
 
 
+
+
 /* DATATABLES.HTML */
 
 body.boxed-layout.datatables-page table th:nth-of-type(2),
@@ -24657,6 +25657,8 @@ body.boxed-layout.datatables-page table td:nth-of-type(4),
 body.boxed-layout.datatables-page table th:nth-of-type(4) {
     display: none !important;
 }
+
+
 
 
 /* ICONS.HTML */
@@ -24676,6 +25678,8 @@ body.boxed-layout.icons-page #icon-nav ul .console-icon {
 }
 
 
+
+
 /* ANIMATIONS.HTML */
 
 body.boxed-layout.animations-page .container>.row #animate-me-panel {
@@ -24684,12 +25688,16 @@ body.boxed-layout.animations-page .container>.row #animate-me-panel {
 }
 
 
+
+
 /* SKETCHPAD.HTML */
 
 body.boxed-layout.sketchpad-page .container>.row>.col-lg-4 {
     display: none !important;
     width: 0;
 }
+
+
 
 
 /* WIDGETS.HTML */
@@ -24704,6 +25712,8 @@ body.boxed-layout.widgets-page .container>.row .timeline-widget {
 }
 
 
+
+
 /* INVOICE-PAGE.HTML */
 
 body.boxed-layout.invoice-page .container>.row>.col-lg-11 .panel-sidemenu {
@@ -24714,6 +25724,8 @@ body.boxed-layout.invoice-page .container>.row>.col-lg-11 #invoice-item {
     width: 95%;
     margin: 40px 2.5% 60px;
 }
+
+
 
 
 /*  MINIMAL PAGE
@@ -24736,25 +25748,27 @@ body.boxed-layout.screenlock-page #main:after {
 }
 
 
+
+
 /* ==============================================
    III. DEMO PAGES
       A. Customizer.html
-	  B. Upload-tools.html
-	  C. Timeline.html
-	  D. Sliders.html
-	  E. Portlets.html
-	  F. Maps.html
-	  G. Gallery.html
-	  H. Dynamic-gallery.html
-	  I. Forms.html
-	  J. Elements.html
-	  K. Charts.html
-	  L. Animations.html
-	  M. Buttons.html
-	  N. 404/500.html
-	  O. Icons.html
-	  P. Global Changes
-	  
+      B. Upload-tools.html
+      C. Timeline.html
+      D. Sliders.html
+      E. Portlets.html
+      F. Maps.html
+      G. Gallery.html
+      H. Dynamic-gallery.html
+      I. Forms.html
+      J. Elements.html
+      K. Charts.html
+      L. Animations.html
+      M. Buttons.html
+      N. 404/500.html
+      O. Icons.html
+      P. Global Changes
+      
  * This file is reserved for changes required only
  * for the themes demo. These styles may be vital
  * to themes appearance but often times will not
@@ -24772,6 +25786,8 @@ body.boxed-layout.screenlock-page #main:after {
 .ajax-loading {
     overflow-y: scroll;
 }
+
+
 
 
 /*===============================================
@@ -24826,6 +25842,8 @@ body.boxed-layout.screenlock-page #main:after {
 }
 
 
+
+
 /*===============================================
   B. Upload-tools.html
 ================================================= */
@@ -24839,6 +25857,8 @@ body.upload-tools-page .panel-body {
 }
 
 
+
+
 /*===============================================
   C. Timeline.html
 ================================================= */
@@ -24846,6 +25866,8 @@ body.upload-tools-page .panel-body {
 body.timeline-page .panel-clone {
     display: none;
 }
+
+
 
 
 /*===============================================
@@ -24874,6 +25896,8 @@ body.timeline-page .panel-clone {
 }
 
 
+
+
 /*===============================================
   E. Portlets.html
 ================================================= */
@@ -24887,6 +25911,8 @@ body.portlets-page .panel .tab-content {
 body.portlets-page #accordion {
     margin-bottom: 35px;
 }
+
+
 
 
 /*===============================================
@@ -24904,6 +25930,8 @@ body.maps-page .panel-menu button {
 }
 
 
+
+
 /*===============================================
   G. Gallery.html
 ================================================= */
@@ -24911,6 +25939,8 @@ body.maps-page .panel-menu button {
 body.gallery-page {
     overflow: scroll;
 }
+
+
 
 
 /*===============================================
@@ -24932,6 +25962,8 @@ body.elements-page .btn-block {
 }
 
 
+
+
 /*===============================================
   K. Charts.html
 ================================================= */
@@ -24948,6 +25980,8 @@ body.charts-page .legend table tr td {
 }
 
 
+
+
 /*===============================================
   L. Animations.html
 ================================================= */
@@ -24960,6 +25994,8 @@ body.charts-page .legend table tr td {
     border: 0;
     padding-bottom: 30px;
 }
+
+
 
 
 /*===============================================
@@ -25004,6 +26040,8 @@ body.buttons-page .zocial.icon.facebook:before {
 }
 
 
+
+
 /*===============================================
   N. 404/500.html
 ================================================= */
@@ -25016,6 +26054,8 @@ body.buttons-page .zocial.icon.facebook:before {
     padding-right: 6px;
     color: #777;
 }
+
+
 
 
 /*===============================================
@@ -25039,6 +26079,8 @@ body.buttons-page .zocial.icon.facebook:before {
     top: 40px;
     right: 22px;
 }
+
+
 
 
 /*===============================================
@@ -25107,6 +26149,8 @@ body.buttons-page .zocial.icon.facebook:before {
 }
 
 
+
+
 /*===============================================
   P. Global Changes
 ================================================= */
@@ -25150,10 +26194,12 @@ ul.sidebar-nav ul#sideEight.sub-nav>li>a:hover {
 }
 
 
+
+
 /*===================================================
   IV. PRINT STYLES - Designed soley for Invoice Page
       Problems will arise if you attempt to use
-	  these styles globally
+      these styles globally
 =====================================================*/
 
 @media print {
@@ -25246,13 +26292,15 @@ ul.sidebar-nav ul#sideEight.sub-nav>li>a:hover {
 }
 
 
+
+
 /* ==============================================
    III. RESPONSIVE STYLES
       A. Header
-	  B. Content
-	  C. Sidebar
-	  D. Dashboard.html
-	  	  
+      B. Content
+      C. Sidebar
+      D. Dashboard.html
+          
 * These styles control various aspects of the
 * site which benefit from being responsive 
 ================================================= 
@@ -25264,6 +26312,8 @@ ul.sidebar-nav ul#sideEight.sub-nav>li>a:hover {
 }
 
 
+
+
 /* content padding on large resolutions */
 
 @media (min-width: 1100px) {
@@ -25271,6 +26321,8 @@ ul.sidebar-nav ul#sideEight.sub-nav>li>a:hover {
         padding: 25px 20px 50px 21px;
     }
 }
+
+
 
 
 /* Adds top padding to md columns as a spacer
@@ -25298,6 +26350,8 @@ ul.sidebar-nav ul#sideEight.sub-nav>li>a:hover {
 }
 
 
+
+
 /*=============================================== 
   B. Topbar Responsive Styles
 ================================================= */
@@ -25312,6 +26366,8 @@ ul.sidebar-nav ul#sideEight.sub-nav>li>a:hover {
 }
 
 
+
+
 /* ==============================================
    Navbar
 ================================================= */
@@ -25324,6 +26380,8 @@ ul.sidebar-nav ul#sideEight.sub-nav>li>a:hover {
     border-radius: 0;
     box-shadow: none;
 }
+
+
 
 
 /*navbar menu*/
@@ -25374,6 +26432,8 @@ ul.sidebar-nav ul#sideEight.sub-nav>li>a:hover {
 }
 
 
+
+
 /*navbranding*/
 
 .navbar-branding {
@@ -25396,6 +26456,8 @@ ul.sidebar-nav ul#sideEight.sub-nav>li>a:hover {
     font-weight: 400;
     letter-spacing: 0.5px;
 }
+
+
 
 
 /*navbar toggle sidemenu button*/
@@ -25422,6 +26484,8 @@ ul.sidebar-nav ul#sideEight.sub-nav>li>a:hover {
 }
 
 
+
+
 /*left nav menu*/
 
 .navbar-nav.navbar-left {
@@ -25436,6 +26500,8 @@ ul.sidebar-nav ul#sideEight.sub-nav>li>a:hover {
 }
 
 
+
+
 /*right nav menu*/
 
 .navbar-nav.navbar-right,
@@ -25443,6 +26509,8 @@ ul.sidebar-nav ul#sideEight.sub-nav>li>a:hover {
     float: right;
     margin: 0 15px 0 0;
 }
+
+
 
 
 /*navbar forms*/
@@ -25462,6 +26530,8 @@ ul.sidebar-nav ul#sideEight.sub-nav>li>a:hover {
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
+
+
 
 
 /*navbar dropdown, child menu item slide effect*/
@@ -25512,6 +26582,8 @@ ul.sidebar-nav ul#sideEight.sub-nav>li>a:hover {
 }
 
 
+
+
 /*navbar dropdown menu item hover effect*/
 
 li.dropdown-hover:hover,
@@ -25521,6 +26593,8 @@ li.dropdown-hover:hover,
     -o-transition-delay: 0s !important;
     transition-delay: 0s !important;
 }
+
+
 
 
 /*navbar dropdown menu item hover border effects*/
@@ -25541,6 +26615,8 @@ li.dropdown-border-hover:hover,
     -o-transition: all linear 0s !important;
     transition: all linear 0s !important;
 }
+
+
 
 
 /*multiselects in navbar user dropdown menu */
@@ -25602,6 +26678,8 @@ li.dropdown-border-hover:hover,
 #user-role+.btn-group .multiselect-container.dropdown-menu>li:first-child:hover:after {
     color: #4a89dc;
 }
+
+
 
 
 /* If navbar has a contextual bg we make menu links white*/
@@ -25883,6 +26961,8 @@ li.dropdown-border-hover:hover,
 }
 
 
+
+
 /* Modify whitespace for user menu dropdown - Firefox alignment bug fix */
 
 .navbar .navbar-right>li:last-child>.dropdown-menu>li>a {
@@ -26015,6 +27095,8 @@ li.dropdown-border-hover:hover,
 }
 
 
+
+
 /* ==============================================
    Content Trays
      A. Trays
@@ -26039,6 +27121,8 @@ li.dropdown-border-hover:hover,
 }
 
 
+
+
 /*trays*/
 
 .tray-left,
@@ -26052,12 +27136,16 @@ li.dropdown-border-hover:hover,
 }
 
 
+
+
 /*Right tray*/
 
 .tray-right {
     border-left: 1px solid #DDD;
     border-right: 0;
 }
+
+
 
 
 /*Top tray*/
@@ -26074,6 +27162,8 @@ li.dropdown-border-hover:hover,
 .tray-top.light {
     background-color: #fafafa;
 }
+
+
 
 
 /*===============================================
@@ -26113,6 +27203,8 @@ li.dropdown-border-hover:hover,
 }
 
 
+
+
 /*===============================================
    C. Tray Bin
 ================================================= */
@@ -26129,12 +27221,16 @@ li.dropdown-border-hover:hover,
 }
 
 
+
+
 /*If navbar has a contextual bg we make menu links white*/
 
 .tray-bin div[class*='col-'] {
     padding-left: 5px;
     padding-right: 5px;
 }
+
+
 
 
 /*traybin divider text. Used primarily in li navs*/
@@ -26147,6 +27243,8 @@ li.dropdown-border-hover:hover,
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
+
 
 
 /*===============================================
@@ -26166,11 +27264,15 @@ ul.tray-nav li a {
 }
 
 
+
+
 /* item icon */
 
 ul.tray-nav li a .fa {
     padding-right: 18px;
 }
+
+
 
 
 /* active item  */
@@ -26182,11 +27284,15 @@ ul.tray-nav li.active a {
 }
 
 
+
+
 /* active item icon */
 
 ul.tray-nav li.active a .fa {
     color: #4a89dc;
 }
+
+
 
 
 /*Tray nav style option - Arrow*/
@@ -26227,11 +27333,15 @@ ul.tray-nav.tray-nav-arrow li.active a:before {
 }
 
 
+
+
 /* item hover */
 
 ul.tray-nav.tray-nav-arrow li:hover a:after {
     border-left-color: #f8f8f8;
 }
+
+
 
 
 /*settings for arrows when used on a right aligned tray (.tray-right)*/
@@ -26260,12 +27370,16 @@ ul.tray-nav.tray-nav-arrow li:hover a:after {
 }
 
 
+
+
 /* item hover */
 
 .tray-right ul.tray-nav.tray-nav-arrow li:hover a:after {
     border-left-color: transparent;
     border-right-color: #f8f8f8;
 }
+
+
 
 
 /*Tray nav style option - Bordered*/
@@ -26298,12 +27412,16 @@ ul.tray-nav.tray-nav-arrow li:hover a:after {
 }
 
 
+
+
 /*modifcation for right side trays (.tray-right)*/
 
 .tray-right .tray-nav.tray-nav-border li:after {
     left: 0;
     right: auto;
 }
+
+
 
 
 /*border skin contextuals*/
@@ -26341,6 +27459,8 @@ ul.tray-nav.tray-nav-arrow li:hover a:after {
 }
 
 
+
+
 /*===============================================
    E. Tray Hover Settings
 
@@ -26370,6 +27490,8 @@ body.tray-rescale .tray-left {
 }
 
 
+
+
 /* adjust center tray to fill window width add needed
  padding to offset the partially hidden tray */
 
@@ -26383,6 +27505,8 @@ body.tray-rescale .tray-center {
 body.tray-rescale .tray-top+.tray-center {
     padding-right: inherit !important;
 }
+
+
 
 
 /* adjust depending on tray size */
@@ -26420,6 +27544,8 @@ body.tray-rescale .tray.tray400 {
 }
 
 
+
+
 /* on hover open the menus */
 
 body.tray-rescale .tray-left:hover,
@@ -26434,12 +27560,16 @@ body.tray-rescale .tray-right:hover {
 }
 
 
+
+
 /* adjust any bootstrap affix settings if they exist */
 
 body.tray-rescale .tray .tray-nav.affix,
 body.tray-rescale .tray .affix-pane.affix {
     top: auto;
 }
+
+
 
 
 /* Disable completely on resolutions <600 */
@@ -26457,6 +27587,8 @@ body.tray-rescale .tray .affix-pane.affix {
         padding: 10px 13px 40px !important;
     }
 }
+
+
 
 
 /* ==============================================
@@ -26486,11 +27618,15 @@ body.tray-rescale .tray .affix-pane.affix {
 }
 
 
+
+
 /* Sidebar Left Menu */
 
 .sidebar-menu {
     padding-bottom: 20px;
 }
+
+
 
 
 /* Top Level Menu Items */
@@ -26504,11 +27640,15 @@ body.tray-rescale .tray .affix-pane.affix {
 }
 
 
+
+
 /* all menu Links */
 
 .sidebar-menu>li a {
     color: #fff;
 }
+
+
 
 
 /* Top level menu Links */
@@ -26519,6 +27659,8 @@ body.tray-rescale .tray .affix-pane.affix {
     height: 35px;
     overflow: hidden;
 }
+
+
 
 
 /* Top Level Menu Icon */
@@ -26534,12 +27676,16 @@ body.tray-rescale .tray .affix-pane.affix {
 }
 
 
+
+
 /* Top Level Menu Title */
 
 .sidebar-menu>li>a>span:nth-child(2) {
     font-weight: 600;
     padding-left: 6px;
 }
+
+
 
 
 /* Menu Item - Tray, used to hold badges and such */
@@ -26556,6 +27702,8 @@ body.tray-rescale .tray .affix-pane.affix {
 }
 
 
+
+
 /* Menu item title caret */
 
 .sidebar-menu li>a>span.caret {
@@ -26568,12 +27716,16 @@ body.tray-rescale .tray .affix-pane.affix {
 }
 
 
+
+
 /* Open Menu Item Caret - we simply flip the carets border */
 
 .sidebar-menu li>a.menu-open>span.caret {
     border-top: 0;
     border-bottom: 5px solid;
 }
+
+
 
 
 /* Sub Level Menu  */
@@ -26591,12 +27743,16 @@ body.tray-rescale .tray .affix-pane.affix {
 }
 
 
+
+
 /* Sub Level Menu Items */
 
 .sidebar-menu>li>ul>li>a {
     color: #d1d1d1;
     padding: 11px 20px 11px 30px;
 }
+
+
 
 
 /* Sub Level Menu first and last items */
@@ -26610,6 +27766,8 @@ body.tray-rescale .tray .affix-pane.affix {
 }
 
 
+
+
 /* Sub Level Menu Item Icon */
 
 .sidebar-menu>li>ul>li>a>span:nth-child(1) {
@@ -26618,12 +27776,16 @@ body.tray-rescale .tray .affix-pane.affix {
 }
 
 
+
+
 /* Sub Level Menu Item Label */
 
 .sidebar-menu>li>ul>li>a>span.label {
     float: right;
     line-height: 17px;
 }
+
+
 
 
 /* Multi Level Menu (submenu inside a submenu and so on) */
@@ -26637,6 +27799,8 @@ body.tray-rescale .tray .affix-pane.affix {
 }
 
 
+
+
 /* Multi Level Menu items */
 
 .sidebar-menu>li>ul>li>ul li a {
@@ -26648,12 +27812,16 @@ body.tray-rescale .tray .affix-pane.affix {
 }
 
 
+
+
 /* Multi Level Menu item label */
 
 .sidebar-menu>li>ul>li>ul li a .label.label-xs {
     float: right;
     line-height: 17px;
 }
+
+
 
 
 /* Top Menu item active border */
@@ -26672,6 +27840,8 @@ body.tray-rescale .tray .affix-pane.affix {
 }
 
 
+
+
 /* Sub-Menu Menu item active border */
 
 .sidebar-menu>li>ul>li>a.menu-open:after,
@@ -26686,6 +27856,8 @@ body.tray-rescale .tray .affix-pane.affix {
     width: 3px;
     background: #AAA;
 }
+
+
 
 
 /* Multi-Menu childen active/hover border */
@@ -26703,6 +27875,8 @@ body.tray-rescale .tray .affix-pane.affix {
 }
 
 
+
+
 /* Sidebar labels */
 
 .sidebar-menu .sidebar-label {
@@ -26713,6 +27887,8 @@ body.tray-rescale .tray .affix-pane.affix {
     padding-bottom: 3px;
     font-size: 12px;
 }
+
+
 
 
 /* Sidebar pProjects */
@@ -26729,6 +27905,8 @@ body.tray-rescale .tray .affix-pane.affix {
     height: auto;
     overflow: visible;
 }
+
+
 
 
 /*===============================================
@@ -26762,6 +27940,8 @@ body.tray-rescale .tray .affix-pane.affix {
 }
 
 
+
+
 /* menu icon */
 
 .user-menu a span {
@@ -26772,6 +27952,8 @@ body.tray-rescale .tray .affix-pane.affix {
 .user-menu a:hover span {
     color: #3078d7;
 }
+
+
 
 
 /* menu title */
@@ -26786,6 +27968,8 @@ body.tray-rescale .tray .affix-pane.affix {
     background-color: #e5e5e5;
     border-bottom: 1px solid #CCC;
 }
+
+
 
 
 /*====================================================
@@ -26825,6 +28009,8 @@ body.tray-rescale .tray .affix-pane.affix {
 }
 
 
+
+
 /* active state */
 
 
@@ -26860,6 +28046,8 @@ body.sb-l-m #sidebar_left .sidebar-stat {
 }
 
 
+
+
 /* Icon container */
 
 body.sb-l-m .sidebar-menu>li {
@@ -26869,6 +28057,8 @@ body.sb-l-m .sidebar-menu>li {
 body.sb-l-m .sidebar-menu>li>a {
     overflow: visible;
 }
+
+
 
 
 /* Icon */
@@ -26882,11 +28072,15 @@ body.sb-l-m .sidebar-menu>li>a>span:nth-child(1) {
 }
 
 
+
+
 /* Active icon */
 
 body.sb-l-m .sidebar-menu>li.active>a>span:nth-child(1) {
     color: #2f87c1;
 }
+
+
 
 
 /* Item title */
@@ -26905,6 +28099,8 @@ body.sb-l-m .sidebar-menu>li>a>.sidebar-title {
 }
 
 
+
+
 /* Convert submenus to visible only on hover */
 
 body.sb-l-m .sidebar-menu>li>a.menu-open+ul {
@@ -26917,11 +28113,15 @@ body.sb-l-m .sidebar-menu>li:hover>a>.sidebar-title {
 }
 
 
+
+
 /* Sub-Menus title caret etc */
 
 body.sb-l-m .sidebar-menu>li>ul li a>.caret {
     display: block !important;
 }
+
+
 
 
 /* Sub-Menus */
@@ -26942,11 +28142,15 @@ body.sb-l-m .sidebar-menu>li>ul>li ul {
 }
 
 
+
+
 /* catch overflow of multi-level submenus */
 
 body.sb-l-m .sidebar-menu>li>ul>li {
     overflow: hidden;
 }
+
+
 
 
 /* first level menu item padding */
@@ -26956,11 +28160,15 @@ body.sb-l-m .sidebar-menu li>ul>li>a {
 }
 
 
+
+
 /* multi level menu item padding */
 
 body.sb-l-m .sidebar-menu li>ul>li>ul>li a {
     padding: 8px 20px 8px 35px;
 }
+
+
 
 
 /* related page container modifications */
@@ -26970,11 +28178,15 @@ body.sb-l-m #content_wrapper {
 }
 
 
+
+
 /* If sidebar is hidden and minified */
 
 body.sb-l-c.sb-l-m #content_wrapper {
     margin-left: 0;
 }
+
+
 
 
 /* Navbar Branding Mini mode */
@@ -26988,6 +28200,8 @@ body.sb-l-m .navbar-brand {
 }
 
 
+
+
 /*===============================================
   D. Nano Sidebar Scroller Settings (Core Plugin)
 ================================================= */
@@ -26995,6 +28209,8 @@ body.sb-l-m .navbar-brand {
 #sidebar_left.affix.nano .tooltip {
     z-index: 9999 !important;
 }
+
+
 
 
 /* If the sidebar is minified we disable nanoscroll via css
@@ -27011,6 +28227,8 @@ body.sb-l-m #sidebar_left.nano>.nano-content {
 }
 
 
+
+
 /*=======================================================
   E. Sidebar Skins - Default Dark Skin 
 ========================================================= */
@@ -27025,12 +28243,16 @@ body.sb-l-m #sidebar_left.nano>.nano-content {
 }
 
 
+
+
 /* Top Level Item - Border Color:hover */
 
 .sidebar-menu>li:hover>a:after,
 .sidebar-menu>li:focus>a:after {
     background: transparent;
 }
+
+
 
 
 /* Top Level Active Menu Item - BG Color */
@@ -27040,11 +28262,15 @@ body.sb-l-m #sidebar_left.nano>.nano-content {
 }
 
 
+
+
 /* Top Level Active Menu Item - Icon Color */
 
 .sidebar-menu>li.active>a>span:nth-child(1) {
     color: #4a89dc;
 }
+
+
 
 
 /* Top Level Active Item - Border Color */
@@ -27055,11 +28281,15 @@ body.sb-l-m #sidebar_left.nano>.nano-content {
 }
 
 
+
+
 /* Sub-Menu Item - BG Color */
 
 .sidebar-menu>li>ul {
     background-color: #282d33;
 }
+
+
 
 
 /* Sub-Menu Item - BG Color:hover */
@@ -27070,6 +28300,8 @@ body.sb-l-m #sidebar_left.nano>.nano-content {
 }
 
 
+
+
 /* Sub-Menu Item - Border Color:hover */
 
 .sidebar-menu>li>ul>li:hover>a:after,
@@ -27078,11 +28310,15 @@ body.sb-l-m #sidebar_left.nano>.nano-content {
 }
 
 
+
+
 /* Sub-Menu Active Item - BG Color */
 
 .sidebar-menu>li>ul>li.active>a {
     background-color: transparent;
 }
+
+
 
 
 /* Sub-Menu Active Item - Icon Color */
@@ -27093,6 +28329,8 @@ body.sb-l-m #sidebar_left.nano>.nano-content {
 }
 
 
+
+
 /* Sub-Menu Active Item - Border Color */
 
 .sidebar-menu>li>ul>li.active>a:after,
@@ -27101,11 +28339,15 @@ body.sb-l-m #sidebar_left.nano>.nano-content {
 }
 
 
+
+
 /* Multi-Menu Item - BG Color */
 
 .sidebar-menu>li>ul>li ul {
     background-color: #22262c;
 }
+
+
 
 
 /* Multi-level Item - BG Color:hover */
@@ -27116,6 +28358,8 @@ body.sb-l-m #sidebar_left.nano>.nano-content {
 }
 
 
+
+
 /* Multi-level Active Item - Border Color:hover */
 
 .sidebar-menu>li>ul>li>ul>li:hover>a:after,
@@ -27124,11 +28368,15 @@ body.sb-l-m #sidebar_left.nano>.nano-content {
 }
 
 
+
+
 /* Multi-level Active Item - BG Color */
 
 .sidebar-menu>li>ul>li>ul>li.active>a {
     background: transparent;
 }
+
+
 
 
 /* Multi-level Active Item - Icon Color */
@@ -27139,11 +28387,15 @@ body.sb-l-m #sidebar_left.nano>.nano-content {
 }
 
 
+
+
 /* Multi-level Active Item - Border Color */
 
 .sidebar-menu>li>ul>li>ul>li.active>a:after {
     background: #967adc;
 }
+
+
 
 
 /* Top Level Menu Item - Label Color */
@@ -27153,11 +28405,15 @@ body.sb-l-m #sidebar_left.nano>.nano-content {
 }
 
 
+
+
 /* Top Level Menu Item - Link Color */
 
 .sidebar-menu>li a {
     color: #ffffff;
 }
+
+
 
 
 /* Menu item Caret */
@@ -27167,11 +28423,15 @@ body.sb-l-m #sidebar_left.nano>.nano-content {
 }
 
 
+
+
 /* Open Menu item Caret */
 
 .sidebar-menu li>a.menu-open>span.caret {
     color: #4a89dc;
 }
+
+
 
 
 /* Usermenu - BG Color */
@@ -27181,11 +28441,15 @@ body.sb-l-m #sidebar_left.nano>.nano-content {
 }
 
 
+
+
 /* Usermenu - Item Icon Color */
 
 .user-menu a span {
     color: #dddddd;
 }
+
+
 
 
 /* Usermenu - BG Color:hover */
@@ -27195,11 +28459,15 @@ body.sb-l-m #sidebar_left.nano>.nano-content {
 }
 
 
+
+
 /* Usermenu - Item Icon Color:hover */
 
 .user-menu a:hover span {
     color: #4a89dc;
 }
+
+
 
 
 /*=======================================================
@@ -27329,6 +28597,8 @@ body.sb-l-m #sidebar_left.nano>.nano-content {
 }
 
 
+
+
 /* minified version of light sidebar */
 
 body.sb-l-m #sidebar_left.sidebar-light {
@@ -27446,6 +28716,8 @@ body.sb-l-m #sidebar_left.sidebar-light .sidebar-menu>li>a>.sidebar-title {
 }
 
 
+
+
 /* ==============================================
    Right Sidebar
      A. Default Closed State
@@ -27474,6 +28746,8 @@ body.sb-l-m #sidebar_left.sidebar-light .sidebar-menu>li>a>.sidebar-title {
 #sidebar_right .sidebar_right_content a:hover {
     text-decoration: none;
 }
+
+
 
 
 /*===============================================
@@ -27506,6 +28780,8 @@ body.sb-l-m #sidebar_left.sidebar-light .sidebar-menu>li>a>.sidebar-title {
 }
 
 
+
+
 /*===============================================
   C. Nano Sidebar Scroller Settings
 ================================================= */
@@ -27518,6 +28794,8 @@ body.sb-l-m #sidebar_left.sidebar-light .sidebar-menu>li>a>.sidebar-title {
     background: #444;
     background: #CCC;
 }
+
+
 
 
 /* ==============================================
@@ -27543,6 +28821,8 @@ body.sb-l-m #sidebar_left.sidebar-light .sidebar-menu>li>a>.sidebar-title {
 }
 
 
+
+
 /*left sidebar closed*/
 
 .sb-l-c #sidebar_left {
@@ -27555,6 +28835,8 @@ body.sb-l-m #sidebar_left.sidebar-light .sidebar-menu>li>a>.sidebar-title {
 }
 
 
+
+
 /*adjust navbar branding when closed*/
 
 .sb-l-c .navbar-branding {
@@ -27564,6 +28846,8 @@ body.sb-l-m #sidebar_left.sidebar-light .sidebar-menu>li>a>.sidebar-title {
 .sb-l-c .navbar-brand {
     display: none;
 }
+
+
 
 
 /*====================================================
@@ -27582,6 +28866,8 @@ body.sb-l-m #sidebar_left.sidebar-light .sidebar-menu>li>a>.sidebar-title {
 }
 
 
+
+
 /*Sidebar Right Closed*/
 
 .sb-r-c #sidebar_right {
@@ -27593,6 +28879,8 @@ body.sb-l-m #sidebar_left.sidebar-light .sidebar-menu>li>a>.sidebar-title {
 }
 
 
+
+
 /*====================================================
   C. Left Sidebar Minified Helper
 ====================================================== */
@@ -27600,6 +28888,8 @@ body.sb-l-m #sidebar_left.sidebar-light .sidebar-menu>li>a>.sidebar-title {
 .sb-l-c.sb-l-m #sidebar_left {
     left: -60px;
 }
+
+
 
 
 /*hide sidebar user menu button when the sidebar is
@@ -27610,6 +28900,8 @@ collapsed. As it's not accessible in this mode*/
     margin-left: 10px;
     display: none;
 }
+
+
 
 
 /*===============================================
@@ -27644,6 +28936,8 @@ manipulation using an html class aswell */
         left: -300px;
     }
 }
+
+
 
 
 /* ==============================================
@@ -27689,6 +28983,8 @@ manipulation using an html class aswell */
 }
 
 
+
+
 /*Toggle sidemenu button*/
 
 #toggle_sidemenu_r i.fa,
@@ -27696,6 +28992,8 @@ manipulation using an html class aswell */
 #toggle_sidemenu_r span.glyphicons {
     margin-top: 2px;
 }
+
+
 
 
 /* toggle sidemenu button (when menu is open) */
@@ -27707,6 +29005,8 @@ body.sb-r-o #toggle_sidemenu_r span.glyphicons {
     transform: scale(-1, 1);
     color: #999;
 }
+
+
 
 
 /*toggle right sidebar badge
@@ -27721,6 +29021,8 @@ body.sb-r-o #toggle_sidemenu_r span.glyphicons {
 }
 
 
+
+
 /*===============================================
    B. Topbar Dropmenu
 ================================================= */
@@ -27733,7 +29035,7 @@ body.sb-r-o #toggle_sidemenu_r span.glyphicons {
     padding: 17px 20px 10px;
     height: auto;
     width: 100%;
-    background: url("../../../img/patterns/topbar-bg.jpg") repeat -60px top;
+    background: url("../img/patterns/topbar-bg.jpg") repeat -60px top;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.4) inset;
 }
 
@@ -27778,6 +29080,8 @@ body.sb-r-o #toggle_sidemenu_r span.glyphicons {
     font-size: 11px;
     font-weight: 600;
 }
+
+
 
 
 /* topbar menu modal */
@@ -27832,21 +29136,23 @@ body.sb-r-o #toggle_sidemenu_r span.glyphicons {
 }
 
 
+
+
 /* ================================================
    PAGES - In Order
       A. UI Animations Page
-	  B. FAQ Page
-	  C. Gallery.html
-	  D. Calendar.html
-	  E. Message Pages
-	  F. Editors.html
-	  G. External Pages
-	  H. Invoice.html
-	  I. Timeline.html
-	  J. Map Pages
-	  K. Profile.html
-	  L. Error Pages
-	  M. Ecommerce Pages // Added update v1.3
+      B. FAQ Page
+      C. Gallery.html
+      D. Calendar.html
+      E. Message Pages
+      F. Editors.html
+      G. External Pages
+      H. Invoice.html
+      I. Timeline.html
+      J. Map Pages
+      K. Profile.html
+      L. Error Pages
+      M. Ecommerce Pages // Added update v1.3
 
  * This file is reserved for changes done on
  * a per-page basis. To create independent
@@ -27913,6 +29219,8 @@ body.ui-animations-page.animation-running .btn.btn-alt.item-checked {
 }
 
 
+
+
 /*===============================================
   B. FAQ Page
 ================================================= */
@@ -27940,6 +29248,8 @@ body.faq-page .input-group-merge .input-group-addon+input.form-control {
 body.faq-page #icon-filter {
     border-left: 3px solid #4a89dc;
 }
+
+
 
 
 /*===============================================
@@ -28005,6 +29315,8 @@ body.gallery-page .fail .fail-message {
 }
 
 
+
+
 /*===============================================
   D. Calendar Page
 ================================================= */
@@ -28058,6 +29370,8 @@ body.calendar-page .tray-center .fc-toolbar .fc-center h2 {
         margin-bottom: 10px;
     }
 }
+
+
 
 
 /*===============================================
@@ -28199,6 +29513,8 @@ body.messages-page .dockmodal-body .quick-compose-form .note-editor .note-status
 }
 
 
+
+
 /*===============================================
   F. Editors Page
 ================================================= */
@@ -28206,6 +29522,8 @@ body.messages-page .dockmodal-body .quick-compose-form .note-editor .note-status
 body.editors-page .panel .panel-heading {
     border-bottom-color: #CCC;
 }
+
+
 
 
 /*===============================================
@@ -28220,7 +29538,7 @@ body.external-page {
 
 body.external-page #main {
     overflow: hidden;
-    background: url("../../../img/patterns/backgrounds/1.jpg") no-repeat top center #2d494d;
+    background: url("../img/patterns/backgrounds/1.jpg") no-repeat top center #2d494d;
 }
 
 body.external-page #main:before {
@@ -28275,6 +29593,8 @@ body.external-page .login-links a:focus {
 }
 
 
+
+
 /*===============================================
   H. Invoice.html
 ================================================= */
@@ -28326,6 +29646,8 @@ body.invoice-page .invoice-buttons {
     left: 15px;
     bottom: 10px;
 }
+
+
 
 
 /*===============================================
@@ -28532,6 +29854,8 @@ body.timeline-page #content {
 }
 
 
+
+
 /*===============================================
   J. Map Pages - Full, Vector
 ================================================= */
@@ -28607,6 +29931,8 @@ body.timeline-page #content {
 }
 
 
+
+
 /*===============================================
   K. Profile.html
 ================================================= */
@@ -28627,6 +29953,8 @@ body.profile-page .profile-settings-icon {
 body.profile-page #content .tab-block .nav-tabs>li>a {
     padding: 9px 35px;
 }
+
+
 
 
 /*===============================================
@@ -28716,6 +30044,8 @@ body.error-page .error-text {
 }
 
 
+
+
 /*===============================================
   L. Ecommerce Page - Added via update v1.3
 ================================================= */
@@ -28778,6 +30108,8 @@ body.error-page .error-text {
 }
 
 
+
+
 /*===============================================
   Animate Settings
 ================================================= */
@@ -28819,6 +30151,8 @@ body.error-page .error-text {
     -webkit-animation-duration: 2s !important;
     animation-duration: 2s !important;
 }
+
+
 
 
 /*===============================================
@@ -28945,6 +30279,8 @@ Copyright (c) 2014 Daniel Eden
     -webkit-animation-name: flash;
     animation-name: flash;
 }
+
+
 
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
@@ -29218,6 +30554,8 @@ Copyright (c) 2014 Daniel Eden
     -webkit-animation-name: tada;
     animation-name: tada;
 }
+
+
 
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
@@ -31169,6 +32507,8 @@ Copyright (c) 2014 Daniel Eden
 }
 
 
+
+
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes rollIn {
@@ -31201,6 +32541,8 @@ Copyright (c) 2014 Daniel Eden
     -webkit-animation-name: rollIn;
     animation-name: rollIn;
 }
+
+
 
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */

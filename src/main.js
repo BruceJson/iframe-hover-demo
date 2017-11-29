@@ -10,6 +10,6 @@ import '@/style/main.css';
 import 'bootstrap';
 
 // js
-import '@/mock'
+// import '@/mock'
 import '@/global';
 import '@/script/page.js';

@@ -2,8 +2,9 @@ import tools from '@/tools';
 
 import api from '@/api'
 
-import Dialog from './dialog.js';
+import Dialog from '@/script/components/core/dialog.js';
 
+import baseData from '@/script/baseData/baseData';
 
 // 创建栏目链接列表模板
 /**
@@ -98,10 +99,10 @@ function createTemplate(navArr = []) {
 function createNavItemTemplate(nav = {}) {
     var navItemStr = `<tr class="nav_item">
         <td class="font_14 align_center matic_modal_td">
-            <input class="font_14 matic-nav-spanSpecial" placeholder='请输入标题' value="${nav.title || ''}">
+            <input class="font_14 matic-nav-spanSpecial nav_title" placeholder='请输入标题' value="${nav.title || ''}">
         </td>
         <td class="font_14 align_center  matic_modal_td">
-            <input class="matic-nav-spanSpecial" placeholder='请输入网址' value="${nav.link || ''}">
+            <input class="matic-nav-spanSpecial nav_link" placeholder='请输入网址' value="${nav.link || ''}">
         </td>
         <td class="align_center font_14  matic_modal_td">
             <!-- 上 -->
@@ -169,7 +170,7 @@ class NavSettingDialog extends Dialog {
             api.getNavLinkList().then(resp => {
                 console.log('获取栏目链接列表成功~~');
                 console.log(resp);
-                resolve(resp.data.list);
+                resolve(resp.list);
             })
         });
     }
@@ -223,8 +224,25 @@ class NavSettingDialog extends Dialog {
 
         // 确定按钮点击事件
         this.$dialog.on('click', '.btn_confirm', function() {
+
+            var navItemList = [];
+
+            self.$dialog.find('.nav_item').map(function() {
+                var title = $(this).find('.nav_title').val();
+                var link = $(this).find('.nav_link').val();
+
+                var navItemData = new baseData.NavItemData(title, link);
+
+                navItemList.push(navItemData);
+            })
+
+            var guid = self.modelData.guid;
+
+            var navbarData = new baseData.NavbarData(guid, navItemList);
+
+            console.log('nav dialog 确定按钮点击');
             self._hideDialog();
-            _resolve('nav dialog 确定按钮点击');
+            _resolve(navbarData);
         });
     }
 

@@ -4,7 +4,7 @@ class ColumnListData {
         this.guid = guid;
         this.type = type;
         this.title = title;
-        this.groupType = groupType;
+        this.groupType = groupType || 'in';
         this.tagIds = tagIds;
     }
 }

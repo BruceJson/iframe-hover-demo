@@ -17,6 +17,16 @@ function createUploaderBox(defaultImgSrc = DEFAULT_IMG_SRC) {
                     <span class='inline_block vertical_middle height_full'></span>
                     <i class="icon iconfont icon-fankui inline_block vertical_middle"></i>
                 </div>
+
+                <div class='progress_shadow absolute_full font_0' style='background-color: rgba(0,0,0,0.5);display: none;'>
+                    <div class='inline_block width_0 height_full vertical_middle'></div>
+                    <div class='inline_block width_full vertical_middle'>
+                        <p class='upload_status font_16' style='color: #fff;'>正在上传中...</p>
+                        <div class='progress inline_block' style='width: 80%;height: 15px;margin-bottom: 0;margin-top: 5px;background-color: #717171;border-radius: 20px;'>
+                            <div class='progress_inner transition_3' style='width: 0%;height: 100%;background-color: #fff;border-radius: 20px;'></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>`;
     return $(domStr);
@@ -49,32 +59,64 @@ class Uploader {
             });
 
             self.uploadFile = new UploadFile(file);
-
-
-
         });
+    }
+
+    _resetProgress() {
+        this.$upload.find('.upload_status').text('正在上传中...');
+        this.$upload.find('.progress_inner').css({
+            width: '0%'
+        });
+
+        this.$upload.find('.input_upload').val('');
+        this.uploadFile = void 0;
     }
 
     // interface
 
     // 开始上传
     upload() {
-        if (!this.uploadFile) {
-            throw '请选择上传文件···'
-        } else {
-            return OssUploader.upload(file, function(percent) {
-                return function(done) {
-                    console.log('正在上传中···');
-                    console.log(percent);
-                    done();
-                }
-            });
-        }
+        var self = this;
+        return new Promise((resolve, reject) => {
+            if (!this.uploadFile) {
+                resolve();
+                throw '请选择上传文件···'
+            } else {
+                self.$upload.find('.progress_shadow').show();
+                OssUploader.upload(self.uploadFile, function(percent) {
+                    return function(done) {
+                        console.log('正在上传中···');
+                        console.log(percent);
+
+                        self.$upload.find('.progress_inner').css({
+                            width: percent * 100 + '%'
+                        });
+
+                        done();
+                    }
+                }).then(resp => {
+                    console.log('图片上传成功，地址为；' + resp);
+
+                    self.$upload.find('.upload_status').text('图片上传成功！');
+                    setTimeout(function() {
+                        self.$upload.find('.progress_shadow').hide();
+                        self._resetProgress();
+
+                        self.setDefaultImg(resp);
+                        resolve(resp);
+                    }, 500)
+                });
+            }
+        });
+    }
+
+    getImgSrc() {
+        return this.$upload.find('.preview_img').attr('src');
     }
 
     // 设置上传底图
-    setDefaultImg(src = DEFAULT_IMG_SRC) {
-        this.$upload.find('.preview_img').attr('src', src);
+    setDefaultImg(src) {
+        this.$upload.find('.preview_img').attr('src', src || DEFAULT_IMG_SRC);
     }
 }
 

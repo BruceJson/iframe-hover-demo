@@ -1,8 +1,10 @@
 import tools from '@/tools';
 
-import Dialog from './dialog.js';
+import Dialog from '@/script/components/core/dialog.js';
 
 import Uploader from '@/script/components/upload/uploader';
+
+import baseData from '@/script/baseData/baseData';
 
 // 创建弹出框模板
 function createTemplate() {
@@ -75,11 +77,26 @@ class BannerSettingDialog extends Dialog {
 
     _renderBanner() {
         this.$dialog.find('#preview_img').attr('src', this.modelData && this.modelData.src || '');
+        this.bannerUploader.setDefaultImg(this.modelData && this.modelData.src || '');
     }
 
     _bindEvent() {
+        var self = this;
         this.$dialog.find('.btn_confirm').click(function() {
-            _resolve('banner dialog 确定');
+
+            self.bannerUploader.upload().then(url => {
+
+                var guid = self.modelData.guid;
+                var src = self.bannerUploader.getImgSrc();
+
+                var bannerData = new baseData.BannerData(guid, src);
+                console.log('banner dialog 确定')
+                _resolve(bannerData);
+
+                // 隐藏弹出框
+                self._hideDialog();
+            });
+
         });
     }
 

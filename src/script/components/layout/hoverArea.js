@@ -8,7 +8,7 @@ const modelDataGetter = new ModelDataGetter();
 
 // 遮罩层工具类
 class HoverArea {
-    constructor($hoverArea, modelPositionList, iframeHtmlStr) {
+    constructor($hoverArea, modelPositionList, $iframeHtmlStr) {
         // 遮罩层
         this.$hoverArea = $hoverArea;
 
@@ -16,7 +16,7 @@ class HoverArea {
         this.modelPositionList = modelPositionList;
 
         // 创建虚拟dom
-        this.$visualIframeDom = $(iframeHtmlStr);
+        this.$visualIframeDom = $iframeHtmlStr;
 
         // 初始化
         this._initialize();

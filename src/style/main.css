@@ -24,6 +24,15 @@ iframe {
     border: none;
 }
 
+
+.modal {
+    z-index: 120;
+}
+
+.modal-backdrop {
+    z-index: 110;
+}
+
 .shadow_box {
     position: absolute;
     width: 100%;
@@ -94,4 +103,55 @@ iframe {
 
 .img_selector .input_upload {
     opacity: 0;
+}
+
+.global_setting_box {
+    position: relative;
+    height: 60px;
+    background-color: #373C40;
+    text-align: center;
+    padding: 0 60px 0 40px;
+}
+
+.global_setting_box .global_setting_part .icon_box {
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.global_setting_box .global_setting_part .icon_box i {
+    font-size: 18px;
+}
+
+.global_setting_box .global_setting_part .icon_box:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.global_setting_box .global_setting_part {
+    height: 100%;
+    line-height: 60px;
+}
+
+.global_setting_box .global_setting_part.part1 {
+    float: left;
+}
+
+.global_setting_box .global_setting_part.part1 .icon_box {
+    margin-right: 20px;
+}
+
+.global_setting_box .global_setting_part.part2 {
+    display: inline-block;
+}
+
+.global_setting_box .global_setting_part.part3 {
+    float: right;
 }

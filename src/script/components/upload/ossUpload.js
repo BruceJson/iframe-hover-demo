@@ -4,7 +4,7 @@ import tools from '@/tools';
 import global from '@/global';
 import cfg from '@/config/common.conf';
 
-var appServer = cfg["API_DOMAIN"] + "/oss/token";
+var appServer = cfg["OSS_DOMAIN"] + "/oss/token";
 var bucket = "rmt";
 var region = "oss-cn-hangzhou";
 
@@ -41,7 +41,8 @@ class OssUploader {
         }
     }
 
-    upload(file, progress) {
+    upload(upfile, progress) {
+        var file = upfile.file;
         return new Promise((resolve, reject) => {
             this.initClient().then(() => {
                 // 获取md5文件名

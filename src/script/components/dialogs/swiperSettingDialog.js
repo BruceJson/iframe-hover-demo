@@ -2,10 +2,11 @@ import tools from '@/tools';
 
 import api from '@/api'
 
-import Dialog from './dialog.js';
+import Dialog from '@/script/components/core/dialog.js';
 
 import Uploader from '@/script/components/upload/uploader';
 
+import baseData from '@/script/baseData/baseData';
 // 创建弹出框模板
 function createTemplate(navArr = []) {
     var template =
@@ -187,9 +188,60 @@ class SwiperSettingDialog extends Dialog {
 
         // 确定按钮点击事件
         this.$dialog.on('click', '.btn_confirm', function() {
-            self._hideDialog();
-            _resolve('swiper dialog 确定按钮点击');
+            // 取出所有uploader
+            var uploaderArr = [];
+            self.$dialog.find('.swiper_item').each(function() {
+                var uploader = $(this).data('uploader');
+                uploaderArr.push(uploader);
+            });
+
+            self._upload(uploaderArr, 0, function() {
+                // 全部上传成功回调
+
+                var swiperItemList = [];
+
+                self.$dialog.find('.swiper_item').each(function() {
+                    var uploader = $(this).data('uploader');
+
+                    // src link
+                    var src = uploader.getImgSrc();
+
+                    var link = $(this).find('.swiper_link').val();
+
+                    var swiperItemData = new baseData.SwiperItemData(src, link);
+
+                    swiperItemList.push(swiperItemData);
+                });
+
+                // guid = '', swiperItemList = []
+
+                var guid = self.modelData.guid;
+                var swiperItemList = swiperItemList;
+
+                var swiperData = new baseData.SwiperData(guid, swiperItemList);
+
+                console.log('swiper dialog 确定按钮点击');
+
+                self._hideDialog();
+                _resolve(swiperData);
+
+            });
+
         });
+    }
+
+    _upload(uploaderArr, index, callback) {
+        var self = this;
+        var index = index;
+        if (index >= uploaderArr.length) {
+            // 如果最后一张已经上传结束
+            callback();
+            return;
+        }
+        uploaderArr[index].upload().then(resp => {
+            index++;
+            self._upload(uploaderArr, index, callback)
+        })
     }
 
     // @interface

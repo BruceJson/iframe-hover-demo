@@ -2,10 +2,11 @@ import tools from '@/tools';
 
 import api from '@/api'
 
-import Dialog from './dialog.js';
+import Dialog from '@/script/components/core/dialog.js';
 
 import global from '@/global';
 
+import baseData from '@/script/baseData/baseData';
 // 创建弹出框模板
 function createTemplate(navArr = []) {
     var template =
@@ -69,9 +70,9 @@ function createTemplate(navArr = []) {
 function createItem(tag) {
     var item =
         `<div class="checkbox-custom fill checkbox-warning checkbox-inline" style='padding-right: 10px'>
-	        <input type="checkbox" id="${tag.id}">
-	        <label for="${tag.id}">${tag.name}</label>
-	    </div>`;
+            <input type="checkbox" id="${tag.id}">
+            <label for="${tag.id}">${tag.name}</label>
+        </div>`;
 
     return item;
 }
@@ -96,17 +97,11 @@ class ColumnSettingDialog extends Dialog {
     // 初始化标签列表
     async _initTagList() {
         var self = this;
-        tools.doNet({
-            url: '/plugin/diyspecial/tags-list',
-            method: 'get',
-            data: {
-                id: global.topicId
-            }
-        }).then((resp) => {
+        api.getTagList().then((resp) => {
             console.log('获取标签列表成功····');
             console.log(resp);
 
-            var tagList = resp.data.list || [];
+            var tagList = resp.list || [];
 
             self._renderTagList(tagList);
         });
@@ -146,9 +141,26 @@ class ColumnSettingDialog extends Dialog {
         var self = this;
 
         // 确定按钮点击事件
+        // guid = '', type = '', title = '', groupType = 'in', tagIds = ''
         this.$dialog.on('click', '.btn_confirm', function() {
+
+            var guid = self.modelData.guid;
+
+            var type = self.modelData.type;
+
+            var title = self.$dialog.find('.column_title').val();
+
+            var groupType = self.$dialog.find('.column_tag_type').val();
+
+            var tagIds = self.$dialog.find('.tag_list').find('input:checked[type=checkbox]').map(function() {
+                return this.id;
+            }).toArray().join(',');
+
+            var columnListData = new baseData.ColumnListData(guid, type, title, groupType, tagIds);
+
+            console.log('column dialog 确定按钮点击');
             self._hideDialog();
-            _resolve('column dialog 确定按钮点击');
+            _resolve(columnListData);
         });
     }
 

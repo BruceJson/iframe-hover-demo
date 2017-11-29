@@ -2,58 +2,59 @@ import tools from '@/tools';
 
 import api from '@/api'
 
-import Dialog from './dialog.js';
+import Dialog from '@/script/components/core/dialog.js';
 
 import Uploader from '@/script/components/upload/uploader';
 
+import baseData from '@/script/baseData/baseData';
 // 创建弹出框模板
 function createTemplate(navArr = []) {
     var template =
         `<div id='zfmodal4' class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
-	        <div class="modal-dialog matic_modal_dialog" role="document">
-	            <div class="modal-content ">
-	                <div class="modal-header matic_header">
-	                    <!-- 叉叉 -->
-	                    <button type="button" class="close matic_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	                    <!-- title -->
-	                    <h4 class="modal-title matic_modal_title" id="gridSystemModalLabel">友情链接</h4>
+            <div class="modal-dialog matic_modal_dialog" role="document">
+                <div class="modal-content ">
+                    <div class="modal-header matic_header">
+                        <!-- 叉叉 -->
+                        <button type="button" class="close matic_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <!-- title -->
+                        <h4 class="modal-title matic_modal_title" id="gridSystemModalLabel">友情链接</h4>
 
-	                </div>
-	                <div class="modal-body">
-	                    <div class="matic-mainBodyNav matic-linkNav" id="matic-lineNav" onmouseover="isOut=false" onmouseoout="isOut=true">
-	                        <div class="panel-body no_padding">
-	                            <table class="table">
-	                                <thead>
-	                                    <tr>
-	                                        <th width="20%" class="matic_modal_th">标题</th>
-	                                        <th width="15%" class="matic_modal_th">名称</th>
-	                                        <th width="50%" class="matic_modal_th">链接地址</th>
-	                                        <th width="15%" class=" matic_modal_th border-rightNone">操作</th>
-	                                    </tr>
-	                                </thead>
-	                                <tbody class='adv_list'>
-	                                  	<!-- ================= advList insert ================= -->
-	                                    <tr class='add_adv_area'>
-	                                        <td colspan="5" class="align_center cursor">
-	                                            <i class="icon iconfont icon-tianjia matic-addIcon"></i>
-	                                            <span class="matic-add">添加</span>
-	                                        </td>
-	                                    </tr>
-	                                </tbody>
-	                            </table>
-	                        </div>
-	                    </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="matic-mainBodyNav matic-linkNav" id="matic-lineNav" onmouseover="isOut=false" onmouseoout="isOut=true">
+                            <div class="panel-body no_padding">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th width="20%" class="matic_modal_th">标题</th>
+                                            <th width="15%" class="matic_modal_th">名称</th>
+                                            <th width="50%" class="matic_modal_th">链接地址</th>
+                                            <th width="15%" class=" matic_modal_th border-rightNone">操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class='adv_list'>
+                                        <!-- ================= advList insert ================= -->
+                                        <tr class='add_adv_area'>
+                                            <td colspan="5" class="align_center cursor">
+                                                <i class="icon iconfont icon-tianjia matic-addIcon"></i>
+                                                <span class="matic-add">添加</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
 
-	                </div>
-	                <div class="modal-footer matic_modal_footer">
-	                    <button type="button" class="btn_confirm">保存</button>
-	                    <button type="button" class="btn_cancel" data-dismiss="modal">取消</button>
-	                </div>
-	            </div>
-	            <!-- /.modal-content -->
-	        </div>
-	        <!-- /.modal-dialog -->
-	    </div>`;
+                    </div>
+                    <div class="modal-footer matic_modal_footer">
+                        <button type="button" class="btn_confirm">保存</button>
+                        <button type="button" class="btn_cancel" data-dismiss="modal">取消</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>`;
 
     return $(template);
 }
@@ -63,11 +64,11 @@ function createAdvItemTemplate(adv = {}) {
         `<tr class='adv_item'>
             <td class="font_14 align_center matic_modal_td">
                 <div class="coverpic-box inline_block upload_box">
-                 	<!-- ============= uploader insert ============= -->
+                    <!-- ============= uploader insert ============= -->
                 </div>
             </td>
             <td class="font_14 align_center  matic_modal_td">
-            	<input class="font_14 matic-nav-spanSpecial adv_name" placeholder='请输入名称' value="${adv.name || ''}">
+                <input class="font_14 matic-nav-spanSpecial adv_name" placeholder='请输入名称' value="${adv.name || ''}">
             </td>
             <td class="font_14 align_center  matic_modal_td">
                 <input class="font_14 matic-nav-spanSpecial adv_link" placeholder='请输入链接地址' value="${adv.link || ''}">
@@ -155,9 +156,62 @@ class AdvListSettingDialog extends Dialog {
 
         // 确定按钮点击事件
         this.$dialog.on('click', '.btn_confirm', function() {
-            self._hideDialog();
-            _resolve('adv dialog 确定按钮点击');
+            // 取出所有uploader
+            var uploaderArr = [];
+            self.$dialog.find('.adv_item').each(function() {
+                var uploader = $(this).data('uploader');
+                uploaderArr.push(uploader);
+            });
+
+            self._upload(uploaderArr, 0, function() {
+                // 全部上传成功回调
+
+                var advItemList = [];
+
+                self.$dialog.find('.adv_item').each(function() {
+                    var uploader = $(this).data('uploader');
+
+                    // src link
+                    var src = uploader.getImgSrc();
+
+                    var name = $(this).find('.adv_name').val();
+
+                    var link = $(this).find('.adv_link').val();
+
+                    // guid = '', src = '', link = '', name = ''
+                    var advData = new baseData.AdvData('', src, link, name);
+
+                    advItemList.push(advData);
+                });
+
+                // guid = '', advList = []
+
+                var guid = self.modelData.guid;
+                var advList = advItemList;
+
+                var advListData = new baseData.AdvListData(guid, advList);
+
+                console.log('advList dialog 确定按钮点击');
+
+                self._hideDialog();
+                _resolve(advListData);
+
+            });
         });
+    }
+
+    _upload(uploaderArr, index, callback) {
+        var self = this;
+        var index = index;
+        if (index >= uploaderArr.length) {
+            // 如果最后一张已经上传结束
+            callback();
+            return;
+        }
+        uploaderArr[index].upload().then(resp => {
+            index++;
+            self._upload(uploaderArr, index, callback)
+        })
     }
 
     // @interface

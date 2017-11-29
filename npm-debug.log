@@ -13,7 +13,7 @@
 6 silly lifecycle iframe-hover-demo@1.0.0~predev: no script for predev, continuing
 7 info lifecycle iframe-hover-demo@1.0.0~dev: iframe-hover-demo@1.0.0
 8 verbose lifecycle iframe-hover-demo@1.0.0~dev: unsafe-perm in lifecycle true
-9 verbose lifecycle iframe-hover-demo@1.0.0~dev: PATH: d:\nodejs\node_global\node_modules\cnpm\node_modules\npm\bin\node-gyp-bin;D:\WWW\iframe-hover-demo\node_modules\.bin;C:\Ruby24-x64\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;D:\SVN\bin;D:\Git\cmd;D:mongo\;D:\nodejs\;F:\php-7.1.9-Win32-VC14-x64;F:\php-7.1.9-Win32-VC14-x64\ext;d:\nodejs\node_global\;D:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm
+9 verbose lifecycle iframe-hover-demo@1.0.0~dev: PATH: d:\nodejs\node_global\node_modules\cnpm\node_modules\npm\bin\node-gyp-bin;D:\WWW\iframe-hover-demo\node_modules\.bin;C:\Ruby24-x64\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;D:\SVN\bin;D:\Git\cmd;D:mongo\;D:\nodejs\;F:\php-7.1.9-Win32-VC14-x64;F:\php-7.1.9-Win32-VC14-x64\ext;d:\nodejs\node_global\;C:\Users\Administrator\AppData\Roaming\npm
 10 verbose lifecycle iframe-hover-demo@1.0.0~dev: CWD: D:\WWW\iframe-hover-demo
 11 silly lifecycle iframe-hover-demo@1.0.0~dev: Args: [ '/d /s /c',
 11 silly lifecycle   'webpack-dev-server --open --inline --config build/webpack.dev.conf.js' ]

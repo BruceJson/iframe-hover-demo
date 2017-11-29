@@ -1,6 +1,9 @@
 import tools from '@/tools';
-import iframeMethodCfg from '@/config/iframe_method.conf.js';
 import HoverArea from '@/script/components/layout/hoverArea.js';
+import TopSettingBox from '@/script/components/layout/topSettingBox.js';
+import global from '@/global';
+
+import quene from '@/script/plugins/queneManager';
 
 var $iframe = $('#iframe');
 
@@ -11,6 +14,8 @@ var iframeWindow = $iframe[0].contentWindow;
 var iframeOrigin = $iframe[0].src;
 
 var hoverArea;
+
+var topSettingBox;
 
 // console.log(bootstrap);
 
@@ -34,7 +39,9 @@ window.onload = function() {
 
 // 获取iframe中内容信息
 function getIframeInfo() {
-    tools.postMessage(iframeWindow, iframeMethodCfg['IFRAME_ALL_POSITION'], iframeOrigin);
+    tools.postMessage(iframeWindow, {
+        method: 'getIframeAllPosition'
+    }, iframeOrigin);
 }
 
 // 加载iframe
@@ -68,16 +75,43 @@ function bindEvent() {
          * {Object} e.data.data 请求的传参
          */
 
-        if (e.data.type === 'getIframeAllPositionCallback') {
-            var ret = e.data.data;
+        var ret = e.data.data;
+        if (e.data.type.indexOf('getIframeAllPositionCallback') >= 0) {
             var modelPositionList = ret.modelPositionList;
-            var iframeHtmlStr = ret.htmlStr;
+            var $iframeHtmlStr = $(ret.htmlStr);
 
-            if (!hoverArea) {
-                hoverArea = new HoverArea($hoverArea, modelPositionList, iframeHtmlStr);
-            } else {
-                hoverArea.refresh(modelPositionList, iframeHtmlStr);
-            }
+            // 加载iframe，刷新高度
+            loadIframe($iframe).then(function() {
+                // 重新刷新
+                if (!topSettingBox) {
+                    topSettingBox = new TopSettingBox($('.global_setting_box'), $iframeHtmlStr);
+                }
+                if (!hoverArea) {
+                    hoverArea = new HoverArea($hoverArea, modelPositionList, $iframeHtmlStr);
+                } else {
+                    hoverArea.refresh(modelPositionList, $iframeHtmlStr);
+                }
+            });
+
+        }
+
+        if (e.data.type.indexOf('deletePartCallback') >= 0 || e.data.type.indexOf('moveUp') >= 0 || e.data.type.indexOf('moveDown') >= 0) {
+            // 如果是删除，移动操作，则添加至队列
+            quene.add(ret.htmlStr);
+        }
+
+        // 如果是保存回调或者发布回调
+        if (e.data.type.indexOf('saveCallback') >= 0 || e.data.type.indexOf('releaseCallback') >= 0) {
+            tools.doNet({
+                url: '/plugin/diyspecial/model-save',
+                method: 'post',
+                data: {
+                    id: global.topicId,
+                    dom: ret.htmlStr
+                }
+            }).then(resp => {
+                tools.alert('保存成功');
+            })
         }
     });
 

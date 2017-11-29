@@ -14,12 +14,18 @@
 </head>
 
 <body>
+    <!-- // data-bg-type image/color 背景类型，图片、颜色
+    // data-bg-src  背景图片链接
+    // data-bg-cover-type:cover/inherit     背景图片平铺类型：平铺、默认
+    // data-bg-position:left/center/left        背景不是平铺时，所处于的位置
+    // data-bg-color        背景颜色色值 -->
+    <div id='body_bg_setting' model-type='bg' data-bg-type='color' data-bg-src='' data-bg-cover-type='' data-bg-position='' data-bg-color='#F1EDE2'></div>
     <div>
-        <div class='router_edit_box banner' movable='false' model-type='banner' data-src=''>
-            <img class='router_img' src='../img/icon_3.png'>
+        <div class='router_edit_box banner' movable='false' model-type='banner'>
+            <img data-src='/static/img/icon_3.png' class='router_img' src='../img/icon_3.png'>
         </div>
         <div class='router_edit_box nav_1' movable='false' model-type='navbar'>
-            <div class='nav_list_1 clx'>
+            <div class='nav_list nav_list_1 clx'>
                 <a class='router_box_item nav_item transition_3 active' data-title='栏目标题1' data-link='http://www.baidu.com'>
                     <span>事件历史</span>
                 </a>
@@ -42,7 +48,8 @@
         <!-- 焦点图、图文列表混合模块 -->
         <div class='section focus_article_box focus_article_box_1 clx'>
             <!-- 焦点图 focus_box -->
-            <div class='router_edit_box focus_box focus_box_1' movable='false' model-type='focus' data-title='焦点图1' data-focus-type='images' data-count='5'>
+            <div class='router_edit_box focus_box focus_box_1' movable='false' model-type='focus' data-title='焦点图1' data-focus-type='images
+' data-count='5'>
                 <div class='focus_inner_box'>
                     <div class="swiper-container">
                         <!-- 上一步按钮 -->
@@ -50,6 +57,22 @@
                         <!-- 下一步按钮 -->
                         <img class="btn_swiper_next" src='../img/png_3.png'>
                         <div class="swiper-wrapper">
+                            <!-- ========================== 焦点图 tags start ========================== -->
+                            <router-focusmap router-type='images' router-title='焦点图1' router-count='5' style='display: none;'>
+                                <div class="swiper-slide">
+                                    <div class='focus_item'>
+                                        <a>
+                                            <img src='[router-imageurl]' />
+                                            <p class='title text_ellipsis'>
+                                                <span class='margin_right_5'>
+                                                    <span class='cur_num'>[router-index]</span>/<span class='total_num'>[router-count]</span></span>
+                                                [router-title]
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </router-focusmap>
+                            <!-- ========================== 焦点图 end ========================== -->
                             <div class="swiper-slide">
                                 <div class='router_box_item focus_item'>
                                     <a>
@@ -102,6 +125,17 @@
             <!-- 图文列表1 article_box -->
             <div class='router_edit_box article_box article_box_1' movable='false' model-type='article' data-type='article' data-title='article1' data-group-type='in' data-tagids='5a124881cc1193e41700002c,5a124879cc1193e41700002b,5a124870cc1193901b00002d'>
                 <div class='article_inner_box'>
+                    <!-- ========================== 图文 start ========================== -->
+                    <!-- type(article/images/video) title count datamode(all/in) tagids dateformat(Y-m-h H:i:s) -->
+                    <router-list style='display: none;' type='article' title='article1' datamode='in' tagids='5a124881cc1193e41700002c,5a124879cc1193e41700002b,5a124870cc1193901b00002d' dateformat='Y-m-h' count='3'>
+                        <div class='article_item article_item_1'>
+                            <a class='block' href='[router-url]'>
+                                <p class='title text_ellipsis'>[router-title]</p>
+                                <p class='intro' data-max-length='83'>[router-desc]...</p>
+                            </a>
+                        </div>
+                    </router-list>
+                    <!-- ========================== 图文 end ========================== -->
                     <div class='article_item article_item_1'>
                         <a class='block'>
                             <p class='title text_ellipsis'>标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</p>
@@ -173,7 +207,7 @@
         <!-- 图文列表组合模块 -->
         <div class='row'>
             <div class='col-xs-8 section '>
-                <div class='column router_edit_box' movable='false' model-type='article' data-type='article' data-title='article2' data-group-type='in' data-tagids=''>
+                <div class='column router_edit_box' movable='false' model-type='article' data-type='article' data-title='article2' data-group-type='in' data-tagids='5a124881cc1193e41700002c,5a124879cc1193e41700002b,5a124870cc1193901b00002d'>
                     <div class='column_head'>
                         <span class='title'>栏目名称</span>
                         <a class='more_link'>更多>></a>
@@ -181,6 +215,19 @@
                     <!-- 图文列表 2 -->
                     <div style='height: 507px;' class=' article_box article_box_2'>
                         <div class='article_inner_box'>
+                            <!-- ========================== 图文 start ========================== -->
+                            <router-list style='display: none;' type='article' title='article2' datamode='in' tagids='5a124881cc1193e41700002c,5a124879cc1193e41700002b,5a124870cc1193901b00002d' dateformat='Y-m-h' count='4'>
+                                <div class='article_item article_item_2'>
+                                    <a class='block' href='[router-desc]'>
+                                        <img src='[router-imageurl]'>
+                                        <div class='article_content'>
+                                            <p class='title text_ellipsis'>[router-title]</p>
+                                            <p class='intro'>[router-desc]...</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </router-list>
+                            <!-- ========================== 图文 end ========================== -->
                             <div class='article_item article_item_2'>
                                 <a class='block'>
                                     <img src='../img/icon_6.png'>
@@ -222,7 +269,7 @@
                 </div>
             </div>
             <div class=' section col-xs-4'>
-                <div class='column router_edit_box' movable='false' model-type='article' data-type='article' data-title='article3' data-group-type='in' data-tagids=''>
+                <div class='column router_edit_box' movable='false' model-type='article' data-type='article' data-title='article3' data-group-type='in' data-tagids='5a124881cc1193e41700002c,5a124879cc1193e41700002b,5a124870cc1193901b00002d'>
                     <div class='column_head'>
                         <span class='title'>栏目名称</span>
                         <a class='more_link'>更多>></a>
@@ -230,6 +277,21 @@
                     <!-- 图文列表 4 -->
                     <div style='height: 507px;' class='article_box article_box_4'>
                         <div class='article_inner_box'>
+                            <!-- ========================== 图文 start ========================== -->
+                            <router-list style='display: none;' type='article' title='article3' datamode='in' tagids='5a124881cc1193e41700002c,5a124879cc1193e41700002b,5a124870cc1193901b00002d' dateformat='Y-m-h' count='10'>
+                                <div class='article_item article_item_4'>
+                                    <a class='block' href='[router-url]'>
+                                        <div class='part_1'>
+                                            <img class='article_img' src='[router-imageurl]'>
+                                            <p class='title text_ellipsis'>[router-title]</p>
+                                        </div>
+                                        <div class='part_2'>
+                                            <p class='text_ellipsis'><strong>·</strong><span class='title'>[router-desc]</span></p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </router-list>
+                            <!-- ========================== 图文 end ========================== -->
                             <div class='article_item article_item_4'>
                                 <a class='block'>
                                     <div class='part_1'>
@@ -346,7 +408,7 @@
             </div>
         </div>
         <!-- 图片列表模块 -->
-        <div class='router_edit_box section' movable='true' model-type='images' data-type='images' data-title='images1' data-group-type='in' data-tagids=''>
+        <div class='router_edit_box section' movable='true' model-type='images' data-type='images' data-title='images1' data-group-type='in' data-tagids='5a124881cc1193e41700002c,5a124879cc1193e41700002b,5a124870cc1193901b00002d'>
             <div class='column'>
                 <div class='column_head'>
                     <span class='title'>栏目名称</span>
@@ -355,6 +417,16 @@
                 <!-- 图文列表 -->
                 <div class=' image_box image_box_1 clx'>
                     <div class='image_inner_box clx'>
+                        <!-- ========================== 图片列表 start ========================== -->
+                        <router-list style='display: none;' type='images' title='images1' datamode='in' tagids='5a124881cc1193e41700002c,5a124879cc1193e41700002b,5a124870cc1193901b00002d' dateformat='Y-m-h' count='4'>
+                            <div class='image_item image_item_1'>
+                                <a class='block width_full height_full' href='[router-url]'>
+                                    <img src='[router-imageurl]'>
+                                    <p class='title text_ellipsis'>[router-title]</p>
+                                </a>
+                            </div>
+                        </router-list>
+                        <!-- ========================== 图片列表 start ========================== -->
                         <div class='image_item image_item_1'>
                             <a class='block width_full height_full'>
                                 <img src='../img/icon_6.png'>
@@ -387,25 +459,17 @@
             <!-- 文字块模块 -->
             <div class='text_box text_box_1'>
                 <div class='router_text_box text_inner_box'>
-                    <p style="text-align: center;">
-                        <strong><span style="font-size: 36px;">铭记历史 振兴中华</span></strong>
-                        <br/>
-                    </p>
-                    <p style="text-align: center; line-height: 1.5em;">
-                        <span style="color: rgb(255, 255, 255); font-size: 20px;"><strong><span style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">勿忘918历史事变历史经历</span></strong>
-                        </span><strong><span style="font-size: 18px;"><br/></span></strong>
-                    </p>
-                    <p style="text-align: center; margin-top: 5px; line-height: 2em;">
-                        <span style="color: rgb(0, 0, 0); font-size: 18px;">九一八事件是日本帝国主义长期以来推向对华侵略扩张的必然结果</span>
-                    </p>
-                    <p style="text-align: center; line-height: 2em;">
-                        <span style="color: rgb(0, 0, 0); font-size: 18px;">标志着反法西斯战争的开始揭开二战东方战场的序幕</span>
-                    </p>
+                    <p style="text-align: center;"><strong><span style="font-size: 36px;">铭记历史 振兴中华</span></strong>
+                        <br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                    <p style="text-align: center; line-height: 1.5em;"><span style="color: rgb(255, 255, 255); font-size: 20px;"><strong><span style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">勿忘918历史事变历史经历</span></strong>
+                        </span><strong><span style="font-size: 18px;"><br/></span></strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                    <p style="text-align: center; margin-top: 5px; line-height: 2em;"><span style="color: rgb(0, 0, 0); font-size: 18px;">九一八事件是日本帝国主义长期以来推向对华侵略扩张的必然结果</span></p>
+                    <p style="text-align: center; line-height: 2em;"><span style="color: rgb(0, 0, 0); font-size: 18px;">标志着反法西斯战争的开始揭开二战东方战场的序幕</span></p>
                 </div>
             </div>
         </div>
         <!-- 图文列表模块 -->
-        <div class='router_edit_box section' movable='true' model-type='article' data-type='article' data-title='article4' data-group-type='in' data-tagids=''>
+        <div class='router_edit_box section' movable='true' model-type='article' data-type='article' data-title='article4' data-group-type='in' data-tagids='5a124881cc1193e41700002c,5a124879cc1193e41700002b,5a124870cc1193901b00002d'>
             <div class='column'>
                 <div class='column_head'>
                     <span class='title'>栏目名称</span>
@@ -414,6 +478,15 @@
                 <!-- 图文列表 3 -->
                 <div class='article_box article_box_3 clx'>
                     <div class='article_inner_box'>
+                        <!-- ========================== 图文列表 start ========================== -->
+                        <router-list style='display: none;' type='article' title='article4' datamode='in' tagids='5a124881cc1193e41700002c,5a124879cc1193e41700002b,5a124870cc1193901b00002d' dateformat='Y-m-h' count='5'>
+                            <div class='article_item article_item_3'>
+                                <a href='[router-url]'>
+                                    <p><strong>·</strong><span class='inline_block vertical_middle text_ellipsis title'>[router-title]</span><span class='time'>[router-createtime]</span></p>
+                                </a>
+                            </div>
+                        </router-list>
+                        <!-- ========================== 图文列表 end ========================== -->
                         <div class='article_item article_item_3'>
                             <a>
                                 <p><strong>·</strong><span class='inline_block vertical_middle text_ellipsis title'>标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</span><span class='time'>2017-09-01</span></p>
@@ -444,7 +517,7 @@
             </div>
         </div>
         <!-- 视频列表模块 -->
-        <div class='router_edit_box section' movable='true' model-type='video' data-type='video' data-title='video1' data-group-type='in' data-tagids=''>
+        <div class='router_edit_box section' movable='true' model-type='video' data-type='video' data-title='video1' data-group-type='in' data-tagids='5a124881cc1193e41700002c,5a124879cc1193e41700002b,5a124870cc1193901b00002d'>
             <div class='column'>
                 <div class='column_head'>
                     <span class='title'>栏目名称</span>
@@ -453,6 +526,19 @@
                 <!-- 视频列表 -->
                 <div class='video_box video_box_1 clx'>
                     <div class='video_inner_box clx'>
+                        <!-- ========================== 视频列表 start ========================== -->
+                        <router-list style='display: none;' type='video' title='video1' datamode='in' tagids='5a124881cc1193e41700002c,5a124879cc1193e41700002b,5a124870cc1193901b00002d' dateformat='Y-m-h' count='4'>
+                            <div class='video_item video_item_1'>
+                                <a class='block width_full height_full' href='[router-url]'>
+                                    <img class='video_img' src='[router-imageurl]'>
+                                    <p class='title text_ellipsis'>[router-title]</p>
+                                    <div class='back_shadow transition_3'>
+                                        <img src='../img/png_5.png'>
+                                    </div>
+                                </a>
+                            </div>
+                        </router-list>
+                        <!-- ========================== 视频列表 end ========================== -->
                         <div class='video_item video_item_1'>
                             <a class='block width_full height_full'>
                                 <img class='video_img' src='../img/icon_4.png'>
@@ -529,9 +615,15 @@
         </div>
     </div>
     <footer>
-        <div class='footer_content'>
-            <p>Copyright © 2017 XXX.com Inc. All Rights Reserved. </p>
-            <p>云服务支持：路特云媒体融合服务平台</p>
+        <div class='footer_content router_edit_box' model-type='text'>
+            <div class='router_text_box text_inner_box'>
+                <p style="text-align: center;">
+                    <span style="font-size: 14px;">Copyright © 2017 XXX.com Inc. All Rights Reserved.</span>
+                </p>
+                <p style="text-align: center;">
+                    <span style="font-size: 14px;">云服务支持：路特云媒体融合服务平台</span>
+                </p>
+            </div>
         </div>
     </footer>
 </body>

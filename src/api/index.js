@@ -10,7 +10,16 @@ var api = {
             url: '/plugin/diyspecial/special-clumn',
             method: 'get',
             data: {
-                id: global.platformId
+                id: global.topicId
+            }
+        })
+    },
+    getTagList() {
+        return fetch({
+            url: '/plugin/diyspecial/tags-list',
+            method: 'get',
+            data: {
+                id: global.topicId
             }
         })
     }

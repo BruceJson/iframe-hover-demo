@@ -5,6 +5,8 @@ import AdvListSettingDialog from '@/script/components/dialogs/advListSettingDial
 import SwiperSettingDialog from '@/script/components/dialogs/swiperSettingDialog'
 import FocusSettingDialog from '@/script/components/dialogs/focusSettingDialog'
 import ColumnSettingDialog from '@/script/components/dialogs/columnSettingDialog'
+import TextSettingDialog from '@/script/components/dialogs/textSettingDialog'
+import BgSettingDialog from '@/script/components/dialogs/bgSettingDialog'
 
 class DialogManager {
     constructor($box) {
@@ -25,7 +27,8 @@ class DialogManager {
         this.swiperDialog = new SwiperSettingDialog();
         this.focusDialog = new FocusSettingDialog();
         this.columnDialog = new ColumnSettingDialog();
-
+        this.textDialog = new TextSettingDialog();
+        this.bgDialog = new BgSettingDialog();
     }
 
     // 渲染
@@ -37,6 +40,8 @@ class DialogManager {
         this.$el.append(this.swiperDialog.getDom());
         this.$el.append(this.focusDialog.getDom());
         this.$el.append(this.columnDialog.getDom());
+        this.$el.append(this.textDialog.getDom());
+        this.$el.append(this.bgDialog.getDom());
     }
 
     // =============== interface ================
@@ -65,13 +70,16 @@ class DialogManager {
                     this.columnDialog.show(modelData, resolve);
                     break;
                 case 'text':
-                    this.navDialog.show(modelData);
+                    this.textDialog.show(modelData, resolve);
                     break;
                 case 'video':
                     this.columnDialog.show(modelData, resolve);
                     break;
                 case 'advList':
                     this.advListDialog.show(modelData, resolve);
+                    break;
+                case 'bg':
+                    this.bgDialog.show(modelData, resolve);
                     break;
                 default:
                     break;

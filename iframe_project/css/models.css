@@ -58,6 +58,7 @@
 }
 
 
+
 /* ============ 组件通用样式 =========== */
 
 html,
@@ -133,6 +134,9 @@ body {
 }
 
 
+
+
+
 /* 焦点图 */
 
 .focus_box {
@@ -146,11 +150,17 @@ body {
 }
 
 
+
+
+
 /* 图文列表 */
 
 .article_box {
     position: relative;
 }
+
+
+
 
 
 /* swiper通用样式 */
@@ -261,7 +271,7 @@ body {
 
 footer {
     border-top: 1px solid #AFAEA9;
-    padding: 10px 0;
+    padding: 30px 0;
     margin-top: 30px;
 }
 
@@ -272,6 +282,9 @@ footer {
     color: #706E6F;
     font-size: 12px;
 }
+
+
+
 
 
 /* ================ 对应组件样式重写 ================ */

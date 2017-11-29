@@ -8,6 +8,7 @@ import NavbarData from './navbar/navbarData';
 import SwiperData from './swiper/swiperData';
 import SwiperItemData from './swiper/swiperItemData';
 import TextData from './text/textData';
+import BgData from './bg/bgData';
 
 export default {
     BannerData,
@@ -19,5 +20,6 @@ export default {
     SwiperItemData,
     AdvData,
     AdvListData,
-    TextData
+    TextData,
+    BgData
 }

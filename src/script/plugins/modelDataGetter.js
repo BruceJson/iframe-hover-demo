@@ -127,8 +127,28 @@ function getAdvListData($advList) {
  */
 function getTextData($text) {
     var guid = getDomGuid($text);
-    var value = $text.find('.router_text_box').innerHTML;
+    var value = $text.find('.router_text_box').html();
     return new BaseData.TextData(guid, value);
+}
+
+/**
+ * 背景设置data
+ * @param $body 
+ * data-bg-type: image/color 背景类型，图片、颜色
+ * data-bg-src  背景图片链接
+ * data-bg-cover-type:cover/inherit     背景图片平铺类型：平铺、默认
+ * data-bg-position:left/center/left        背景不是平铺时，所处于的位置
+ * data-bg-color        背景颜色色值
+ */
+function getBgData($body) {
+
+    var bgType = $body.attr('data-bg-type');
+    var bgSrc = $body.attr('data-bg-src');
+    var bgCoverType = $body.attr('data-bg-cover-type');
+    var bgPosition = $body.attr('data-bg-position');
+    var bgColor = $body.attr('data-bg-color');
+
+    return new BaseData.BgData(bgType, bgSrc, bgCoverType, bgPosition, bgColor);
 }
 
 // 获取dom的type
@@ -175,6 +195,9 @@ class ModelDataGetter {
                 break;
             case 'advList':
                 data = getAdvListData($modelDom);
+                break;
+            case 'bg':
+                data = getBgData($modelDom);
                 break;
             default:
                 break;
